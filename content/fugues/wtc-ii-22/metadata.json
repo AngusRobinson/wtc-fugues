@@ -1,0 +1,46 @@
+{
+  "id": "wtc-ii-22",
+  "book": 2,
+  "number": 22,
+  "bwv": "891",
+  "key": "B♭ minor",
+  "title": "J. S. Bach: Fugue in B♭ minor",
+  "subtitle": "Das wohltemperierte Klavier II, no. 22 · BWV 891 · Four voices · 3/2",
+  "description": "Subject, countersubjects, contrapuntal disposition and harmonic arrivals, with the complete annotated score.",
+  "downloads": [
+    {
+      "label": "Two staves",
+      "href": "./pdf/bach-bflat-minor-fugue-keyboard.pdf"
+    },
+    {
+      "label": "Four staves",
+      "href": "./pdf/bach-bflat-minor-fugue-annotated.pdf"
+    }
+  ],
+  "analyses": [
+    {
+      "label": "Prout (1910), pp. 85–86",
+      "href": "./pdf/prout-bwv891-analysis.pdf"
+    },
+    {
+      "label": "Tovey (1924), pp. 156–157",
+      "href": "./pdf/tovey-bwv891-analysis.pdf"
+    },
+    {
+      "label": "Keller, pp. 179–182 (German)",
+      "href": "https://www.hermann-keller.org/assets/downloads/547e2aeb/bwv891.pdf#page=3"
+    }
+  ],
+  "publicFiles": [
+    "pdf/bach-bflat-minor-fugue-annotated.pdf",
+    "pdf/bach-bflat-minor-fugue-keyboard.pdf",
+    "pdf/prout-bwv891-analysis.pdf",
+    "pdf/tovey-bwv891-analysis.pdf",
+    "sources/NOTICE.txt"
+  ],
+  "legacyPages": [
+    "bach-bflat-minor-fugue-analysis.html",
+    "bach-bflat-minor-fugue.html"
+  ],
+  "legacyArchive": "bach-bwv891-public.zip"
+}
