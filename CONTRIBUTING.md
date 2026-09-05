@@ -47,6 +47,6 @@ Optional `legacyPages` and `legacyArchive` fields preserve existing download nam
 
 For GitHub Pages, `npm run build:pages` runs the build, checks and packaging sequence above. The manual workflow in `.github/workflows/pages.yml` publishes only `output/release`, from the repository's default branch. Keep all internal links relative and retain the generated directory structure so project-site subdirectories work.
 
-`npm run build:site` prepares the separate server-based app for other hosts; it is not the GitHub Pages build.
+`npm run dev` builds the static collection and opens a local HTTP server at `http://127.0.0.1:5173`. Rebuild after edits to refresh the files. Shared styles are in `styles/`; `vite.config.ts` configures the browser build.
 
 Generated data can be committed so ordinary builds need no notation tools. Keep temporary notation, source scans and test results under the ignored `tmp/<id>` directory. Public files should contain no local paths, personal notes or conversational text. Retain source attribution and necessary third-party licence notices.
