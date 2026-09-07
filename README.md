@@ -6,6 +6,13 @@ The analyses examine subjects and countersubjects, recurring motifs, contrapunta
 
 ## Available analyses
 
+**Book I, no. 2: Fugue in C minor, BWV 847**
+
+- [Annotated keyboard score, two staves](content/fugues/wtc-i-02/pdf/bach-c-minor-fugue-keyboard.pdf)
+- [Annotated open score, three staves](content/fugues/wtc-i-02/pdf/bach-c-minor-fugue-annotated.pdf)
+- [Prout’s analysis (1910), pp. 14–16](content/fugues/wtc-i-02/pdf/prout-bwv847-analysis.pdf)
+- [Keller’s analysis, pp. 45–47 (German)](https://www.hermann-keller.org/assets/downloads/547e2aeb/bwv847.pdf#page=2)
+
 **Book II, no. 22: Fugue in B-flat minor, BWV 891**
 
 - [Annotated keyboard score, two staves](content/fugues/wtc-ii-22/pdf/bach-bflat-minor-fugue-keyboard.pdf)
@@ -13,8 +20,10 @@ The analyses examine subjects and countersubjects, recurring motifs, contrapunta
 
 ## Sources
 
-The BWV 891 score is based on Kroll’s Bach-Gesellschaft edition (1866), using David Huron’s digital transcription, revised by Craig Sapp. The analysis draws on Prout, Tovey and Keller; source-based observations and additional editorial readings are distinguished on the page.
+The scores are based on Kroll’s Bach-Gesellschaft edition (1866), using David Huron’s digital transcription, revised by Craig Sapp. The analyses draw on Keller and Prout, and on Tovey for BWV 891; source-based observations and additional editorial readings are distinguished on the page.
 
 - [Prout’s analysis (1910), pp. 85–86](content/fugues/wtc-ii-22/pdf/prout-bwv891-analysis.pdf)
 - [Tovey’s analysis (1924), pp. 156–157](content/fugues/wtc-ii-22/pdf/tovey-bwv891-analysis.pdf)
 - [Source and edition details](content/fugues/wtc-ii-22/sources/NOTICE.txt)
+
+- [BWV 847 source and edition details](content/fugues/wtc-i-02/sources/NOTICE.txt)

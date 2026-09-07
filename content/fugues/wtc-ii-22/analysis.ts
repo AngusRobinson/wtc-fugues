@@ -16,7 +16,7 @@ export const sections = [
  {start:96,end:101,label:'Paired stretto within the coda',entries:'S + A 96.1 · Tⁱ + Bⁱ 96.2',detail:'Soprano and alto enter in parallel sixths; tenor and bass follow one minim later in inversion, in thirds. The closing chord has D♮.'}
 ];
 export const themes = [
- {id:'subject',title:'Subject / answer',location:'Subject: alto, bars 1–5',text:'The real answer enters in the soprano at bar 5, a perfect fifth higher, with A♮ replacing A♭ at its close. The bass entry likewise closes on D♮. The quaver continuation and closing cell s also occur outside complete entries.'},
+ {id:'subject',title:'Subject / real answer',location:'Subject: alto, bars 1–5',text:'The real answer enters in the soprano at bar 5, a perfect fifth higher, with A♮ replacing A♭ at its close. The bass entry likewise closes on D♮. The quaver continuation and closing cell s also occur outside complete entries.'},
  {id:'cs1',title:'Countersubject 1',location:'Alto, bars 5–9',text:'Two chromatic ascents (c1), followed by a sustained note and the turn/suspension figure t1. The alto repeats CS1 at bar 11; inverted versions accompany the entries from bar 42.'},
  {id:'cs2',title:'Countersubject 2',location:'Soprano, bars 11–15',text:'Keller’s second counterpoint; Prout identifies only the chromatic countersubject. The crotchet–rest cell c2 coincides with the subject’s quaver continuation. Later variants and detached cells are marked separately.'}
 ];

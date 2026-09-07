@@ -31,7 +31,7 @@ export function AnalyticalMap({study,onSeek,onPassage}:{study:FugueData;onSeek:(
  function chooseTone(id:string,q:number){setToneId(id);onSeek(q,null,false);}
  const activate=(fn:()=>void)=>(e:React.KeyboardEvent)=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();fn();}};
  return <section className="analytical-map" aria-labelledby="map-title"><h2 id="map-title">Entries, countersubjects and modulation</h2>
- <div className="map-legend">{materials.map(m=><span key={m.id}><i style={{background:m.colour}}/>{m.label}</span>)}<span className="map-symbols">Hatched: inversion</span></div>
+ <div className="map-legend">{materials.map(m=><span key={m.id}><i style={{background:m.colour}}/>{m.label}</span>)}{annotations.some(a=>a.inverted)&&<span className="map-symbols">Hatched: inversion</span>}</div>
  <div className="analysis-map-scroll"><svg className="analysis-map-svg" viewBox={`0 0 1200 ${rowBottom+212}`} role="group" aria-label={`${formalGroups.length} principal sections, thematic entries in ${voices.length} voices, and modulation markers`}>
  <defs><pattern id="map-inversion-hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(135)"><line x1="0" y1="0" x2="0" y2="7" stroke="#fff" strokeOpacity=".65" strokeWidth="2"/></pattern></defs>
  {formalGroups.map(g=>{const a=x(barStart(bars,g.start)),b=x(barEnd(bars,g.end));return <g className="formal-group" key={g.number}>

@@ -1,0 +1,40 @@
+{
+  "id": "wtc-i-02",
+  "book": 1,
+  "number": 2,
+  "bwv": "847",
+  "key": "C minor",
+  "title": "J. S. Bach: Fugue in C minor",
+  "subtitle": "Das wohltemperierte Klavier I, no. 2 · BWV 847 · Three voices · 4/4",
+  "description": "Subject, two countersubjects, episodes and harmonic arrivals, with the complete annotated score.",
+  "downloads": [
+    {
+      "label": "Two staves",
+      "href": "./pdf/bach-c-minor-fugue-keyboard.pdf"
+    },
+    {
+      "label": "Three staves",
+      "href": "./pdf/bach-c-minor-fugue-annotated.pdf"
+    }
+  ],
+  "analyses": [
+    {
+      "label": "Keller, pp. 45–47 (German)",
+      "href": "https://www.hermann-keller.org/assets/downloads/547e2aeb/bwv847.pdf#page=2"
+    },
+    {
+      "label": "Prout (1910), pp. 14–16",
+      "href": "./pdf/prout-bwv847-analysis.pdf"
+    },
+    {
+      "label": "Tovey (1924), p. 9",
+      "href": "https://s9.imslp.org/files/imglnks/usimg/4/4f/IMSLP911003-PMLP05948-Bach_-_48_Preludes_and_Fugues_%28Tovey%29_-_Book_I.pdf#page=29"
+    }
+  ],
+  "publicFiles": [
+    "pdf/bach-c-minor-fugue-annotated.pdf",
+    "pdf/bach-c-minor-fugue-keyboard.pdf",
+    "pdf/prout-bwv847-analysis.pdf",
+    "sources/NOTICE.txt"
+  ]
+}
