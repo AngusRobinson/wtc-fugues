@@ -77,4 +77,9 @@ for(const voiceCount of [2,5]){
  assert.equal(scorePosition(bars,7.5),'3:2½');assert.equal(systemAt(fixture.systems,2),1);
  assert.throws(()=>validateStudy({...fixture,score:{...fixture.score,duration:9}}));
 }
-console.log('Collection checks passed: catalogue, document links, unchanged PDFs, unique IDs, variable metres, two/five voices, extra subjects and missing-work handling.');
+const compoundBars=[{number:1,start:0,duration:3,beatQuarters:.75},{number:2,start:3,duration:3,beatQuarters:.75}];
+assert.equal(scorePosition(compoundBars,.25),'1:1⅓');
+assert.equal(scorePosition(compoundBars,.5),'1:1⅔');
+assert.equal(scorePosition(compoundBars,2.75),'1:4⅔');
+assert.equal(scorePosition(compoundBars,3),'2:1');
+console.log('Collection checks passed: catalogue, document links, unchanged PDFs, unique IDs, variable metres, compound beats, two/five voices, extra subjects and missing-work handling.');

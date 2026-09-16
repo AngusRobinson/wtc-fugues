@@ -1,0 +1,41 @@
+{
+  "id": "wtc-ii-04",
+  "book": 2,
+  "number": 4,
+  "bwv": "873",
+  "key": "C♯ minor",
+  "title": "J. S. Bach: Fugue in C♯ minor",
+  "subtitle": "Das wohltemperierte Klavier II, no. 4 · BWV 873 · Three voices · 12/16",
+  "description": "Two subjects, inversion and contrapuntal combinations, with the complete annotated score.",
+  "downloads": [
+    {
+      "label": "Two staves",
+      "href": "./pdf/bach-c-sharp-minor-fugue-keyboard.pdf"
+    },
+    {
+      "label": "Three staves",
+      "href": "./pdf/bach-c-sharp-minor-fugue-annotated.pdf"
+    }
+  ],
+  "analyses": [
+    {
+      "label": "Keller, pp. 132–133 (German)",
+      "href": "https://www.hermann-keller.org/assets/downloads/547e2aeb/bwv873.pdf#page=3"
+    },
+    {
+      "label": "Prout (1910), pp. 57–58",
+      "href": "./pdf/prout-bwv873-analysis.pdf"
+    },
+    {
+      "label": "Tovey (1924), p. 21",
+      "href": "./pdf/tovey-bwv873-analysis.pdf"
+    }
+  ],
+  "publicFiles": [
+    "pdf/bach-c-sharp-minor-fugue-keyboard.pdf",
+    "pdf/bach-c-sharp-minor-fugue-annotated.pdf",
+    "pdf/prout-bwv873-analysis.pdf",
+    "pdf/tovey-bwv873-analysis.pdf",
+    "sources/NOTICE.txt"
+  ]
+}

@@ -18,5 +18,8 @@ export function systemAt(systems:ScoreSystem[],bar:number):number {
 }
 export function scorePosition(bars:Bar[],q:number):string {
  const bar=barAt(bars,q),beat=1+(q-bar.start)/bar.beatQuarters;
- return bar.number+':'+String(beat).replace('.5','½').replace('.25','¼').replace('.75','¾');
+ const whole=Math.floor(beat+1e-8),fraction=beat-whole;
+ const fractions:[[number,string],...Array<[number,string]>]=[[0,''],[.25,'¼'],[1/3,'⅓'],[.5,'½'],[2/3,'⅔'],[.75,'¾']];
+ const match=fractions.find(([value])=>Math.abs(fraction-value)<1e-8);
+ return bar.number+':'+(match?String(whole)+match[1]:String(Number(beat.toFixed(3))));
 }

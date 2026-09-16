@@ -13,6 +13,14 @@ The analyses examine subjects and countersubjects, recurring motifs, contrapunta
 - [Prout’s analysis (1910), pp. 14–16](content/fugues/wtc-i-02/pdf/prout-bwv847-analysis.pdf)
 - [Keller’s analysis, pp. 45–47 (German)](https://www.hermann-keller.org/assets/downloads/547e2aeb/bwv847.pdf#page=2)
 
+**Book II, no. 4: Fugue in C-sharp minor, BWV 873**
+
+- [Annotated keyboard score, two staves](content/fugues/wtc-ii-04/pdf/bach-c-sharp-minor-fugue-keyboard.pdf)
+- [Annotated open score, three staves](content/fugues/wtc-ii-04/pdf/bach-c-sharp-minor-fugue-annotated.pdf)
+- [Prout’s analysis (1910), pp. 57–58](content/fugues/wtc-ii-04/pdf/prout-bwv873-analysis.pdf)
+- [Tovey’s analysis (1924), p. 21](content/fugues/wtc-ii-04/pdf/tovey-bwv873-analysis.pdf)
+- [Keller’s analysis, pp. 132–133 (German)](https://www.hermann-keller.org/assets/downloads/547e2aeb/bwv873.pdf#page=3)
+
 **Book II, no. 9: Fugue in E major, BWV 878**
 
 - [Annotated keyboard score, two staves](content/fugues/wtc-ii-09/pdf/bach-e-major-fugue-keyboard.pdf)
@@ -37,3 +45,5 @@ The scores are based on Kroll’s Bach-Gesellschaft edition (1866), using David 
 - [BWV 847 source and edition details](content/fugues/wtc-i-02/sources/NOTICE.txt)
 
 - [BWV 878 source and edition details](content/fugues/wtc-ii-09/sources/NOTICE.txt)
+
+- [BWV 873 source and edition details](content/fugues/wtc-ii-04/sources/NOTICE.txt)

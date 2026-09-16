@@ -1,0 +1,36 @@
+export const voices=['Soprano','Alto','Bass'];
+export const formalGroups=[
+ {start:1,end:15,number:'I',label:'Exposition',range:'1–15',continuation:'First subject · episode'},
+ {start:16,end:23,number:'II',label:'Second group',range:'16–23',continuation:'S → A → B'},
+ {start:24,end:34,number:'III',label:'Inversion',range:'24–34',continuation:'S → A → B; direct A 30'},
+ {start:35,end:47,number:'IV',label:'Second theme',range:'35–47',continuation:'S → A → B · episode'},
+ {start:48,end:71,number:'V',label:'Combination',range:'48–71',continuation:'Both subjects · final cadence'},
+];
+export const themes=[
+ {id:'subject',title:'First subject / real answer',location:'Subject: bass, bars 1–3',text:'The running semiquavers receive a real answer at the fifth in the soprano, bar 2 beat 3. The opening neighbour-note figures lead into an ascending scale and a sequential tail. Later entries present the subject in inversion or adapt its ending.'},
+ {id:'second',title:'Second subject',location:'Soprano, bars 35–37',text:'A slower chromatic descent leads into alternating fourths and fifths. The alto answers in stretto at bar 36, with an octave-displaced opening and shortened continuation. From bar 48 this theme combines with the first subject in changing contrapuntal dispositions.'},
+ {id:'motif',title:'Episode figures',location:'Arpeggio-and-scale figure: soprano, bars 13–14',text:'The subject’s sequential tail (t) supplies much of the episodic writing. A rising arpeggio followed by a descending scale (r) emerges in bar 13 and returns, with variants, in later episodes. Earlier chromatic lines (ch) foreshadow the second subject.'},
+];
+export const sections=[
+ {start:1,end:6,label:'Exposition',entries:'Bass 1:1 · soprano 2:3 · alto 5:1',detail:'The real answer overlaps the first subject’s closing phrase. Its sequential extension leads back to C♯ minor for the alto entry. The accompanying dotted quavers are recurrent counterpoint, but do not remain a fixed countersubject throughout the fugue.'},
+ {start:6,end:15,label:'First episode',entries:'Sequential tail · arpeggio-and-scale figure',detail:'The sequential tail (t) passes between the voices through an extended episode. The arpeggio-and-scale figure (r) first appears in the soprano at bar 13 beat 3. A bass head-fragment at bar 14 beat 3 develops into sequence rather than a complete entry. The episode leads to the C♯ minor cadence at bar 16.'},
+ {start:16,end:23,label:'Second group',entries:'Soprano 16:1 · alto 17:3 · bass 20:1',detail:'The first two entries repeat the tonic–dominant relationship; the bass enters in E major. Prout therefore calls this an irregular counter-exposition. The chromatic foreshadowing (ch) is heard in the bass at bars 17–19 and in the soprano from bar 20.'},
+ {start:24,end:31,label:'Inverted entries and direct return',entries:'Inverted: soprano 24:1 · alto 26:1 · bass 28:1; direct: alto 30:1',detail:'Three successive entries reverse the subject’s diatonic contour, with intervals adjusted to the harmony. The alto then restores the direct form in its lower register. Above the inverted alto entry, the soprano’s chromatic line in bar 27 anticipates the second subject in shorter values.'},
+ {start:32,end:34,label:'Episode into the second theme',entries:'Arpeggio-and-scale variants: soprano 33 · alto 34',detail:'The running figure passes from soprano to alto above an ascending bass. E♯ in the bass leads to the F♯ minor cadence at bar 35, where the second subject begins.'},
+ {start:35,end:39,label:'Second-subject entries',entries:'Soprano 35:1 · alto 36:1 · bass 37:4',detail:'The alto overlaps the soprano after one bar, displacing the opening note by an octave and breaking off early. The bass begins on G♯ at the last dotted quaver of bar 37, with a shortened opening. These entries stand against running material derived from the first subject, without a complete first-subject statement.'},
+ {start:39,end:47,label:'Extended episode',entries:'Sequential tail · renewed arpeggio figures',detail:'Sequential writing leads through B major at bar 44. The arpeggio figure and its altered forms drive the approach to bar 48, where the soprano’s first subject begins on a tied C♯ above F♯ minor harmony.'},
+ {start:48,end:56,label:'First combinations',entries:'48: first subject in soprano, second in bass · 53: inverted first subject in alto · 55: second in soprano, first in bass',detail:'The outer voices invert their contrapuntal disposition between bars 48 and 55, in double counterpoint at the twelfth. The first subject has a broadened close at bar 48 and a raised third at bar 55. Between them, an altered inversion in the alto follows the A major cadence at bar 53.'},
+ {start:57,end:65,label:'Episode and renewed combination',entries:'61: first subject in alto, second in bass',detail:'The arpeggio-and-scale figure returns in the soprano in bars 59–60. At bar 61 the first subject begins on G♯ over C♯ minor harmony, paired with the chromatic theme in the bass. Its ascent and continuation are altered; subsequent sequences lead towards the final tonic entries.'},
+ {start:66,end:71,label:'Final combinations and close',entries:'66: first subject in alto, second in soprano · bass answer 67:3 · second subject in alto 68:1',detail:'The combination returns with the second subject above the first, now in double counterpoint at the octave. The bass answer enters halfway through bar 67 on a tied G♯; the alto joins it with the second subject half a bar later. Running semiquavers continue to the last cadence. The final C♯ major chord lasts one dotted quaver, followed by rests.'},
+];
+export const tonalEvents=[
+ {id:'cs16',bar:16,q:45,key:'C♯ minor',short:'C♯m',type:'cadence',evidence:'Bass G♯ moves to C♯, soprano B♯ rises to C♯, and the alto supplies E.'},
+ {id:'e20',bar:20,q:57,key:'E major',short:'E',type:'cadence',evidence:'Bass B moves to E, soprano D♯ rises to E, and the alto reaches G♯ as the bass subject begins.'},
+ {id:'b24',bar:24,q:69,key:'B major',short:'B',type:'entry',evidence:'The inverted subject starts on F♯ above B and D♯. This is an entry context within continuing motion, not a new cadence.'},
+ {id:'fs35',bar:35,q:102,key:'F♯ minor',short:'F♯m',type:'cadence',evidence:'Bass E♯ rises to F♯, with A in the alto and F♯ in the soprano at the second subject’s entrance.'},
+ {id:'b44',bar:44,q:129,key:'B major',short:'B',type:'cadence',evidence:'The F♯ major dominant resolves to B in the bass and alto, with D♯ in the soprano.'},
+ {id:'fs48',bar:48,q:141,key:'F♯ minor',short:'F♯m',type:'arrival',evidence:'Bass E♯ rises to F♯ under A and the tied soprano C♯. The first subject’s C♯ opening is above F♯ minor harmony.'},
+ {id:'a53',bar:53,q:156,key:'A major',short:'A',type:'cadence',evidence:'Bass E moves to A, soprano G♯ rises to A, and the inverted alto subject begins on C♯.'},
+ {id:'cs61',bar:61,q:180,key:'C♯ minor',short:'C♯m',type:'arrival',evidence:'C♯ in the bass supports E in the soprano and the alto subject’s G♯. The subject’s starting pitch does not itself establish G♯ minor.'},
+ {id:'cs71',bar:71,q:210,key:'C♯ major',short:'C♯',type:'close',evidence:'Bass G♯ resolves to C♯, soprano B♯ rises to C♯, and E♯ in the alto supplies the major third.'},
+];

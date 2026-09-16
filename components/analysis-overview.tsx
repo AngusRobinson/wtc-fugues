@@ -2,14 +2,14 @@
 import {useState} from 'react';
 import {Button} from '@/components/ui/button';
 import type {FugueData} from '@/lib/fugues/types';
-import {barAt,barStart,barEnd} from '@/lib/fugues/position';
+import {barAt,barStart,barEnd,scorePosition} from '@/lib/fugues/position';
 const left=83,right=1170,width=right-left;
 // Preserve the engraving scale instead of stretching short examples across the page.
 const exampleWidth=(svg:string)=>Number(svg.match(/viewBox="0 0 ([\d.]+)/)?.[1])||840;
 export function ThematicMaterial({study,onSeek}:{study:FugueData;onSeek:(q:number)=>void}){
  const {themes,examples}=study;
  const colours=Object.fromEntries(study.materials.map(m=>[m.id,m.colour]));
- return <section className="thematic-material" aria-labelledby="themes-title"><h2 id="themes-title">Subject and countersubjects</h2>
+ return <section className="thematic-material" aria-labelledby="themes-title"><h2 id="themes-title">{study.materials.some(m=>m.role==='countersubject')?'Subject and countersubjects':'Subjects and figures'}</h2>
  {themes.map(theme=>{const example=examples.find(e=>e.id===theme.id)!;return <figure className="theme-example" key={theme.id}>
  <figcaption><h3 style={{color:colours[theme.id]}}>{theme.title}</h3><span>{theme.location}</span><Button variant="ghost" size="sm" aria-label={'Show '+theme.title+' in the complete score'} onClick={()=>onSeek(example.start)}>Score ↗</Button></figcaption>
  <div className="theme-scroll"><div className="theme-notation" style={{width:exampleWidth(example.svg)}} role="img" aria-label={theme.title+', '+theme.location} dangerouslySetInnerHTML={{__html:example.svg}}/></div>
@@ -31,7 +31,7 @@ export function AnalyticalMap({study,onSeek,onPassage}:{study:FugueData;onSeek:(
  const entry=annotations.find(a=>a.id===entryId);
  function chooseTone(id:string,q:number){setToneId(id);onSeek(q,null,false);}
  const activate=(fn:()=>void)=>(e:React.KeyboardEvent)=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();fn();}};
- return <section className="analytical-map" aria-labelledby="map-title"><h2 id="map-title">Entries, countersubjects and modulation</h2>
+ return <section className="analytical-map" aria-labelledby="map-title"><h2 id="map-title">{materials.some(m=>m.role==='countersubject')?'Entries, countersubjects and modulation':'Entries and tonal arrivals'}</h2>
  <div className="map-legend">{materials.map(m=><span key={m.id}><i style={{background:m.colour}}/>{m.label}</span>)}{annotations.some(a=>a.inverted)&&<span className="map-symbols">Hatched: inversion</span>}</div>
  <div className="analysis-map-scroll"><svg className="analysis-map-svg" viewBox={`0 0 1200 ${rowBottom+212}`} role="group" aria-label={`${formalGroups.length} principal sections, thematic entries in ${voices.length} voices, and modulation markers`}>
  <defs><pattern id="map-inversion-hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(135)"><line x1="0" y1="0" x2="0" y2="7" stroke="#fff" strokeOpacity=".65" strokeWidth="2"/></pattern></defs>
@@ -53,7 +53,7 @@ export function AnalyticalMap({study,onSeek,onPassage}:{study:FugueData;onSeek:(
  </g>
  </svg></div>
  <p className="formal-correspondences">{study.notes.formal} {study.notes.formalSource&&<a href={study.notes.formalSource.href} target="_blank" rel="noreferrer">{study.notes.formalSource.label}</a>}</p>
- {entry&&<p className="entry-detail"><strong>{entry.name}</strong> · {voices[entry.voice].name} · bar {barAt(bars,entry.start).number}, beat {1+(entry.start-barAt(bars,entry.start).start)/barAt(bars,entry.start).beatQuarters}{entry.status==='statement'?'':' · '+entry.status}</p>}
+ {entry&&<p className="entry-detail"><strong>{entry.name}</strong> · {voices[entry.voice].name} · bar {barAt(bars,entry.start).number}, beat {scorePosition(bars,entry.start).split(':')[1]}{entry.status==='statement'?'':' · '+entry.status}</p>}
  {tone&&<div className="tonal-evidence" aria-live="polite"><p><strong>Bar {tone.bar} · {tone.key}.</strong> {tone.evidence}</p><Button variant="ghost" size="sm" onClick={()=>onSeek(tone.q)}>Score ↗</Button></div>}
  <p className="map-note">{study.notes.map}</p>
  <details className="disposition" open><summary>Contrapuntal disposition</summary><table><thead><tr><th>Bars</th><th>Disposition</th><th>Entries and construction</th></tr></thead><tbody>{sections.map(c=><tr key={c.start}><td><button onClick={()=>onPassage(c.start,c.end)}>{c.start}–{c.end}</button></td><td>{c.label}</td><td><strong>{c.entries}</strong><br/>{c.detail}</td></tr>)}</tbody></table><p>{study.notes.disposition}</p></details>
