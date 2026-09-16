@@ -6,6 +6,7 @@ import annotated from './data/annotations.json';
 import examples from './data/thematic-examples.json';
 import {voices,formalGroups,sections,themes,tonalEvents} from './analysis';
 const study:FugueData={
+ recording:{youtubeId:'XkSJq_W58TU',startSeconds:99,performer:'Masato Suzuki',instrument:'Harpsichord',source:{label:'Netherlands Bach Society',href:'https://www.bachvereniging.nl/en/bwv/bwv-847'}},
  metadata,voices:voices.map((name,i)=>({name,short:['S','A','B'][i]})),
  bars:Array.from({length:31},(_,i)=>({number:i+1,start:i*4,duration:4,beatQuarters:1})),
  tempo:{initial:63,min:40,max:108,beatQuarters:1,label:'Crotchet'},initialLoop:[1,9],initialTone:'eb11',seekStep:.25,
@@ -26,7 +27,7 @@ const study:FugueData={
   cells:'h subject head · d scale figure · q quaver counterpoint · ↑ ascending form',
   edition:[
    'Kroll, Bach-Gesellschaft XIV (1866); Humdrum encoding by David Huron, revised by Craig Sapp. Counterpoint boundaries and the principal division follow Keller; the harmonic markers and detailed variant spans are editorial readings checked against the score and Prout. Prout’s countersubject crosses from soprano to alto in bars 26–27 because it includes the scale link. The quaver portion labelled CS1 here is wholly in the alto.',
-   'Prout is supplied as a public-domain extract; Keller is linked in German. Initial playback tempo: crotchet = 63, after Keller. Playback joins ties and retains the closing chord tones; expressive timing is omitted.',
+   'Prout is supplied as a public-domain extract; Keller is linked in German. Initial synthetic playback tempo: crotchet = 63, after Keller. Synthetic playback joins ties and retains the closing chord tones; expressive timing is omitted.',
   ],
   scoreSource:{label:'Score source',href:'https://github.com/humdrum-tools/bach-wtc-fugues/blob/master/kern/wtc1f02.krn'},
  },

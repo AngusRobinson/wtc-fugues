@@ -13,6 +13,14 @@ The analyses examine subjects and countersubjects, recurring motifs, contrapunta
 - [Prout’s analysis (1910), pp. 14–16](content/fugues/wtc-i-02/pdf/prout-bwv847-analysis.pdf)
 - [Keller’s analysis, pp. 45–47 (German)](https://www.hermann-keller.org/assets/downloads/547e2aeb/bwv847.pdf#page=2)
 
+**Book II, no. 9: Fugue in E major, BWV 878**
+
+- [Annotated keyboard score, two staves](content/fugues/wtc-ii-09/pdf/bach-e-major-fugue-keyboard.pdf)
+- [Annotated open score, four staves](content/fugues/wtc-ii-09/pdf/bach-e-major-fugue-annotated.pdf)
+- [Prout’s analysis (1910), pp. 64–66](content/fugues/wtc-ii-09/pdf/prout-bwv878-analysis.pdf)
+- [Tovey’s analysis (1924), pp. 56–57](content/fugues/wtc-ii-09/pdf/tovey-bwv878-analysis.pdf)
+- [Keller’s analysis, pp. 144–146 (German)](https://www.hermann-keller.org/assets/downloads/547e2aeb/bwv878.pdf#page=2)
+
 **Book II, no. 22: Fugue in B-flat minor, BWV 891**
 
 - [Annotated keyboard score, two staves](content/fugues/wtc-ii-22/pdf/bach-bflat-minor-fugue-keyboard.pdf)
@@ -20,10 +28,12 @@ The analyses examine subjects and countersubjects, recurring motifs, contrapunta
 
 ## Sources
 
-The scores are based on Kroll’s Bach-Gesellschaft edition (1866), using David Huron’s digital transcription, revised by Craig Sapp. The analyses draw on Keller and Prout, and on Tovey for BWV 891; source-based observations and additional editorial readings are distinguished on the page.
+The scores are based on Kroll’s Bach-Gesellschaft edition (1866), using David Huron’s digital transcription, revised by Craig Sapp. The analyses draw on Keller, Prout and Tovey; source-based observations and additional editorial readings are distinguished on the page.
 
 - [Prout’s analysis (1910), pp. 85–86](content/fugues/wtc-ii-22/pdf/prout-bwv891-analysis.pdf)
 - [Tovey’s analysis (1924), pp. 156–157](content/fugues/wtc-ii-22/pdf/tovey-bwv891-analysis.pdf)
 - [Source and edition details](content/fugues/wtc-ii-22/sources/NOTICE.txt)
 
 - [BWV 847 source and edition details](content/fugues/wtc-i-02/sources/NOTICE.txt)
+
+- [BWV 878 source and edition details](content/fugues/wtc-ii-09/sources/NOTICE.txt)

@@ -10,7 +10,7 @@
     "build": "node scripts/build_collection.mjs",
     "lint": "oxlint",
     "format": "oxfmt",
-    "check": "tsc --noEmit && node scripts/check_analysis_page.mjs && node scripts/test_audio.mjs && node scripts/check_collection.mjs && python3 content/fugues/wtc-i-02/scripts/check_analysis.py",
+    "check": "tsc --noEmit && node scripts/check_analysis_page.mjs && node scripts/test_audio.mjs && node scripts/check_collection.mjs && python3 content/fugues/wtc-i-02/scripts/check_analysis.py && python3 content/fugues/wtc-ii-09/scripts/check_analysis.py",
     "build:pages": "npm run build && npm run check && python3 scripts/package_release.py",
     "preview": "python3 -m http.server 5173 --bind 127.0.0.1 --directory output/site"
   },

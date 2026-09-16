@@ -4,15 +4,16 @@ import {Button} from '@/components/ui/button';
 import type {FugueData} from '@/lib/fugues/types';
 import {barAt,barStart,barEnd} from '@/lib/fugues/position';
 const left=83,right=1170,width=right-left;
+// Preserve the engraving scale instead of stretching short examples across the page.
+const exampleWidth=(svg:string)=>Number(svg.match(/viewBox="0 0 ([\d.]+)/)?.[1])||840;
 export function ThematicMaterial({study,onSeek}:{study:FugueData;onSeek:(q:number)=>void}){
  const {themes,examples}=study;
  const colours=Object.fromEntries(study.materials.map(m=>[m.id,m.colour]));
  return <section className="thematic-material" aria-labelledby="themes-title"><h2 id="themes-title">Subject and countersubjects</h2>
  {themes.map(theme=>{const example=examples.find(e=>e.id===theme.id)!;return <figure className="theme-example" key={theme.id}>
  <figcaption><h3 style={{color:colours[theme.id]}}>{theme.title}</h3><span>{theme.location}</span><Button variant="ghost" size="sm" aria-label={'Show '+theme.title+' in the complete score'} onClick={()=>onSeek(example.start)}>Score ↗</Button></figcaption>
- <div className="theme-scroll"><div className="theme-notation" role="img" aria-label={theme.title+', '+theme.location} dangerouslySetInnerHTML={{__html:example.svg}}/></div>
+ <div className="theme-scroll"><div className="theme-notation" style={{width:exampleWidth(example.svg)}} role="img" aria-label={theme.title+', '+theme.location} dangerouslySetInnerHTML={{__html:example.svg}}/></div>
  <p>{theme.text}</p></figure>;})}
- <p className="example-note">{study.notes.examples}</p>
  </section>;
 }
 export function AnalyticalMap({study,onSeek,onPassage}:{study:FugueData;onSeek:(q:number,id?:string|null,scroll?:boolean)=>void;onPassage:(start:number,end:number)=>void}){
@@ -34,7 +35,7 @@ export function AnalyticalMap({study,onSeek,onPassage}:{study:FugueData;onSeek:(
  <div className="map-legend">{materials.map(m=><span key={m.id}><i style={{background:m.colour}}/>{m.label}</span>)}{annotations.some(a=>a.inverted)&&<span className="map-symbols">Hatched: inversion</span>}</div>
  <div className="analysis-map-scroll"><svg className="analysis-map-svg" viewBox={`0 0 1200 ${rowBottom+212}`} role="group" aria-label={`${formalGroups.length} principal sections, thematic entries in ${voices.length} voices, and modulation markers`}>
  <defs><pattern id="map-inversion-hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(135)"><line x1="0" y1="0" x2="0" y2="7" stroke="#fff" strokeOpacity=".65" strokeWidth="2"/></pattern></defs>
- {formalGroups.map(g=>{const a=x(barStart(bars,g.start)),b=x(barEnd(bars,g.end));return <g className="formal-group" key={g.number}>
+ {formalGroups.map(g=>{const a=x(g.startQ??barStart(bars,g.start)),b=x(g.endQ??barEnd(bars,g.end));return <g className="formal-group" key={g.number}>
  <title>{g.number+'. '+g.label+', bars '+g.range+'. '+g.continuation}</title>
  <line x1={a+3} x2={b-3} y1="4" y2="4" stroke="#465d7a" strokeWidth="2"/>
  <text x={a+6} y="25" className="formal-title">{g.number} · {g.label}</text>

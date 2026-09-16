@@ -34,6 +34,11 @@ export function validateStudy(study:FugueData):void {
  check(systems[systems.length-1].end===bars[bars.length-1].number,'Missing final system');
  check(numbers.has(study.initialLoop[0])&&numbers.has(study.initialLoop[1])&&study.initialLoop[0]<=study.initialLoop[1],'Invalid initial loop');
  for(const section of [...study.sections,...study.formalGroups])check(numbers.has(section.start)&&numbers.has(section.end)&&section.start<=section.end,'Invalid section');
+ for(const group of study.formalGroups){
+  const first=bars.find(b=>b.number===group.start)!,last=bars.find(b=>b.number===group.end)!;
+  const start=group.startQ??first.start,end=group.endQ??(last.start+last.duration);
+  check(validSpan(start,end)&&start>=first.start&&start<first.start+first.duration&&end>=last.start&&end<=last.start+last.duration,'Invalid formal boundary');
+ }
  unique(study.examples.map(e=>e.id),'example');
  study.themes.forEach(theme=>check(kinds.has(theme.id)&&study.examples.some(e=>e.id===theme.id),'Theme without material or engraving'));
  unique(study.tonalEvents.map(t=>t.id),'tonal event');

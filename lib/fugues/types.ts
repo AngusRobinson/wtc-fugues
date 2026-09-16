@@ -19,6 +19,7 @@ export interface Annotation {
 export interface TonalEvent {id:string; bar:number; q:number; key:string; short:string; type:string; evidence:string}
 export interface FugueData {
  metadata:WorkMetadata;
+ recording?:{youtubeId:string; startSeconds:number; performer:string; instrument:string; source:WorkLink};
  voices:{name:string; short:string}[];
  bars:Bar[];
  tempo:{initial:number; min:number; max:number; beatQuarters:number; label:string};
@@ -28,7 +29,7 @@ export interface FugueData {
  materials:Material[]; annotations:Annotation[];
  themes:{id:string; title:string; location:string; text:string}[];
  examples:{id:string; start:number; svg:string}[];
- formalGroups:{start:number; end:number; number:string; label:string; range:string; continuation:string}[];
+ formalGroups:{start:number; end:number; startQ?:number; endQ?:number; number:string; label:string; range:string; continuation:string}[];
  sections:{start:number; end:number; label:string; entries:string; detail:string}[];
  tonalEvents:TonalEvent[];
  notes:{examples:string; formal:string; formalSource?:WorkLink; map:string; disposition:string; notation:string; cells:string; edition:string[]; scoreSource:WorkLink};

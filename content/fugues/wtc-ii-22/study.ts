@@ -7,6 +7,7 @@ import examples from './data/thematic-examples.json';
 import {voices,formalGroups,sections,themes,tonalEvents} from './analysis';
 
 const study:FugueData={
+ recording:{youtubeId:'QIveGkUw2FI',startSeconds:360,performer:'Christine Schornsheim',instrument:'Harpsichord',source:{label:'Netherlands Bach Society',href:'https://www.bachvereniging.nl/en/bwv/bwv-891'}},
  metadata,
  voices:voices.map((name,i)=>({name,short:['S','A','T','B'][i]})),
  bars:Array.from({length:101},(_,i)=>({number:i+1,start:i*6,duration:6,beatQuarters:2})),
@@ -32,7 +33,7 @@ const study:FugueData={
   notation:'S / Si subject material · i inversion · * variant / fragment · > continuation',
   cells:'s = subject tail · c1 = chromatic cell · c2 = detached-crotchet cell · t1 = CS1 tail',
   edition:[
-   'Kroll, Bach-Gesellschaft XIV (1866); Humdrum encoding by David Huron, revised by Craig Sapp. The five principal groups follow Prout; the table divides the last group to show the paired stretto separately. Countersubject identification follows Keller; later CS2 variants and the harmonic markers are editorial readings of the score. Subject labels include local melodic adjustments. Playback joins ties; ornaments and expressive timing are omitted.',
+   'Kroll, Bach-Gesellschaft XIV (1866); Humdrum encoding by David Huron, revised by Craig Sapp. The five principal groups follow Prout; the table divides the last group to show the paired stretto separately. Countersubject identification follows Keller; later CS2 variants and the harmonic markers are editorial readings of the score. Subject labels include local melodic adjustments. Synthetic playback joins ties; ornaments and expressive timing are omitted.',
    'Prout and Tovey: public-domain extracts, with edition details and scan sources in the PDFs. Keller: external link to the German text.',
   ],
   scoreSource:{label:'Score source',href:'https://github.com/humdrum-tools/bach-wtc-fugues/blob/master/kern/wtc2f22.krn'},

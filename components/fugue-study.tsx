@@ -6,6 +6,7 @@ import {Slider} from '@/components/ui/slider';
 import {Switch} from '@/components/ui/switch';
 import {Toggle} from '@/components/ui/toggle';
 import {Input} from '@/components/ui/input';
+import {RecordingPlayer} from '@/components/recording-player';
 import {StudyAudio} from '@/lib/audio';
 import type {FugueData,ScoreSystem} from '@/lib/fugues/types';
 import {barAt,barStart,barEnd,systemAt,scorePosition} from '@/lib/fugues/position';
@@ -45,6 +46,8 @@ const System=memo(function System({study,system,index,beat,enabled,classes,onSee
 });
 export default function FugueStudy({study,collectionHref}:{study:FugueData;collectionHref?:string}){
  const {score,systems,bars,voices,materials,metadata,sections:chapters}=study;
+ const [playback,setPlayback]=useState<'recording'|'synthetic'>(study.recording?'recording':'synthetic');
+ const recordingMode=playback==='recording'&&!!study.recording;
  const lastBar=bars[bars.length-1].number,firstBar=bars[0].number,duration=score.duration;
  const materialColours=Object.fromEntries(materials.map(m=>[m.id,m.colour]));
  const formatPosition=(q:number)=>scorePosition(bars,q);
@@ -78,6 +81,7 @@ export default function FugueStudy({study,collectionHref}:{study:FugueData;colle
   player.current?.seek(q);setPosition(q);
   if(scroll)requestAnimationFrame(()=>document.getElementById('system-'+systemAt(systems,b))?.scrollIntoView({behavior:'smooth',block:'start'}));
  },[loop,loopStart,loopEnd,bars,duration,chapters,systems]);
+ function changePlayback(mode:'recording'|'synthetic'){player.current?.pause();setPlaying(false);setError('');setPlayback(mode);}
  async function playPause(){if(playing){player.current?.pause();setPlaying(false);return;}try{setError('');await player.current?.play(position);setPlaying(true);}catch(e){setError(e instanceof Error?e.message:'Audio unavailable.');}}
  function selectPassage(start:number,end:number){setLoopStart(start);setLoopEnd(end);if(loop)player.current?.setRange(barStart(bars,start),barEnd(bars,end),true);navigate(barStart(bars,start));}
  return <main className="musician-study">
@@ -86,26 +90,38 @@ export default function FugueStudy({study,collectionHref}:{study:FugueData;colle
  <header className="study-title"><div><h1>{metadata.title}</h1><p>{metadata.subtitle}</p></div><nav className="score-downloads" aria-label="Annotated score PDFs">{metadata.downloads.map(link=><a key={link.href} className="pdf-link" href={link.href} target="_blank" rel="noreferrer"><Download size={16}/>{link.label}</a>)}</nav></header>
  <ThematicMaterial study={study} onSeek={q=>navigate(q)}/>
  <AnalyticalMap study={study} onSeek={navigate} onPassage={selectPassage}/>
- <h2 id="complete-score" className="complete-score-title">Annotated score</h2>
+ <div className="score-section-heading"><h2 id="complete-score" className="complete-score-title">Annotated score</h2>
+ {study.recording&&<div className="playback-selector" role="group" aria-label="Playback source">
+ <button type="button" aria-pressed={recordingMode} onClick={()=>changePlayback('recording')}>NBS recording</button>
+ <button type="button" aria-pressed={!recordingMode} onClick={()=>changePlayback('synthetic')}>Synthetic</button>
+ </div>}</div>
+ <div className={recordingMode?'score-layout with-recording':'score-layout'}>
+ {recordingMode&&study.recording&&<RecordingPlayer recording={study.recording}/>}
+ <div className="score-column">
+ <div className="score-controls">
  <div className="study-toolbar" ref={toolbar}>
   <div className="transport">
+   {!recordingMode&&<>
    <Button className="play-button" onClick={playPause}>{playing?<Pause size={16}/>:<Play size={16}/>} {playing?'Pause':'Play'}</Button>
    <Button variant="outline" size="icon" aria-label="Return to beginning" onClick={()=>navigate(0)}><RotateCcw size={16}/></Button>
    <span className="position-readout">{position>=duration?'End':formatPosition(position-position%study.seekStep)}</span>
    <div className="seek-control"><Slider min={0} max={duration} step={study.seekStep} value={[position]} aria-label="Score position" onValueChange={v=>navigate(valueOf(v),null,false)}/><span>{fmt(position*secondsPerQuarter/tempo)} / {fmt(duration*secondsPerQuarter/tempo)}</span></div>
    <div className="tempo-control"><label id="tempo-label">{study.tempo.label} = {tempo}</label><Slider min={study.tempo.min} max={study.tempo.max} step={1} value={[tempo]} aria-labelledby="tempo-label" onValueChange={v=>setTempo(valueOf(v))}/></div>
+   </>}
    <form className="go-form" onSubmit={e=>{e.preventDefault();const n=Number(new FormData(e.currentTarget).get('bar'));if(bars.some(b=>b.number===n))navigate(barStart(bars,n));}}><Input type="number" min={firstBar} max={lastBar} name="bar" placeholder="Bar" aria-label="Go to bar"/><Button type="submit" variant="outline" size="sm">Go</Button></form>
   </div>
-  <div className="control-row"><div className="loop-controls"><Switch id="loop" checked={loop} onCheckedChange={setLoop}/><label htmlFor="loop">Loop</label><Input aria-label="First loop bar" type="number" min={firstBar} max={loopEnd} value={loopStart} onChange={e=>setLoopStart(Math.max(firstBar,Math.min(loopEnd,Number(e.target.value)||firstBar)))}/><span>–</span><Input aria-label="Last loop bar" type="number" min={loopStart} max={lastBar} value={loopEnd} onChange={e=>setLoopEnd(Math.min(lastBar,Math.max(loopStart,Number(e.target.value)||lastBar)))}/></div>
-   <div className="follow-control"><Switch id="follow" checked={follow} onCheckedChange={setFollow}/><label htmlFor="follow">Follow</label></div>
+  <div className="control-row">{!recordingMode&&<><div className="loop-controls"><Switch id="loop" checked={loop} onCheckedChange={setLoop}/><label htmlFor="loop">Loop</label><Input aria-label="First loop bar" type="number" min={firstBar} max={loopEnd} value={loopStart} onChange={e=>setLoopStart(Math.max(firstBar,Math.min(loopEnd,Number(e.target.value)||firstBar)))}/><span>–</span><Input aria-label="Last loop bar" type="number" min={loopStart} max={lastBar} value={loopEnd} onChange={e=>setLoopEnd(Math.min(lastBar,Math.max(loopStart,Number(e.target.value)||lastBar)))}/></div>
+   <div className="follow-control"><Switch id="follow" checked={follow} onCheckedChange={setFollow}/><label htmlFor="follow">Follow</label></div></>}
    <div className="size-control"><label id="size-label">Score {size}%</label><Slider aria-labelledby="size-label" min={70} max={120} step={5} value={[size]} onValueChange={v=>setSize(valueOf(v))}/></div>
-   <div className="voice-controls" aria-label="Voice mixer">{voices.map((v,i)=><div key={v.name}><span title={v.name}>{v.short}</span><Toggle pressed={muted[i]} onPressedChange={()=>setMuted(m=>m.map((x,j)=>i===j?!x:x))} aria-label={'Mute '+v.name}>M</Toggle><Toggle pressed={solo===i} onPressedChange={()=>{setSolo(x=>x===i?null:i);setMuted(m=>m.map((x,j)=>i===j?false:x));}} aria-label={'Solo '+v.name}>Solo</Toggle></div>)}</div>
+   {!recordingMode&&<div className="voice-controls" aria-label="Voice mixer">{voices.map((v,i)=><div key={v.name}><span title={v.name}>{v.short}</span><Toggle pressed={muted[i]} onPressedChange={()=>setMuted(m=>m.map((x,j)=>i===j?!x:x))} aria-label={'Mute '+v.name}>M</Toggle><Toggle pressed={solo===i} onPressedChange={()=>{setSolo(x=>x===i?null:i);setMuted(m=>m.map((x,j)=>i===j?false:x));}} aria-label={'Solo '+v.name}>Solo</Toggle></div>)}</div>}
   </div>
   <div className="annotation-controls" aria-label="Annotation layers">{materials.map(({id:kind,label})=><Toggle key={kind} pressed={visible[kind]} onPressedChange={v=>setVisible(x=>({...x,[kind]:v}))}><i style={{background:materialColours[kind]}}/>{label}</Toggle>)}<span className="notation-key">{study.notes.notation}</span></div>
   {error&&<p className="error" role="alert">{error}</p>}
  </div>
  <div className="selection-strip" aria-live="polite">{selectedAnnotation?<><strong style={{color:materialColours[selectedAnnotation.kind]}}>{selectedAnnotation.label}</strong> · {voices[selectedAnnotation.voice].name} · {formatPosition(selectedAnnotation.start)}–{formatPosition(selectedAnnotation.end)} <span>{selectedAnnotation.status==='statement'?'':selectedAnnotation.status}</span></>:<span>{study.notes.cells}</span>}</div>
- <div className="continuous-score" style={{'--score-size':size/100} as React.CSSProperties}>{systems.map((system,index)=><System study={study} key={system.start} system={system} index={index} beat={index===activeIndex?position:null} enabled={enabled} classes={classes} onSeek={navigate}/>)}</div>
+ </div>
+ <div className="score-viewport"><div className="continuous-score" style={{'--score-size':size/100} as React.CSSProperties}>{systems.map((system,index)=><System study={study} key={system.start} system={system} index={index} beat={!recordingMode&&index===activeIndex?position:null} enabled={enabled} classes={classes} onSeek={navigate}/>)}</div></div>
+ </div></div>
  <footer><details><summary>Edition & annotation notes</summary>{study.notes.edition.map((note,i)=><p key={i}>{note}</p>)}<p><a href={study.notes.scoreSource.href} target="_blank" rel="noreferrer">{study.notes.scoreSource.label}</a>. Engraved with Verovio.</p></details></footer>
  </main>;
 }
