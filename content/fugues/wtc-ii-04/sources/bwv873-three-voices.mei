@@ -59,7 +59,7 @@
       </fileDesc>
       <encodingDesc>
          <appInfo>
-            <application isodate="2026-09-16T22:34:45" version="6.3.0-425dd7b">
+            <application isodate="2026-09-16T23:08:16" version="6.3.0-425dd7b">
                <name>Verovio</name>
                <p>Transcoded from Humdrum</p>
             </application>
@@ -392,19 +392,11 @@
                   <measure xml:id="measure-L1" n="1">
                      <staff xml:id="staff-L8F3" n="1">
                         <layer xml:id="layer-L1F3N1" n="1">
-                           <rest xml:id="rest-L16F3" dots="1" dur="8" />
-                           <rest xml:id="rest-L19F3" dots="1" dur="8" />
-                           <rest xml:id="rest-L22F3" dots="1" dur="8" />
-                           <rest xml:id="rest-L25F3" dots="1" dur="8" />
-                        </layer>
+                           <mRest xml:id="rest-L16F3" /></layer>
                      </staff>
                      <staff xml:id="staff-L8F2" n="2">
                         <layer xml:id="layer-L1F2N1" n="1">
-                           <rest xml:id="rest-L16F2" dots="1" dur="8" />
-                           <rest xml:id="rest-L19F2" dots="1" dur="8" />
-                           <rest xml:id="rest-L22F2" dots="1" dur="8" />
-                           <rest xml:id="rest-L25F2" dots="1" dur="8" />
-                        </layer>
+                           <mRest xml:id="rest-L16F2" /></layer>
                      </staff>
                      <staff xml:id="staff-L8F1" n="3">
                         <layer xml:id="layer-L1F1N1" n="1">
@@ -450,11 +442,7 @@
                      </staff>
                      <staff xml:id="staff-L28F2N1" n="2">
                         <layer xml:id="layer-L28F2N1" n="1">
-                           <rest xml:id="rest-L29F2" dots="1" dur="8" />
-                           <rest xml:id="rest-L32F2" dots="1" dur="8" />
-                           <rest xml:id="rest-L35F2" dots="1" dur="8" />
-                           <rest xml:id="rest-L38F2" dots="1" dur="8" />
-                        </layer>
+                           <mRest xml:id="rest-L29F2" /></layer>
                      </staff>
                      <staff xml:id="staff-L28F1N1" n="3">
                         <layer xml:id="layer-L28F1N1" n="1">
@@ -505,11 +493,7 @@
                      </staff>
                      <staff xml:id="staff-L41F2N1" n="2">
                         <layer xml:id="layer-L41F2N1" n="1">
-                           <rest xml:id="rest-L42F2" dots="1" dur="8" />
-                           <rest xml:id="rest-L45F2" dots="1" dur="8" />
-                           <rest xml:id="rest-L48F2" dots="1" dur="8" />
-                           <rest xml:id="rest-L51F2" dots="1" dur="8" />
-                        </layer>
+                           <mRest xml:id="rest-L42F2" /></layer>
                      </staff>
                      <staff xml:id="staff-L41F1N1" n="3">
                         <layer xml:id="layer-L41F1N1" n="1">
@@ -547,11 +531,7 @@
                      </staff>
                      <staff xml:id="staff-L54F2N1" n="2">
                         <layer xml:id="layer-L54F2N1" n="1">
-                           <rest xml:id="rest-L55F2" dots="1" dur="8" />
-                           <rest xml:id="rest-L58F2" dots="1" dur="8" />
-                           <rest xml:id="rest-L61F2" dots="1" dur="8" />
-                           <rest xml:id="rest-L64F2" dots="1" dur="8" />
-                        </layer>
+                           <mRest xml:id="rest-L55F2" /></layer>
                      </staff>
                      <staff xml:id="staff-L54F1N1" n="3">
                         <layer xml:id="layer-L54F1N1" n="1">
@@ -1650,11 +1630,7 @@
                      </staff>
                      <staff xml:id="staff-L353F1N1" n="3">
                         <layer xml:id="layer-L353F1N1" n="1">
-                           <rest xml:id="rest-L354F1" dots="1" dur="8" />
-                           <rest xml:id="rest-L357F1" dots="1" dur="8" />
-                           <rest xml:id="rest-L360F1" dots="1" dur="8" />
-                           <rest xml:id="rest-L363F1" dots="1" dur="8" />
-                        </layer>
+                           <mRest xml:id="rest-L354F1" /></layer>
                      </staff>
                   </measure>
                   <measure xml:id="measure-L366" n="28">

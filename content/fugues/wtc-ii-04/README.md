@@ -2,6 +2,8 @@
 
 Three voices, 71 bars, 12/16. The page counts four dotted-quaver beats per bar; internal times are crotchets. The source is Kroll's Bach-Gesellschaft text, encoded by David Huron and revised by Craig Sapp. The Humdrum encoding is unchanged.
 
+The engraving consolidates the encoding's subdivided rests in fully silent bars into conventional full-bar rests, as in Kroll and Tovey. Partial-bar rests retain their encoded durations.
+
 ## Analysis and source comparison
 
 The five formal groups follow Keller, pp. 132–133: exposition with episode (1–15), second group (16–23), inverted group and direct return (24–34), second theme and episode (35–47), and combinations (48–71). These groups are not five uninterrupted expositions. Tovey, p. 21, recognises the second subject and its subsequent combinations; Prout, pp. 57–58, treats bars 31–47 as a long episode. Keller regards the double-fugue classification as borderline because the chromatic theme is foreshadowed earlier and immediately accompanied by material derived from the first subject.

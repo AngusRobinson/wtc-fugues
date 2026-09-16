@@ -61,6 +61,15 @@ for measure in tree.findall('.//m:measure',ns):
    state[key]=alt
    # Explicit gestural accidentals avoid Verovio 6.3 MIDI ignoring key signatures.
    target.set('accid.ges',{-2:'ff',-1:'f',0:'n',1:'s',2:'ss'}[alt])
+# The encoding subdivides silent bars; engrave them as conventional bar rests.
+M='{http://www.music-encoding.org/ns/mei}'
+for layer in tree.findall('.//m:layer',ns):
+ children=list(layer)
+ if children and all(c.tag==M+'rest' for c in children):
+  duration=sum(4/int(c.get('dur'))*sum(.5**j for j in range(int(c.get('dots','0'))+1)) for c in children)
+  assert duration==3,duration
+  for rest in children:layer.remove(rest)
+  ET.SubElement(layer,M+'mRest',{ID:children[0].get(ID)})
 ET.register_namespace('','http://www.music-encoding.org/ns/mei')
 mei=ET.tostring(tree,encoding='unicode')
 tk=verovio.toolkit();tk.setOptions({'inputFrom':'mei'});assert tk.loadData(mei)
