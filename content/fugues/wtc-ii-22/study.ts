@@ -33,7 +33,7 @@ const study:FugueData={
   notation:'S / Si subject material · i inversion · * variant / fragment · > continuation',
   cells:'s = subject tail · c1 = chromatic cell · c2 = detached-crotchet cell · t1 = CS1 tail',
   edition:[
-   'Kroll, Bach-Gesellschaft XIV (1866); Humdrum encoding by David Huron, revised by Craig Sapp. The five principal groups follow Prout; the table divides the last group to show the paired stretto separately. Countersubject identification follows Keller; later CS2 variants and the harmonic markers are editorial readings of the score. Subject labels include local melodic adjustments. Synthetic playback joins ties; ornaments and expressive timing are omitted.',
+   'Kroll, Bach-Gesellschaft XIV (1866); Humdrum encoding by David Huron, revised by Craig Sapp. The five principal groups follow Prout; the table divides the last group to show the paired stretto separately. Countersubject identification follows Keller; later CS2 variants and the harmonic markers are editorial readings of the score. Subject labels include local melodic adjustments. Scrolling playback joins ties; ornaments and expressive timing are omitted.',
    'Prout and Tovey: public-domain extracts, with edition details and scan sources in the PDFs. Keller: external link to the German text.',
   ],
   scoreSource:{label:'Score source',href:'https://github.com/humdrum-tools/bach-wtc-fugues/blob/master/kern/wtc2f22.krn'},

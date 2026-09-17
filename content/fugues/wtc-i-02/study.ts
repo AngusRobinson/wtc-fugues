@@ -27,7 +27,7 @@ const study:FugueData={
   cells:'h subject head · d scale figure · q quaver counterpoint · ↑ ascending form',
   edition:[
    'Kroll, Bach-Gesellschaft XIV (1866); Humdrum encoding by David Huron, revised by Craig Sapp. Counterpoint boundaries and the principal division follow Keller; the harmonic markers and detailed variant spans are editorial readings checked against the score and Prout. Prout’s countersubject crosses from soprano to alto in bars 26–27 because it includes the scale link. The quaver portion labelled CS1 here is wholly in the alto.',
-   'Prout is supplied as a public-domain extract; Keller is linked in German. Initial synthetic playback tempo: crotchet = 63, after Keller. Synthetic playback joins ties and retains the closing chord tones; expressive timing is omitted.',
+   'Prout is supplied as a public-domain extract; Keller is linked in German. Initial scrolling playback tempo: crotchet = 63, after Keller. Scrolling playback joins ties and retains the closing chord tones; expressive timing is omitted.',
   ],
   scoreSource:{label:'Score source',href:'https://github.com/humdrum-tools/bach-wtc-fugues/blob/master/kern/wtc1f02.krn'},
  },

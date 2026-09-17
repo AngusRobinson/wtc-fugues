@@ -24,7 +24,7 @@ const study:FugueData={
  notation:'S1 first subject · A1 real answer · S2 second subject · i inversion · * variant / incomplete statement · > continuation',
  cells:'t sequential tail · r arpeggio-and-scale figure · ch chromatic foreshadowing',
  edition:[
- 'Kroll, Bach-Gesellschaft XIV (1866); Humdrum encoding by David Huron, revised by Craig Sapp. Formal grouping follows Keller; thematic spans and harmonic markers are editorial readings checked against the score, Prout and Tovey. Synthetic playback joins ties and omits ornaments.',
+ 'Kroll, Bach-Gesellschaft XIV (1866); Humdrum encoding by David Huron, revised by Craig Sapp. Formal grouping follows Keller; thematic spans and harmonic markers are editorial readings checked against the score, Prout and Tovey. Scrolling playback joins ties and omits ornaments.',
  'Keller regards the work as a borderline double fugue; Tovey treats the chromatic theme as a second subject, while Prout includes its first appearances in an extended episode. The study follows Keller’s grouping and distinguishes foreshadowings from second-subject entries. Keller’s suggested readings from the earlier C minor version are not substituted for the supplied score.'
  ],
  scoreSource:{label:'Score source',href:'https://github.com/humdrum-tools/bach-wtc-fugues/blob/master/kern/wtc2f04.krn'}

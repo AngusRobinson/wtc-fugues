@@ -1,0 +1,41 @@
+{
+  "id": "wtc-i-23",
+  "book": 1,
+  "number": 23,
+  "bwv": "868",
+  "key": "B major",
+  "title": "J. S. Bach: Fugue in B major",
+  "subtitle": "Das wohltemperierte Klavier I, no. 23 · BWV 868 · Four voices · 4/4",
+  "description": "Tonal answer, inverted entries, countersubject and related episodes, with the complete annotated score.",
+  "downloads": [
+    {
+      "label": "Two staves",
+      "href": "./pdf/bach-b-major-fugue-keyboard.pdf"
+    },
+    {
+      "label": "Four staves",
+      "href": "./pdf/bach-b-major-fugue-annotated.pdf"
+    }
+  ],
+  "analyses": [
+    {
+      "label": "Keller, pp. 111–112 (German)",
+      "href": "https://www.hermann-keller.org/assets/downloads/547e2aeb/bwv868.pdf#page=2"
+    },
+    {
+      "label": "Prout (1910), pp. 50–51",
+      "href": "./pdf/prout-bwv868-analysis.pdf"
+    },
+    {
+      "label": "Tovey (1924), p. 151",
+      "href": "./pdf/tovey-bwv868-analysis.pdf"
+    }
+  ],
+  "publicFiles": [
+    "pdf/bach-b-major-fugue-annotated.pdf",
+    "pdf/bach-b-major-fugue-keyboard.pdf",
+    "pdf/prout-bwv868-analysis.pdf",
+    "pdf/tovey-bwv868-analysis.pdf",
+    "sources/NOTICE.txt"
+  ]
+}

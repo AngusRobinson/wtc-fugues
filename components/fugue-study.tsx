@@ -93,7 +93,7 @@ export default function FugueStudy({study,collectionHref}:{study:FugueData;colle
  <div className="score-section-heading"><h2 id="complete-score" className="complete-score-title">Annotated score</h2>
  {study.recording&&<div className="playback-selector" role="group" aria-label="Playback source">
  <button type="button" aria-pressed={recordingMode} onClick={()=>changePlayback('recording')}>NBS recording</button>
- <button type="button" aria-pressed={!recordingMode} onClick={()=>changePlayback('synthetic')}>Synthetic</button>
+ <button type="button" aria-pressed={!recordingMode} onClick={()=>changePlayback('synthetic')}>Scrolling</button>
  </div>}</div>
  <div className={recordingMode?'score-layout with-recording':'score-layout'}>
  {recordingMode&&study.recording&&<RecordingPlayer recording={study.recording}/>}
