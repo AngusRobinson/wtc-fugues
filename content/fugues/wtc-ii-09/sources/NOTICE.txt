@@ -29,6 +29,6 @@ https://www.hermann-keller.org/assets/downloads/547e2aeb/bwv878.pdf#page=2
 
 The six formal groups follow Keller. Harmonic markers and note-level spans
 are editorial readings checked against the score. The additional chromatic
-counterpoints follow Tovey's identification; adapted returns are marked.
+countersubjects follow Tovey's identification; adapted returns are marked.
 Notation engraved with Verovio. The browser page retains the third-party
 licence notices embedded in its compiled JavaScript.

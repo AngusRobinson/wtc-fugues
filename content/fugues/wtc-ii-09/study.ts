@@ -13,9 +13,9 @@ const study:FugueData={
  score:{events,audio,duration},systems,examples,formalGroups,sections,themes,tonalEvents,
  materials:[
  {id:'subject',label:'Subject / answer',colour:'#244f91',role:'subject'},
- {id:'cs1',label:'Countersubject',colour:'#a45112',role:'countersubject'},
- {id:'cs2',label:'Chromatic x',colour:'#843d7c',role:'countersubject'},
- {id:'cs3',label:'Chromatic y',colour:'#35735a',role:'countersubject'},
+ {id:'cs1',label:'Main countersubject',colour:'#a45112',role:'countersubject'},
+ {id:'cs2',label:'Countersubject x',colour:'#843d7c',role:'countersubject'},
+ {id:'cs3',label:'Countersubject y',colour:'#35735a',role:'countersubject'},
  {id:'motif',label:'Derived figures',colour:'#637878',role:'cell'}],
  annotations:annotated.annotations,
  notes:{
@@ -27,7 +27,7 @@ const study:FugueData={
  notation:'S subject · A answer · v ornamented variation · d diminution · * adapted statement / fragment · > continuation',
  cells:'c = countersubject-derived figure · i = altered inverted-diminution figure. Neither denotes a complete additional subject entry.',
  edition:[
- 'Kroll, Bach-Gesellschaft XIV (1866); Humdrum encoding by David Huron, revised by Craig Sapp. Formal grouping follows Keller; recurring material and harmonic arrivals were checked against the score, Prout and Tovey. The chromatic pair x/y follows Tovey’s identification, with adapted forms marked. Scrolling playback joins ties and omits expressive timing.',
+ 'Kroll, Bach-Gesellschaft XIV (1866); Humdrum encoding by David Huron, revised by Craig Sapp. Formal grouping follows Keller; recurring material and harmonic arrivals were checked against the score, Prout and Tovey. Countersubjects x and y follow Tovey’s identification; they combine with the subject in triple counterpoint, with adapted forms marked. Scrolling playback joins ties and omits expressive timing.',
  'Prout and Tovey: public-domain extracts with bibliographic details and scan links. Keller: external link to the German text. Tovey’s proposed octave alterations at bar 35 are not adopted; the inverted figure is labelled as altered.'
  ],
  scoreSource:{label:'Score source',href:'https://github.com/humdrum-tools/bach-wtc-fugues/blob/master/kern/wtc2f09.krn'}

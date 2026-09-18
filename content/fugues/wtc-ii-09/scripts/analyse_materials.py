@@ -29,16 +29,16 @@ entries=[
  (3,40,1,41,4,'A','Final answer')]
 for v,b,bt,e,et,label,name in entries:
  span('subject',v,at(b,bt),at(e,et),label,name,'variant' if '*' in label or label.endswith('v') else 'statement')
-# The conventional countersubject, with modified returns explicitly distinguished.
+# The main countersubject, with modified returns explicitly distinguished.
 for v,b,bt,e,et,var in [(3,3,1,4,4,False),(2,4,3,5,4,True),(1,6,1,7,3,False),
  (2,11,4,12,4,True),(0,36,1,37,3,True),(1,37,1,38,1.5,True),(2,38,1,39,2.5,True),(1,40,3.5,42,3,True)]:
- span('cs1',v,at(b,bt),at(e,et),'CS*' if var else 'CS','Countersubject'+('; variant' if var else ''),'variant' if var else 'statement')
+ span('cs1',v,at(b,bt),at(e,et),'CS*' if var else 'CS','Main countersubject'+('; variant' if var else ''),'variant' if var else 'statement')
 # The recurrent chromatic pair of bars 16-20 (Tovey's additional countersubjects).
 for v,b,bt,e,et,var in [(2,16,1,17,4.5,False),(1,17,3.5,19,1,True),(0,19,1,20,3,True)]:
- span('cs2',v,at(b,bt),at(e,et),'x*' if var else 'x','Chromatic counterpoint x'+('; adapted opening' if var else ''),'variant' if var else 'statement')
+ span('cs2',v,at(b,bt),at(e,et),'x*' if var else 'x','Countersubject x'+('; adapted opening' if var else ''),'variant' if var else 'statement')
 for v,b,bt,e,et,var in [(3,16,1,18,1,False),(2,17,4.5,19,1,True),(1,19,1,21,1,True)]:
- span('cs3',v,at(b,bt),at(e,et),'y*' if var else 'y','Chromatic counterpoint y'+('; variant' if var else ''),'variant' if var else 'statement')
-# Conventional-counterpoint derivation: codetta and the imitative episode.
+ span('cs3',v,at(b,bt),at(e,et),'y*' if var else 'y','Countersubject y'+('; variant' if var else ''),'variant' if var else 'statement')
+# Main-countersubject derivation: codetta and the imitative episode.
 for v,b,bt,e,et in [(2,8,1.5,9,2),(2,11,1.5,11,4),(0,12,3.5,14,3),(1,13,1,15,1),(3,13,3,15,1),(2,14,1,15,3),(1,15,1,16,1)]:
  span('motif',v,at(b,bt),at(e,et),'c*','Countersubject-derived figure','fragment')
 # Sequential development and inversion-like material; not complete exact inversions.
