@@ -1,6 +1,9 @@
 """Create the annotated keyboard score from the two-staff engraving."""
 import json, re
 from pathlib import Path
+import sys
+sys.path.insert(0,str(Path(__file__).resolve().parents[4]/'scripts'))
+from pdf_score import score_height,draw_score,page_number
 from reportlab.pdfgen import canvas
 from reportlab.lib.pagesizes import A4
 from reportlab.lib.colors import HexColor
@@ -39,33 +42,24 @@ for index in range(5):
             c.drawString(x+10,H-68,label)
         c.setFillColor(HexColor('#526174'))
         c.setFont('Helvetica',7.3)
-        c.drawString(left,H-82,'Voice prefixes S, A, T, B / i inversion / * variant or fragment / > continuation')
+        c.drawString(left,H-82,'i inversion / * variant or fragment / > continuation')
         c.drawString(left,H-94,'s subject tail / c1 chromatic cell / c2 detached-crotchet cell / t1 CS1 tail')
         y=H-105
     else:
-        c.setFont('Times-Roman',11)
-        c.drawString(left,H-29,'Bach - Fugue in B-flat minor, BWV 891')
-        c.setFont('Helvetica',8)
-        c.drawRightString(W-left,H-29,f'Bars {batch[0]["start"]}-{batch[-1]["end"]}')
-        c.setStrokeColor(HexColor('#dce2e8'))
-        c.setLineWidth(.4)
-        c.line(left,H-38,W-left,H-38)
-        y=H-47
-    heights=[]
-    for system in batch:
-        vb=list(map(float,re.search(r'viewBox="([^"]+)"',system['svg']).group(1).split()))
-        heights.append(width*vb[3]/vb[2])
+        y=H-28
+    heights=[score_height(ROOT,system,width) for system in batch]
     gap=min(24,(y-45-sum(heights))/4)
     assert gap>=8,(index,gap)
     placements=[]
     for system,height in zip(batch,heights):
-        c.drawImage(str(IMAGES/f'system-{system["start"]}.png'),left,y-height,width=width,height=height)
+        draw_score(c,ROOT,system,IMAGES/f'system-{system["start"]}.png',left,y-height,width,height)
         placements.append({'bars':[system['start'],system['end']],'top':y,'bottom':y-height})
         y-=height+gap
-    c.setFillColor(HexColor('#657486'))
-    c.setFont('Helvetica',6.6)
-    c.drawString(left,23,'Kroll 1866 / Huron-Sapp encoding / Analytical labels after Keller')
-    c.drawRightString(W-left,23,f'{index+1} / 5')
+    if index==4:
+        c.setFillColor(HexColor('#657486'))
+        c.setFont('Helvetica',6.6)
+        c.drawString(left,23,'Kroll 1866 / Huron-Sapp encoding / Analytical labels after Keller')
+    page_number(c,W,index+1)
     c.showPage()
     manifest.append(placements)
 c.save()

@@ -1,6 +1,9 @@
 """Isolated thematic examples; original pitches, rhythms, rests and internal ties."""
 import ast,copy,json,re
 from pathlib import Path
+import sys
+sys.path.insert(0,str(Path(__file__).resolve().parents[4]/'scripts'))
+from engraving import tidy_score,finish_svg
 import xml.etree.ElementTree as ET
 import verovio
 R=Path(__file__).resolve().parents[1]
@@ -34,7 +37,7 @@ for name,a,b,voice,start,end,colour,cells in [
   ET.SubElement(d,M+'rend',{'fontfam':'Arial','fontweight':'bold','fontstyle':'normal','fontsize':'small'}).text=label
  tk=verovio.toolkit();tk.setOptions({'inputFrom':'mei','pageWidth':2500,'pageHeight':5000,'scale':40,'adjustPageHeight':True,'header':'none','footer':'none','svgViewBox':True,'breaks':'none','xmlIdSeed':892,'mnumInterval':1,'spacingStaff':5})
  assert tk.loadData(ET.tostring(root,encoding='unicode').replace('ns0:','').replace('xmlns:ns0=','xmlns='))
- svg=ET.fromstring(tk.renderToSVG(1));prefix='theme-'+name+'-';old=svg.get('id')
+ svg=ET.fromstring(finish_svg(tk.renderToSVG(1)));prefix='theme-'+name+'-';old=svg.get('id')
  for el in svg.iter():
   if el.tag==V+'style' and el.text:el.text=el.text.replace('#'+old,'#'+prefix+old)
   if el.get('id'):el.set('id',prefix+el.get('id'))

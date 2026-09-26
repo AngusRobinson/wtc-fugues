@@ -1,0 +1,41 @@
+{
+  "id": "wtc-i-03",
+  "book": 1,
+  "number": 3,
+  "bwv": "848",
+  "key": "C-sharp major",
+  "title": "J. S. Bach: Fugue in C-sharp major",
+  "subtitle": "Das wohltemperierte Klavier I, no. 3 · BWV 848 · Three voices · 4/4",
+  "description": "Two countersubjects in triple counterpoint, episodic development and the return of the exposition.",
+  "downloads": [
+    {
+      "label": "Two staves",
+      "href": "./pdf/bach-c-sharp-major-fugue-keyboard.pdf"
+    },
+    {
+      "label": "Three staves",
+      "href": "./pdf/bach-c-sharp-major-fugue-annotated.pdf"
+    }
+  ],
+  "analyses": [
+    {
+      "label": "Keller, pp. 49–51 (German)",
+      "href": "https://www.hermann-keller.org/assets/downloads/547e2aeb/bwv848.pdf#page=3"
+    },
+    {
+      "label": "Prout (1910), pp. 16–19",
+      "href": "./pdf/prout-bwv848-analysis.pdf"
+    },
+    {
+      "label": "Tovey (1924), pp. 14–15",
+      "href": "./pdf/tovey-bwv848-analysis.pdf"
+    }
+  ],
+  "publicFiles": [
+    "pdf/bach-c-sharp-major-fugue-keyboard.pdf",
+    "pdf/bach-c-sharp-major-fugue-annotated.pdf",
+    "pdf/prout-bwv848-analysis.pdf",
+    "pdf/tovey-bwv848-analysis.pdf",
+    "sources/NOTICE.txt"
+  ]
+}

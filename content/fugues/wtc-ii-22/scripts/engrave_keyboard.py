@@ -1,6 +1,9 @@
 """Engrave the four contrapuntal voices on a keyboard grand staff."""
 import copy, json, re
 from pathlib import Path
+import sys
+sys.path.insert(0,str(Path(__file__).resolve().parents[4]/'scripts'))
+from engraving import tidy_score,finish_svg
 import xml.etree.ElementTree as ET
 import verovio
 
@@ -121,7 +124,7 @@ for start, end in ranges:
             'staff':str(v//2+1), 'startid':'#'+first['id'],
             'place':'above' if v%2 == 0 else 'below', 'color':colours[a['kind']],
             ID:f'keyboard-label-{a["id"]}-{start}'})
-        label = ['S','A','T','B'][v]+': '+a['label']+(' >' if a['start']<(start-1)*6 else '')
+        label = a['label']+(' >' if a['start']<(start-1)*6 else '')
         ET.SubElement(direction, M+'rend', {'fontfam':'Arial','fontweight':'bold','fontstyle':'normal','fontsize':'small'}).text = label
 
 # The transformation changes layout, not pitches, durations, rests or ties.
@@ -131,6 +134,7 @@ def signature(node):
 assert signature(root) == signature(source)
 assert len(root.findall('.//m:note',NS)) == 1828
 assert len(root.findall('.//m:tie',NS)) == 76
+tidy_score(root,notes,True,ROOT.name)
 mei = ET.tostring(root, encoding='unicode')
 (OUT / 'keyboard.mei').write_text(mei)
 tk = verovio.toolkit()
@@ -145,7 +149,7 @@ for nid,event in notes.items():
 systems=[]
 rendered=[]
 for page,(start,end) in enumerate(ranges,1):
-    svg=tk.renderToSVG(page)
+    svg=finish_svg(tk.renderToSVG(page))
     svg=re.sub(r'>\s+<','><',svg)
     rr=ET.fromstring(svg)
     rendered.extend(e.get('id') for e in rr.iter() if e.get('id') in notes)

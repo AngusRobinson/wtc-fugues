@@ -1,0 +1,20 @@
+{
+  "title": "Fugue in D minor",
+  "bwv": 851,
+  "number": 6,
+  "slug": "d-minor",
+  "voices": 3,
+  "meter": "3/4",
+  "answer": "real",
+  "figure": "semiquaver",
+  "proutPages": [
+    27,
+    28,
+    29
+  ],
+  "proutPrinted": "24\u201326",
+  "toveyPages": [
+    56
+  ],
+  "toveyPrinted": "37"
+}

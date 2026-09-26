@@ -1,0 +1,32 @@
+J. S. Bach: Fugue in C major, BWV 846 (WTC I, no. 1)
+
+Musical edition: Franz Kroll, Bach-Gesellschaft Ausgabe, Band 14, 1866.
+Humdrum encoding: David Huron; revisions by Craig Stuart Sapp.
+Source: https://github.com/humdrum-tools/bach-wtc-fugues/blob/master/kern/wtc1f01.krn
+
+The original encoding contains these notices, retained as source metadata:
+Copyright 1994, David Huron
+Rights to all derivative electronic formats reserved.
+
+The underlying composition and Kroll's 1866 edition are public domain.
+David Huron and Craig Stuart Sapp are credited for the digital transcription.
+The original Humdrum file is preserved without alteration. Derived MEI separates
+individual parts and makes sounding accidentals explicit. Both score formats
+preserve the selected reading's notes and ties.
+
+Prout: Analysis of J. S. Bach's Forty-Eight Fugues, ed. Louis B. Prout,
+London: Edwin Ashdown, 1910, pp. 11–13. Public-domain source extract.
+Scan source: Walter Cosand Library; full link is included in the PDF.
+
+Tovey: The Well-Tempered Clavier, Book I, Associated Board, 1924,
+pp. 3. Public-domain source extract; adjoining commentary retained.
+Scan source: IMSLP #911003; full link is included in the PDF.
+
+Keller: Das Wohltemperierte Klavier von Johann Sebastian Bach, 1965,
+pp. 41–44. External link to German text; no scan or translation reproduced.
+https://www.hermann-keller.org/assets/downloads/547e2aeb/bwv846.pdf#page=3
+
+Keller’s two-part division at the A minor cadence governs the overview. Prout separates a counter-exposition and a final section at 24. The twenty-four entry spans include curtailed statements; the further head allusions at 16, 20 and 24 are marked separately. The score retains the primary Kroll reading of the encoded ossias in bars 4, 8 and 12; Tovey adopts different readings at 4 and 9.
+
+Notation engraved with Verovio. The browser page retains third-party licence
+notices embedded in its compiled JavaScript.

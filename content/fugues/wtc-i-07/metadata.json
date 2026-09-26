@@ -1,0 +1,41 @@
+{
+  "id": "wtc-i-07",
+  "book": 1,
+  "number": 7,
+  "bwv": "852",
+  "key": "E-flat major",
+  "title": "J. S. Bach: Fugue in E-flat major",
+  "subtitle": "Das wohltemperierte Klavier I, no. 7 · BWV 852 · Three voices · 4/4",
+  "description": "A modulating subject, tonal answer and episodic triple counterpoint, with annotated scores.",
+  "downloads": [
+    {
+      "label": "Two staves",
+      "href": "./pdf/bach-eflat-major-fugue-keyboard.pdf"
+    },
+    {
+      "label": "Three staves",
+      "href": "./pdf/bach-eflat-major-fugue-annotated.pdf"
+    }
+  ],
+  "analyses": [
+    {
+      "label": "Keller, pp. 64–65 (German)",
+      "href": "https://www.hermann-keller.org/assets/downloads/547e2aeb/bwv852.pdf#page=4"
+    },
+    {
+      "label": "Prout (1910), pp. 26–27",
+      "href": "./pdf/prout-bwv852-analysis.pdf"
+    },
+    {
+      "label": "Tovey (1924), p. 43",
+      "href": "./pdf/tovey-bwv852-analysis.pdf"
+    }
+  ],
+  "publicFiles": [
+    "pdf/bach-eflat-major-fugue-keyboard.pdf",
+    "pdf/bach-eflat-major-fugue-annotated.pdf",
+    "pdf/prout-bwv852-analysis.pdf",
+    "pdf/tovey-bwv852-analysis.pdf",
+    "sources/NOTICE.txt"
+  ]
+}

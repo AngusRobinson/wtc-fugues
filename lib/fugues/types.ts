@@ -16,7 +16,7 @@ export interface Annotation {
  id:string; kind:string; voice:number; start:number; end:number;
  label:string; name:string; inverted:boolean; status:string;
 }
-export interface TonalEvent {id:string; bar:number; q:number; key:string; short:string; type:string; evidence:string}
+export interface TonalEvent {id:string; bar:number; q:number; key:string; short:string; roman:string; type:string; evidence:string}
 export interface FugueData {
  metadata:WorkMetadata;
  recording?:{youtubeId:string; startSeconds:number; performer:string; instrument:string; source:WorkLink};

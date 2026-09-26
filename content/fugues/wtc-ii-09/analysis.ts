@@ -24,12 +24,12 @@ export const sections=[
  {start:40,end:43,label:'Last entry and close',entries:'Answer: bass 40:1 · main countersubject variant: alto 40:3½',detail:'The final answer continues down the scale beyond its closing B; the soprano follows with a descending line. Crotchet rests interrupt the inner voices in bar 42. The final E major cadence falls at bar 43 beat 3.'},
 ];
 export const tonalEvents=[
- {id:'b9',bar:9,q:64,key:'B major',short:'B',type:'cadence',evidence:'A♯ in the tenor rises to B; C♯ in the alto resolves to F♯ above the sustained bass B. The soprano settles on D♯. The first stretto follows on beat 2.'},
- {id:'cs16',bar:16,q:120,key:'C♯ minor',short:'C♯m',type:'cadence',evidence:'The G♯ dominant of bar 15, with B♯ and F♯, resolves to C♯ and E at bar 16. The alto subject enters on E within this C♯ minor arrival.'},
- {id:'fs23',bar:23,q:176,key:'F♯ minor',short:'F♯m',type:'cadence',evidence:'E♯ in the soprano resolves to F♯ over bass F♯, with A in the alto and C♯ in the tenor. The ornamented subject begins at the cadence.'},
- {id:'b28',bar:28,q:216,key:'B major',short:'B',type:'cadence',evidence:'The bass F♯ of bar 27 resolves to B as the soprano A♯ rises to B; D♯ in the alto supplies the third. The diminished entries continue through this cadence.'},
- {id:'e30',bar:30,q:236,key:'E major',short:'E',type:'entry',evidence:'The alto begins the subject on E in its original note values. The bass is C♯ and the tenor G♯: this is an entry context, not a tonic cadence.'},
- {id:'e31',bar:31,q:244,key:'E major',short:'E',type:'arrival',evidence:'At beat 3 the bass reaches E under G♯ in the alto and tenor and B in the soprano. This tonic sonority is embedded in the continuing sequence.'},
- {id:'gs35',bar:35,q:272,key:'G♯ minor',short:'G♯m',type:'cadence',evidence:'F𝄪 in the soprano resolves to G♯ while the bass moves from D♯ to G♯. B and D♯ complete the tonic triad; the final group begins on the next minim.'},
- {id:'e43',bar:43,q:340,key:'E major',short:'E',type:'close',evidence:'The bass B moves to E at beat 3. F♯ and D♯ in the upper voices resolve to E and B, with G♯ in the tenor.'},
+ {id:'b9',bar:9,q:64,key:'B major',short:'B',roman:'V',type:'cadence',evidence:'A♯ in the tenor rises to B; C♯ in the alto resolves to F♯ above the sustained bass B. The soprano settles on D♯. The first stretto follows on beat 2.'},
+ {id:'cs16',bar:16,q:120,key:'C♯ minor',short:'C♯m',roman:'vi',type:'cadence',evidence:'The G♯ dominant of bar 15, with B♯ and F♯, resolves to C♯ and E at bar 16. The alto subject enters on E within this C♯ minor arrival.'},
+ {id:'fs23',bar:23,q:176,key:'F♯ minor',short:'F♯m',roman:'ii',type:'cadence',evidence:'E♯ in the soprano resolves to F♯ over bass F♯, with A in the alto and C♯ in the tenor. The ornamented subject begins at the cadence.'},
+ {id:'b28',bar:28,q:216,key:'B major',short:'B',roman:'V',type:'cadence',evidence:'The bass F♯ of bar 27 resolves to B as the soprano A♯ rises to B; D♯ in the alto supplies the third. The diminished entries continue through this cadence.'},
+ {id:'e30',bar:30,q:236,key:'E major',short:'E',roman:'I',type:'entry',evidence:'The alto begins the subject on E in its original note values. The bass is C♯ and the tenor G♯: this is an entry context, not a tonic cadence.'},
+ {id:'e31',bar:31,q:244,key:'E major',short:'E',roman:'I',type:'arrival',evidence:'At beat 3 the bass reaches E under G♯ in the alto and tenor and B in the soprano. This tonic sonority is embedded in the continuing sequence.'},
+ {id:'gs35',bar:35,q:272,key:'G♯ minor',short:'G♯m',roman:'iii',type:'cadence',evidence:'F𝄪 in the soprano resolves to G♯ while the bass moves from D♯ to G♯. B and D♯ complete the tonic triad; the final group begins on the next minim.'},
+ {id:'e43',bar:43,q:340,key:'E major',short:'E',roman:'I',type:'close',evidence:'The bass B moves to E at beat 3. F♯ and D♯ in the upper voices resolve to E and B, with G♯ in the tenor.'},
 ];

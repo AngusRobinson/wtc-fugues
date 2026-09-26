@@ -1,0 +1,21 @@
+{
+  "title": "Fugue in D-sharp minor",
+  "bwv": 853,
+  "number": 8,
+  "slug": "d-sharp-minor",
+  "voices": 3,
+  "meter": "4/4",
+  "answer": "tonal",
+  "figure": "quaver",
+  "proutPages": [
+    30,
+    31,
+    32
+  ],
+  "proutPrinted": "27\u201329",
+  "toveyPages": [
+    69,
+    70
+  ],
+  "toveyPrinted": "50\u201351"
+}

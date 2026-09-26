@@ -1,0 +1,21 @@
+{
+  "title": "Fugue in D major",
+  "bwv": 850,
+  "number": 5,
+  "slug": "d-major",
+  "voices": 4,
+  "meter": "4/4",
+  "answer": "real",
+  "figure": "demisemiquaver",
+  "proutPages": [
+    25,
+    26,
+    27
+  ],
+  "proutPrinted": "22\u201324",
+  "toveyPages": [
+    49,
+    50
+  ],
+  "toveyPrinted": "30\u201331"
+}

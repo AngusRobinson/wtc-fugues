@@ -1,6 +1,9 @@
 """A score-only PDF using the browser's annotated engraving."""
 import json,re
 from pathlib import Path
+import sys
+sys.path.insert(0,str(Path(__file__).resolve().parents[4]/'scripts'))
+from pdf_score import score_height,draw_score,page_number
 from reportlab.pdfgen import canvas
 from reportlab.lib.pagesizes import A4
 from reportlab.lib.colors import HexColor
@@ -34,24 +37,19 @@ for p,count in enumerate(groups,1):
   c.drawString(left,H-81,'s subject tail   c1 chromatic cell   c2 detached-crotchet cell   t1 CS1 tail')
   y=H-94
  else:
-  c.setFont('Times-Roman',11);c.drawString(left,H-29,'Bach - Fugue in B-flat minor, BWV 891')
-  c.setFont('Helvetica',8);c.drawRightString(W-left,H-29,f'Bars {batch[0]["start"]}-{batch[-1]["end"]}')
-  c.setStrokeColor(HexColor('#dce2e8'));c.setLineWidth(.4);c.line(left,H-38,W-left,H-38)
-  y=H-50
- heights=[]
- for s in batch:
-  vb=[float(x) for x in re.search(r'viewBox="([^"]+)"',s['svg']).group(1).split()]
-  heights.append(width*vb[3]/vb[2])
+  y=H-28
+ heights=[score_height(R,s,width) for s in batch]
  gap=12 if p==1 else (23 if count==4 else 47)
  assert y-sum(heights)-gap*(count-1)>40,(p,y,heights)
  placements=[]
  for s,h in zip(batch,heights):
-  c.drawImage(str(TEMP/f'pdfs/system-{s["start"]}.png'),left,y-h,width=width,height=h)
+  draw_score(c,R,s,TEMP/f'pdfs/system-{s["start"]}.png',left,y-h,width,h)
   placements.append({'bars':[s['start'],s['end']],'top':round(y,2),'bottom':round(y-h,2)})
   y-=h+gap
- c.setFillColor(HexColor('#657486'));c.setFont('Helvetica',6.6)
- c.drawString(left,23,'Kroll 1866 / Huron-Sapp encoding / Analytical labels after Keller')
- c.drawRightString(W-left,23,f'{p} / {len(groups)}')
+ if p==len(groups):
+  c.setFillColor(HexColor('#657486'));c.setFont('Helvetica',6.6)
+  c.drawString(left,23,'Kroll 1866 / Huron-Sapp encoding / Analytical labels after Keller')
+ page_number(c,W,p)
  c.showPage();page_manifest.append({'page':p,'systems':placements})
 c.save()
 pdf=PdfReader(output)

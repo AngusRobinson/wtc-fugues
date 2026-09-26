@@ -18,8 +18,31 @@ const System=memo(function System({study,system,index,beat,enabled,classes,onSee
  const ref=useRef<HTMLDivElement>(null);
  const [cursor,setCursor]=useState<{x:number;height:number}|null>(null);
  const [revision,setRevision]=useState(0);
+ const arrivals=useMemo(()=>tonalEvents.filter(t=>t.bar>=system.start&&t.bar<=system.end&&['arrival','cadence','close'].includes(t.type)).sort((a,b)=>a.q-b.q),[system,tonalEvents]);
+ const [tones,setTones]=useState<{id:string;anchor:number;centre:number;row:number}[]>([]);
+ const toneHeight=arrivals.length?(Math.max(0,...tones.map(t=>t.row))+1)*24:0;
  const notes=useMemo(()=>score.events.filter(n=>n.bar>=system.start&&n.bar<=system.end),[system,score]);
  useEffect(()=>{if(!ref.current)return;const r=new ResizeObserver(()=>setRevision(n=>n+1));r.observe(ref.current);return()=>r.disconnect();},[]);
+ useLayoutEffect(()=>{
+  const box=ref.current;if(!box||!arrivals.length)return;
+  const rect=box.getBoundingClientRect(),ends:number[]=[];
+  const placed=arrivals.map(t=>{
+   const xs=notes.filter(n=>Math.abs(n.start-t.q)<1e-7).flatMap(n=>{
+    const head=box.querySelector('[data-note-id="'+n.id+'"] .notehead');
+    const r=head?.getBoundingClientRect();return r?.width?[r.left+r.width/2-rect.left]:[];
+   }).sort((a,b)=>a-b);
+   if(!xs.length)return null;
+   const mid=Math.floor(xs.length/2),anchor=xs.length%2?xs[mid]:(xs[mid-1]+xs[mid])/2;
+   const label=box.querySelector<HTMLElement>('[data-tone-id="'+t.id+'"]');
+   const half=(label?.getBoundingClientRect().width??0)/2;
+   const centre=Math.max(half+4,Math.min(rect.width-half-4,anchor));
+   let row=ends.findIndex(end=>centre-half>end+8);
+   if(row<0)row=ends.length;
+   ends[row]=centre+half;
+   return {id:t.id,anchor,centre,row};
+  }).filter(t=>t!==null);
+  setTones(placed);
+ },[arrivals,notes,revision]);
  useLayoutEffect(()=>{
   const box=ref.current;if(!box)return;
   box.querySelectorAll('.sounding').forEach(el=>el.classList.remove('sounding'));
@@ -37,10 +60,14 @@ const System=memo(function System({study,system,index,beat,enabled,classes,onSee
   setCursor({x,height:rect.height});
  },[beat,notes,system,enabled,revision,bars]);
  return <section id={'system-'+index} className={'score-system '+classes} aria-label={'Score, bars '+system.start+' to '+system.end}>
- <div className="system-heading"><span>{system.start}–{system.end}</span><span>{tonalEvents.filter(t=>t.bar>=system.start&&t.bar<=system.end).map(t=>'bar '+t.bar+' '+t.key).join(' · ')}</span></div>
+ <div className="system-heading"><span>{system.start}–{system.end}</span></div>
  <div className="system-scroll"><div ref={ref} className="system-engraving">
+  {arrivals.length>0&&<div className="score-tonal-arrivals" style={{height:toneHeight}}>
+   <svg className="score-tonal-guides" aria-hidden="true">{tones.map(t=><line key={t.id} data-tone-anchor={t.id} x1={t.centre} y1={t.row*24+19} x2={t.anchor} y2={toneHeight}/>)}</svg>
+   {arrivals.map(t=>{const p=tones.find(p=>p.id===t.id);return <button key={t.id} type="button" className="score-tone" data-tone-id={t.id} data-time={t.q} style={{left:p?.centre??0,top:(p?.row??0)*24,visibility:p?'visible':'hidden'}} title={t.evidence} aria-label={'Bar '+scorePosition(bars,t.q)+': '+t.key+' ('+t.roman+')'} onClick={()=>onSeek(t.q,null,false)}>{t.short} <span>({t.roman})</span></button>;})}
+  </div>}
   <div role="img" aria-label={'Annotated score, bars '+system.start+' to '+system.end} onClick={e=>{const el=(e.target as Element).closest('[data-note-id]');if(el)onSeek(Number(el.getAttribute('data-time')),el.getAttribute('data-annotation-id'),false);}} dangerouslySetInnerHTML={{__html:system.svg}}/>
-  {cursor&&<div className="score-cursor" aria-hidden="true" style={{left:cursor.x,height:Math.max(0,cursor.height-20)}}/>}
+  {cursor&&<div className="score-cursor" aria-hidden="true" style={{left:cursor.x,top:toneHeight+10,height:Math.max(0,cursor.height-toneHeight-20)}}/>}
  </div></div>
  </section>;
 });

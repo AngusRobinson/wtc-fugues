@@ -1,0 +1,41 @@
+export const voices=['Soprano','Alto','Bass'];
+export const themes=[
+ {id:'subject',title:'Subject / tonal answer',location:'Alto, bars 1–3',text:'The tonal answer enters in the soprano at bar 3 beat 3. Its opening A♯–D♯ fourth answers the subject’s D♯–A♯ fifth. The two clauses meet on D♯ at bar 2 beat 3. There is no regular countersubject: the subject combines with its own direct, inverted and augmented forms.'},
+ {id:'augmentation',title:'Augmented subject',location:'Bass, bars 62–64: opening',text:'The full augmentation doubles the note values; its first note here is altered. Earlier entries in bars 24 and 47 augment only part of the theme and introduce dotted crotchets. The final stretto combines the normal, partially augmented and fully augmented forms.'},
+];
+export const formalGroups=[
+ {start:1,end:19,startQ:0,endQ:74,number:'I',label:'Exposition',range:'1–19',continuation:'A · S · B · B'},
+ {start:19,end:30,startQ:74,endQ:116,number:'II',label:'Stretti',range:'19–30',continuation:'Direct'},
+ {start:30,end:44,startQ:116,endQ:174,number:'III',label:'Inversion',range:'30–44',continuation:'S · A · B'},
+ {start:44,end:52,startQ:174,endQ:204,number:'IV',label:'Stretti',range:'44–52',continuation:'Inverted'},
+ {start:52,end:62,startQ:204,endQ:244,number:'V',label:'Head stretti',range:'52–61',continuation:'Direct / inverted'},
+ {start:62,end:87,startQ:244,endQ:348,number:'VI',label:'Augmentation',range:'62–87',continuation:'B · A · S'},
+];
+export const sections=[
+ {start:1,end:19,label:'Exposition and additional answer',entries:'Alto, bar 1 · soprano, bar 3 beat 3 · bass, bar 8 · additional bass answer, bar 12',detail:'The two-part link after the first answer develops the syncopated subject tail (t). The bass enters first in a tenor register, then gives the additional answer an octave lower after its divided opening note. The episode in bars 15–19 leads to an A♯ minor cadence.'},
+ {start:19,end:30,label:'Three direct stretti',entries:'Alto, bar 19 beat 3; soprano, bar 20 · soprano, bar 24; alto, beat 2 · soprano, bar 27; alto, beat 3',detail:'The first pair enters two crotchets apart at the upper octave. In bar 24 the alto follows after one crotchet in partial augmentation; the bass adds an incomplete subject-head hint (h) on beat 3. The pair in bar 27 inverts the first disposition in double counterpoint at the twelfth, producing imitation at the lower fifth. Its soprano opening is tied in from bar 26.'},
+ {start:30,end:44,label:'Inverted subject',entries:'Soprano, bar 30 · alto, bar 36 · bass, bar 39',detail:'The inversion first appears in F♯ major. The alto entry lies in G♯ minor; the bass returns to D♯ minor, disguising its opening leap with a semiquaver flourish. Short episodes separate these entries. The bass rests in bars 43–44 prepare its next entry in a lower register.'},
+ {start:44,end:52,label:'Inverted stretti',entries:'Bass, bar 44 beat 3; soprano, bar 45 · alto, bar 47 beat 3; soprano, beat 4',detail:'The first pair applies the earlier octave stretto to the inverted subject. The soprano crosses below the alto. The second pair combines the inverted subject with its partially augmented form, corresponding to the direct combination in bars 24–26.'},
+ {start:52,end:62,label:'Three-part head stretti',entries:'Bass, alto, soprano at successive crotchets: bars 52–53 and 54–55 · expanded soprano subject, bar 57',detail:'The subject heads enter one crotchet apart, first directly and then in inversion. These are incomplete statements, not six complete entries. The soprano’s entry in bar 57 begins on a tied note and expands its first crotchet into a three-crotchet flourish. The descending continuation reaches a dominant half-close at bar 61 beat 3.'},
+ {start:61,end:67,label:'First augmented combination',entries:'Alto, bar 61 beat 3 · augmented bass, bar 62 · inverted soprano, bar 64 beat 3',detail:'The altered alto entry precedes the full augmentation by two crotchets. The soprano inversion enters during the augmentation’s second half. The bass’s initial A♯ replaces the G♯ expected from the ensuing G♯ minor form; its closing G♯ also begins the next bass entry.'},
+ {start:67,end:77,label:'Inversion in double counterpoint at the twelfth',entries:'Bass, bar 67 · augmented alto, beat 3 · soprano, bar 69 beat 3 · alto, bar 72 beat 3',detail:'The normal and augmented forms invert their disposition from bars 61–66 in double counterpoint at the twelfth, with tonal adjustments. The added soprano entry is now direct. The alto’s final F♯ in augmentation becomes the first note of a further normal entry. The following episode leads back to the dominant.'},
+ {start:77,end:87,label:'Final three-part combination and coda',entries:'Bass, bar 77 · partially augmented alto, beat 2 · fully augmented soprano, beat 3 · normal alto, bar 80 beat 3',detail:'The three forms enter at successive crotchets, with altered opening notes. The bass begins on A♯ tied from bar 76; the full augmentation in the soprano begins on E♯. The alto adds a normal entry during the soprano’s second half. The coda sequences the descending continuation through all three voices before the final D♯ major chord.'},
+];
+export const tonalEvents=[
+ {id:'as6',bar:6,q:20,key:'A-sharp minor',short:'A♯m',roman:'v',type:'cadence',evidence:'The answer closes on A♯ in both voices, approached through B♯ above and G double-sharp below; its C♯ establishes the minor mode.'},
+ {id:'ds10',bar:10,q:38,key:'D-sharp minor',short:'D♯m',roman:'i',type:'cadence',evidence:'The bass subject closes on D♯ under F♯ and D♯; the preceding C double-sharp resolves in the soprano.'},
+ {id:'as12',bar:12,q:44,key:'A-sharp major',short:'A♯',roman:'V',type:'arrival',evidence:'The descending chromatic bass reaches A♯ with A♯ and C double-sharp above: a dominant arrival preceding the additional answer.'},
+ {id:'as19',bar:19,q:74,key:'A-sharp minor',short:'A♯m',roman:'v',type:'cadence',evidence:'E♯ in the bass and G double-sharp in the alto resolve to A♯; the new stretto continues in the minor mode.'},
+ {id:'fs30',bar:30,q:116,key:'F-sharp major',short:'F♯',roman:'III',type:'cadence',evidence:'C♯ in the bass and E♯ in the soprano resolve to F♯ in all three parts.'},
+ {id:'gs35',bar:35,q:136,key:'G-sharp minor',short:'G♯m',roman:'iv',type:'cadence',evidence:'D♯ in the bass and F double-sharp in the alto resolve to G♯, with B in the soprano.'},
+ {id:'ds39',bar:39,q:152,key:'D-sharp minor',short:'D♯m',roman:'i',type:'arrival',evidence:'The bass reaches D♯ under F♯ and D♯ as its ornamented inverted entry begins.'},
+ {id:'gs47',bar:47,q:184,key:'G-sharp minor',short:'G♯m',roman:'iv',type:'cadence',evidence:'F double-sharp in the bass rises to G♯, with B and D♯ above.'},
+ {id:'as52',bar:52,q:204,key:'A-sharp major',short:'A♯',roman:'V',type:'arrival',evidence:'The bass moves from B to A♯ beneath C double-sharp and A♯, launching the close head stretti.'},
+ {id:'as61',bar:61,q:242,key:'A-sharp major',short:'A♯',roman:'V',type:'cadence',evidence:'The emphatic half-close places A♯ in the bass below C double-sharp and E♯; the alto simultaneously begins an altered entry.'},
+ {id:'gs67',bar:67,q:264,key:'G-sharp minor',short:'G♯m',roman:'iv',type:'cadence',evidence:'The augmented bass closes on G♯ under B and G♯, following F double-sharp in the soprano.'},
+ {id:'fs69',bar:69,q:274,key:'F-sharp major',short:'F♯',roman:'III',type:'cadence',evidence:'G♯ in the bass and E♯ in the soprano resolve to F♯, with A♯ in the alto.'},
+ {id:'gs72',bar:72,q:284,key:'G-sharp minor',short:'G♯m',roman:'iv',type:'arrival',evidence:'The bass F double-sharp rises to G♯ below G♯ and B. This arrival precedes the alto’s next entry by two crotchets.'},
+ {id:'as77',bar:77,q:304.5,key:'A-sharp major',short:'A♯',roman:'V',type:'arrival',evidence:'Over the sustained dominant, the alto’s D♯ suspension resolves to C double-sharp while the bass moves to E♯; A♯ remains above.'},
+ {id:'ds86',bar:86,q:340,key:'D-sharp minor',short:'D♯m',roman:'i',type:'arrival',evidence:'The bass reaches low D♯ beneath A♯ and F♯ after the dominant sequence; the final cadential ascent follows.'},
+ {id:'ds87',bar:87,q:346,key:'D-sharp major',short:'D♯',roman:'I',type:'close',evidence:'A♯ in the bass and C double-sharp in the soprano resolve to D♯; F double-sharp gives the closing major third.'},
+];

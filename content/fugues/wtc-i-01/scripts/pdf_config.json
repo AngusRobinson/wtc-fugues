@@ -1,0 +1,20 @@
+{
+  "title": "Fugue in C major",
+  "bwv": 846,
+  "number": 1,
+  "slug": "c-major",
+  "voices": 4,
+  "meter": "4/4",
+  "answer": "real",
+  "figure": "semiquaver",
+  "proutPages": [
+    14,
+    15,
+    16
+  ],
+  "proutPrinted": "11\u201313",
+  "toveyPages": [
+    22
+  ],
+  "toveyPrinted": "3"
+}

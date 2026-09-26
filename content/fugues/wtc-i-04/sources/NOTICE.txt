@@ -1,0 +1,32 @@
+J. S. Bach: Fugue in C sharp minor, BWV 849 (WTC I, no. 4)
+
+Musical edition: Franz Kroll, Bach-Gesellschaft Ausgabe, Band 14, 1866.
+Humdrum encoding: David Huron; revisions by Craig Stuart Sapp.
+Source: https://github.com/humdrum-tools/bach-wtc-fugues/blob/master/kern/wtc1f04.krn
+
+The original encoding contains these notices, retained as source metadata:
+Copyright 1994, David Huron
+Rights to all derivative electronic formats reserved.
+
+The underlying composition and Kroll's 1866 edition are public domain.
+David Huron and Craig Stuart Sapp are credited for the digital transcription.
+The original Humdrum file is preserved without alteration. The derived MEI
+separates the five voices and makes sounding accidentals explicit, including
+tied notes across bar-lines. Both engraved versions preserve every note and tie.
+
+Prout: Analysis of J. S. Bach's Forty-Eight Fugues, ed. Louis B. Prout,
+London: Edwin Ashdown, 1910, pp. 19-22. Public-domain source extract.
+Scan source: Walter Cosand Library; full link is included in the PDF.
+
+Tovey: The Well-Tempered Clavier, Book I, Associated Board, 1924,
+pp. 22-23. Public-domain source extract; adjoining prelude commentary retained.
+Scan source: IMSLP #911003; full link is included in the PDF.
+
+Keller: Das Wohltemperierte Klavier von Johann Sebastian Bach, 1965,
+pp. 53-55. External link to German text; no scan or translation reproduced.
+https://www.hermann-keller.org/assets/downloads/547e2aeb/bwv849.pdf#page=3
+
+The main division follows Keller and Tovey. Prout begins his final section at bar 73. The later themes are labelled as subjects, following Keller, rather than Prout's countersubjects. The thematic spans and harmonic markers
+are editorial readings checked against the score, Keller, Prout and Tovey.
+Notation engraved with Verovio. The browser page retains the third-party
+licence notices embedded in its compiled JavaScript.

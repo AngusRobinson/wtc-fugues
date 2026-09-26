@@ -24,13 +24,13 @@ export const sections=[
  {start:66,end:71,label:'Final combinations and close',entries:'66: first subject in alto, second in soprano · bass answer 67:3 · second subject in alto 68:1',detail:'The combination returns with the second subject above the first, now in double counterpoint at the octave. The bass answer enters halfway through bar 67 on a tied G♯; the alto joins it with the second subject half a bar later. Running semiquavers continue to the last cadence. The final C♯ major chord lasts one dotted quaver, followed by rests.'},
 ];
 export const tonalEvents=[
- {id:'cs16',bar:16,q:45,key:'C♯ minor',short:'C♯m',type:'cadence',evidence:'Bass G♯ moves to C♯, soprano B♯ rises to C♯, and the alto supplies E.'},
- {id:'e20',bar:20,q:57,key:'E major',short:'E',type:'cadence',evidence:'Bass B moves to E, soprano D♯ rises to E, and the alto reaches G♯ as the bass subject begins.'},
- {id:'b24',bar:24,q:69,key:'B major',short:'B',type:'entry',evidence:'The inverted subject starts on F♯ above B and D♯. This is an entry context within continuing motion, not a new cadence.'},
- {id:'fs35',bar:35,q:102,key:'F♯ minor',short:'F♯m',type:'cadence',evidence:'Bass E♯ rises to F♯, with A in the alto and F♯ in the soprano at the second subject’s entrance.'},
- {id:'b44',bar:44,q:129,key:'B major',short:'B',type:'cadence',evidence:'The F♯ major dominant resolves to B in the bass and alto, with D♯ in the soprano.'},
- {id:'fs48',bar:48,q:141,key:'F♯ minor',short:'F♯m',type:'arrival',evidence:'Bass E♯ rises to F♯ under A and the tied soprano C♯. The first subject’s C♯ opening is above F♯ minor harmony.'},
- {id:'a53',bar:53,q:156,key:'A major',short:'A',type:'cadence',evidence:'Bass E moves to A, soprano G♯ rises to A, and the inverted alto subject begins on C♯.'},
- {id:'cs61',bar:61,q:180,key:'C♯ minor',short:'C♯m',type:'arrival',evidence:'C♯ in the bass supports E in the soprano and the alto subject’s G♯. The subject’s starting pitch does not itself establish G♯ minor.'},
- {id:'cs71',bar:71,q:210,key:'C♯ major',short:'C♯',type:'close',evidence:'Bass G♯ resolves to C♯, soprano B♯ rises to C♯, and E♯ in the alto supplies the major third.'},
+ {id:'cs16',bar:16,q:45,key:'C♯ minor',short:'C♯m',roman:'i',type:'cadence',evidence:'Bass G♯ moves to C♯, soprano B♯ rises to C♯, and the alto supplies E.'},
+ {id:'e20',bar:20,q:57,key:'E major',short:'E',roman:'III',type:'cadence',evidence:'Bass B moves to E, soprano D♯ rises to E, and the alto reaches G♯ as the bass subject begins.'},
+ {id:'b24',bar:24,q:69,key:'B major',short:'B',roman:'VII',type:'entry',evidence:'The inverted subject starts on F♯ above B and D♯. This is an entry context within continuing motion, not a new cadence.'},
+ {id:'fs35',bar:35,q:102,key:'F♯ minor',short:'F♯m',roman:'iv',type:'cadence',evidence:'Bass E♯ rises to F♯, with A in the alto and F♯ in the soprano at the second subject’s entrance.'},
+ {id:'b44',bar:44,q:129,key:'B major',short:'B',roman:'VII',type:'cadence',evidence:'The F♯ major dominant resolves to B in the bass and alto, with D♯ in the soprano.'},
+ {id:'fs48',bar:48,q:141,key:'F♯ minor',short:'F♯m',roman:'iv',type:'arrival',evidence:'Bass E♯ rises to F♯ under A and the tied soprano C♯. The first subject’s C♯ opening is above F♯ minor harmony.'},
+ {id:'a53',bar:53,q:156,key:'A major',short:'A',roman:'VI',type:'cadence',evidence:'Bass E moves to A, soprano G♯ rises to A, and the inverted alto subject begins on C♯.'},
+ {id:'cs61',bar:61,q:180,key:'C♯ minor',short:'C♯m',roman:'i',type:'arrival',evidence:'C♯ in the bass supports E in the soprano and the alto subject’s G♯. The subject’s starting pitch does not itself establish G♯ minor.'},
+ {id:'cs71',bar:71,q:210,key:'C♯ major',short:'C♯',roman:'I',type:'close',evidence:'Bass G♯ resolves to C♯, soprano B♯ rises to C♯, and E♯ in the alto supplies the major third.'},
 ];

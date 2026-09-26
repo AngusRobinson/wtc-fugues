@@ -1,6 +1,9 @@
 """Engrave the complete score with shared analytical labels and colours."""
 import copy,json,re
 from pathlib import Path
+import sys
+sys.path.insert(0,str(Path(__file__).resolve().parents[4]/'scripts'))
+from engraving import tidy_score,finish_svg
 import xml.etree.ElementTree as ET
 import verovio
 ROOT=Path(__file__).resolve().parents[1]
@@ -38,9 +41,10 @@ def annotated_mei():
    d=ET.SubElement(measure,M+'dir',{XMLID:'mark-'+ann['id']+'-'+str(a),'staff':str(ann['voice']+1),'startid':'#'+first['id'],'place':'above','color':colours[ann['kind']]})
    rend=ET.SubElement(d,M+'rend',{'fontfam':'Arial','fontweight':'bold','fontstyle':'normal','fontsize':'small'})
    rend.text=label
+ tidy_score(root,notes,False,ROOT.name)
  return ET.tostring(root,encoding='unicode').replace('ns0:','').replace('xmlns:ns0=','xmlns=')
 def decorate(svg,a):
- rr=ET.fromstring(svg);prefix='sys'+str(a)+'-';oldroot=rr.get('id')
+ rr=ET.fromstring(finish_svg(svg));prefix='sys'+str(a)+'-';oldroot=rr.get('id')
  for g in rr.iter():
   id=g.get('id','')
   if id in notes:

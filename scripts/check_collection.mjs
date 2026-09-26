@@ -9,9 +9,11 @@ import {readCatalogue,root,workRoot} from './catalogue.mjs';
 fs.mkdirSync('tmp/checks',{recursive:true});
 await build({stdin:{contents:`export {default as Study} from './components/fugue-study';export * from './lib/fugues/catalogue';export * from './lib/fugues/position';export * from './lib/fugues/validate';`,resolveDir:root,loader:'tsx'},bundle:true,packages:'external',platform:'node',format:'esm',alias:{'@':root},outfile:'tmp/checks/collection-check.mjs'});
 const {Study,loadStudy,barAt,barStart,barEnd,systemAt,scorePosition,validateStudy}=await import('../tmp/checks/collection-check.mjs');
-assert.equal(await loadStudy('wtc-i-01'),undefined,'Unavailable studies do not fall back to another fugue');
+const works=readCatalogue();
+const missing=Array.from({length:48},(_,i)=>`wtc-${i<24?'i':'ii'}-${String(i%24+1).padStart(2,'0')}`).find(id=>!works.some(w=>w.id===id));
+if(missing)assert.equal(await loadStudy(missing),undefined,'Unavailable studies do not fall back to another fugue');
 assert.equal(await loadStudy('__proto__'),undefined);
-const works=readCatalogue(),site=path.join(root,'output/site');
+const site=path.join(root,'output/site');
 const index=fs.readFileSync(path.join(site,'index.html'),'utf8');
 assert(!index.includes('<script'),'The catalogue should not load any score bundle');
 function checkHostedLink(href,page){
@@ -33,6 +35,13 @@ for(const work of works){
  assert(!/<script[^>]+src=/.test(packed));assert(!/<link[^>]+(?:stylesheet|preload)/.test(packed));
  assert(packed.includes('data-collection-href="../../index.html"'));
  const rendered=renderToStaticMarkup(React.createElement(Study,{study,collectionHref:'../../index.html'}));
+ assert.equal((rendered.match(/class="tonal-roman"/g)||[]).length,study.tonalEvents.length,'Every tonal marker has a Roman numeral');
+ const arrivals=study.tonalEvents.filter(t=>['arrival','cadence','close'].includes(t.type));
+ assert.equal((rendered.match(/class="score-tone"/g)||[]).length,arrivals.length,'The full score shows harmonic arrivals, not entry-only key contexts');
+ for(const t of arrivals)assert(study.score.events.some(n=>Math.abs(n.start-t.q)<1e-7&&n.bar===t.bar),'No engraved anchor for '+work.id+' '+t.id);
+ for(const event of study.tonalEvents){
+  assert.equal(event.roman,event.key.endsWith('minor')?event.roman.toLowerCase():event.roman.toUpperCase(),'Roman-numeral case follows key mode');
+ }
  const ids=[...rendered.matchAll(/\sid="([^"]+)"/g)].map(x=>x[1]);
  assert.equal(new Set(ids).size,ids.length,'Duplicate identifiers in '+work.id);
  for(const [,href] of rendered.matchAll(/href="([^"]+)"/g)){
@@ -82,4 +91,7 @@ assert.equal(scorePosition(compoundBars,.25),'1:1⅓');
 assert.equal(scorePosition(compoundBars,.5),'1:1⅔');
 assert.equal(scorePosition(compoundBars,2.75),'1:4⅔');
 assert.equal(scorePosition(compoundBars,3),'2:1');
+const sixEight=[{number:1,start:0,duration:3,beatQuarters:1.5}];
+assert.equal(scorePosition(sixEight,.25),'1:1⅙');
+assert.equal(scorePosition(sixEight,1.25),'1:1⅚');
 console.log('Collection checks passed: catalogue, document links, unchanged PDFs, unique IDs, variable metres, compound beats, two/five voices, extra subjects and missing-work handling.');

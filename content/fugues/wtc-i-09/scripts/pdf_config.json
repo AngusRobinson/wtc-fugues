@@ -1,0 +1,20 @@
+{
+  "title": "Fugue in E major",
+  "bwv": 854,
+  "number": 9,
+  "slug": "e-major",
+  "voices": 3,
+  "meter": "4/4",
+  "answer": "tonal",
+  "figure": "semiquaver",
+  "proutPages": [
+    32,
+    33,
+    34
+  ],
+  "proutPrinted": "29\u201331",
+  "toveyPages": [
+    78
+  ],
+  "toveyPrinted": "59"
+}

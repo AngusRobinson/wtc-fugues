@@ -19,7 +19,7 @@ export function systemAt(systems:ScoreSystem[],bar:number):number {
 export function scorePosition(bars:Bar[],q:number):string {
  const bar=barAt(bars,q),beat=1+(q-bar.start)/bar.beatQuarters;
  const whole=Math.floor(beat+1e-8),fraction=beat-whole;
- const fractions:[[number,string],...Array<[number,string]>]=[[0,''],[.25,'¼'],[1/3,'⅓'],[.5,'½'],[2/3,'⅔'],[.75,'¾']];
+ const fractions:[[number,string],...Array<[number,string]>]=[[0,''],[1/6,'⅙'],[.25,'¼'],[1/3,'⅓'],[.5,'½'],[2/3,'⅔'],[.75,'¾'],[5/6,'⅚']];
  const match=fractions.find(([value])=>Math.abs(fraction-value)<1e-8);
  return bar.number+':'+(match?String(whole)+match[1]:String(Number(beat.toFixed(3))));
 }

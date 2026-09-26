@@ -1,0 +1,41 @@
+{
+  "id": "wtc-i-08",
+  "book": 1,
+  "number": 8,
+  "bwv": "853",
+  "key": "D-sharp minor",
+  "title": "J. S. Bach: Fugue in D-sharp minor",
+  "subtitle": "Das wohltemperierte Klavier I, no. 8 · BWV 853 · Three voices · 4/4",
+  "description": "Direct and inverted stretti, partial and full augmentation, and double counterpoint at the twelfth.",
+  "downloads": [
+    {
+      "label": "Two staves",
+      "href": "./pdf/bach-d-sharp-minor-fugue-keyboard.pdf"
+    },
+    {
+      "label": "Three staves",
+      "href": "./pdf/bach-d-sharp-minor-fugue-annotated.pdf"
+    }
+  ],
+  "analyses": [
+    {
+      "label": "Keller, pp. 67–70 (German)",
+      "href": "https://www.hermann-keller.org/assets/downloads/547e2aeb/bwv853.pdf#page=3"
+    },
+    {
+      "label": "Prout (1910), pp. 27–29",
+      "href": "./pdf/prout-bwv853-analysis.pdf"
+    },
+    {
+      "label": "Tovey (1924), pp. 50–51",
+      "href": "./pdf/tovey-bwv853-analysis.pdf"
+    }
+  ],
+  "publicFiles": [
+    "pdf/bach-d-sharp-minor-fugue-keyboard.pdf",
+    "pdf/bach-d-sharp-minor-fugue-annotated.pdf",
+    "pdf/prout-bwv853-analysis.pdf",
+    "pdf/tovey-bwv853-analysis.pdf",
+    "sources/NOTICE.txt"
+  ]
+}

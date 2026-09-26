@@ -1,0 +1,22 @@
+{
+  "title": "Fugue in C-sharp major",
+  "bwv": 848,
+  "number": 3,
+  "slug": "c-sharp-major",
+  "voices": 3,
+  "meter": "4/4",
+  "answer": "tonal",
+  "figure": "semiquaver",
+  "proutPages": [
+    19,
+    20,
+    21,
+    22
+  ],
+  "proutPrinted": "16\u201319",
+  "toveyPages": [
+    33,
+    34
+  ],
+  "toveyPrinted": "14\u201315"
+}

@@ -1,0 +1,41 @@
+{
+  "id": "wtc-i-22",
+  "book": 1,
+  "number": 22,
+  "bwv": "867",
+  "key": "B-flat minor",
+  "title": "J. S. Bach: Fugue in B-flat minor",
+  "subtitle": "Das wohltemperierte Klavier I, no. 22 · BWV 867 · Five voices · 2/2",
+  "description": "Tonal answer, recurring crotchet figures, paired stretti and the final five-part stretto.",
+  "downloads": [
+    {
+      "label": "Two staves",
+      "href": "./pdf/bach-bflat-minor-fugue-keyboard.pdf"
+    },
+    {
+      "label": "Five staves",
+      "href": "./pdf/bach-bflat-minor-fugue-annotated.pdf"
+    }
+  ],
+  "analyses": [
+    {
+      "label": "Keller, pp. 108–110 (German)",
+      "href": "https://www.hermann-keller.org/assets/downloads/547e2aeb/bwv867.pdf#page=2"
+    },
+    {
+      "label": "Prout (1910), pp. 48–49",
+      "href": "./pdf/prout-bwv867-analysis.pdf"
+    },
+    {
+      "label": "Tovey (1924), pp. 144–145",
+      "href": "./pdf/tovey-bwv867-analysis.pdf"
+    }
+  ],
+  "publicFiles": [
+    "pdf/bach-bflat-minor-fugue-annotated.pdf",
+    "pdf/bach-bflat-minor-fugue-keyboard.pdf",
+    "pdf/prout-bwv867-analysis.pdf",
+    "pdf/tovey-bwv867-analysis.pdf",
+    "sources/NOTICE.txt"
+  ]
+}

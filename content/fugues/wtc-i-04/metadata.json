@@ -1,0 +1,41 @@
+{
+  "id": "wtc-i-04",
+  "book": 1,
+  "number": 4,
+  "bwv": "849",
+  "key": "C♯ minor",
+  "title": "J. S. Bach: Fugue in C♯ minor",
+  "subtitle": "Das wohltemperierte Klavier I, no. 4 · BWV 849 · Five voices · 2/2",
+  "description": "Three subjects, four dispositions of triple counterpoint and combined stretti, with the complete annotated score.",
+  "downloads": [
+    {
+      "label": "Two staves",
+      "href": "./pdf/bach-c-sharp-minor-fugue-keyboard.pdf"
+    },
+    {
+      "label": "Five staves",
+      "href": "./pdf/bach-c-sharp-minor-fugue-annotated.pdf"
+    }
+  ],
+  "analyses": [
+    {
+      "label": "Keller, pp. 53–55 (German)",
+      "href": "https://www.hermann-keller.org/assets/downloads/547e2aeb/bwv849.pdf#page=3"
+    },
+    {
+      "label": "Prout (1910), pp. 19–22",
+      "href": "./pdf/prout-bwv849-analysis.pdf"
+    },
+    {
+      "label": "Tovey (1924), pp. 22–23",
+      "href": "./pdf/tovey-bwv849-analysis.pdf"
+    }
+  ],
+  "publicFiles": [
+    "pdf/bach-c-sharp-minor-fugue-keyboard.pdf",
+    "pdf/bach-c-sharp-minor-fugue-annotated.pdf",
+    "pdf/prout-bwv849-analysis.pdf",
+    "pdf/tovey-bwv849-analysis.pdf",
+    "sources/NOTICE.txt"
+  ]
+}

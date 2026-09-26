@@ -1,0 +1,41 @@
+{
+  "id": "wtc-i-01",
+  "book": 1,
+  "number": 1,
+  "bwv": "846",
+  "key": "C major",
+  "title": "J. S. Bach: Fugue in C major",
+  "subtitle": "Das wohltemperierte Klavier I, no. 1 · BWV 846 · Four voices · 4/4",
+  "description": "Real answer, twenty-four entries, successive stretti and recurring semiquaver figures.",
+  "downloads": [
+    {
+      "label": "Two staves",
+      "href": "./pdf/bach-c-major-fugue-keyboard.pdf"
+    },
+    {
+      "label": "Four staves",
+      "href": "./pdf/bach-c-major-fugue-annotated.pdf"
+    }
+  ],
+  "analyses": [
+    {
+      "label": "Keller, pp. 41–44 (German)",
+      "href": "https://www.hermann-keller.org/assets/downloads/547e2aeb/bwv846.pdf#page=3"
+    },
+    {
+      "label": "Prout (1910), pp. 11–13",
+      "href": "./pdf/prout-bwv846-analysis.pdf"
+    },
+    {
+      "label": "Tovey (1924), p. 3",
+      "href": "./pdf/tovey-bwv846-analysis.pdf"
+    }
+  ],
+  "publicFiles": [
+    "pdf/bach-c-major-fugue-annotated.pdf",
+    "pdf/bach-c-major-fugue-keyboard.pdf",
+    "pdf/prout-bwv846-analysis.pdf",
+    "pdf/tovey-bwv846-analysis.pdf",
+    "sources/NOTICE.txt"
+  ]
+}

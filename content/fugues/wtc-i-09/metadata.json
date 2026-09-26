@@ -1,0 +1,41 @@
+{
+  "id": "wtc-i-09",
+  "book": 1,
+  "number": 9,
+  "bwv": "854",
+  "key": "E major",
+  "title": "J. S. Bach: Fugue in E major",
+  "subtitle": "Das wohltemperierte Klavier I, no. 9 · BWV 854 · Three voices · 4/4",
+  "description": "Overlapping thematic continuations, a central minor-key passage and episodic double counterpoint.",
+  "downloads": [
+    {
+      "label": "Two staves",
+      "href": "./pdf/bach-e-major-fugue-keyboard.pdf"
+    },
+    {
+      "label": "Three staves",
+      "href": "./pdf/bach-e-major-fugue-annotated.pdf"
+    }
+  ],
+  "analyses": [
+    {
+      "label": "Keller, pp. 71–73 (German)",
+      "href": "https://www.hermann-keller.org/assets/downloads/547e2aeb/bwv854.pdf#page=2"
+    },
+    {
+      "label": "Prout (1910), pp. 29–31",
+      "href": "./pdf/prout-bwv854-analysis.pdf"
+    },
+    {
+      "label": "Tovey (1924), p. 59",
+      "href": "./pdf/tovey-bwv854-analysis.pdf"
+    }
+  ],
+  "publicFiles": [
+    "pdf/bach-e-major-fugue-keyboard.pdf",
+    "pdf/bach-e-major-fugue-annotated.pdf",
+    "pdf/prout-bwv854-analysis.pdf",
+    "pdf/tovey-bwv854-analysis.pdf",
+    "sources/NOTICE.txt"
+  ]
+}

@@ -45,6 +45,7 @@ export function validateStudy(study:FugueData):void {
  study.tonalEvents.forEach(event=>{
   const bar=bars.find(b=>b.number===event.bar);
   check(bar&&event.q>=bar.start&&event.q<bar.start+bar.duration,'Incorrect tonal event bar');
+  check(/^[♭♯]?(?:[IV]+|[iv]+)$/.test(event.roman),'Missing or invalid tonal Roman numeral');
  });
  check(!study.initialTone||study.tonalEvents.some(t=>t.id===study.initialTone),'Unknown initial tonal event');
 }

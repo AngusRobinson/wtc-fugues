@@ -1,21 +1,25 @@
 """Build both annotated scores and the public-domain source extracts."""
 import json,re,argparse
 from pathlib import Path
+import sys
+sys.path.insert(0,str(Path(__file__).resolve().parents[4]/'scripts'))
+from pdf_score import score_height,draw_score,page_number
 from io import BytesIO
 from reportlab.pdfgen import canvas
 from reportlab.lib.pagesizes import A4
 from reportlab.lib.colors import HexColor
 from pypdf import PdfReader,PdfWriter,Transformation
-p=argparse.ArgumentParser();p.add_argument('--prout',type=Path,required=True);p.add_argument('--tovey',type=Path,required=True);args=p.parse_args()
+p=argparse.ArgumentParser();p.add_argument('--prout',type=Path);p.add_argument('--tovey',type=Path);p.add_argument('--scores-only',action='store_true');args=p.parse_args()
+if not args.scores_only and (not args.prout or not args.tovey):p.error('--prout and --tovey are required unless --scores-only is used')
 R=Path(__file__).resolve().parents[1];TEMP=R.parents[2]/'tmp'/R.name;W,H=A4;left=30;width=W-60
 for mode,suffix,description in [('open','annotated','Three staves'),('keyboard','keyboard','Two staves')]:
  systems=json.loads((TEMP/f'{mode}-systems.json').read_text())
  batches=[];batch=[];used=0
  for s in systems:
-  dims=re.search(r'viewBox="[\d.]+ [\d.]+ ([\d.]+) ([\d.]+)"',s['svg']);s['height']=width*float(dims[2])/float(dims[1])
-  available=H-(115 if not batches else 45)-45
-  if batch and used+s['height']+16>available:batches.append(batch);batch=[];used=0
-  batch.append(s);used+=s['height']+16
+  s['height']=score_height(R,s,width)
+  available=H-(105 if not batches else 28)-42
+  if batch and used+s['height']+8>available:batches.append(batch);batch=[];used=0
+  batch.append(s);used+=s['height']+8
  if batch:batches.append(batch)
  dest=R/f'pdf/bach-c-sharp-minor-fugue-{suffix}.pdf';c=canvas.Canvas(str(dest),pagesize=A4,pageCompression=1,invariant=1)
  c.setTitle(f'Bach - Fugue in C-sharp minor, BWV 873 - {description}');c.setAuthor('J. S. Bach; analysis with reference to Keller, Prout and Tovey');c.setCreator('WTC fugue analyses');c.setSubject('Two subjects, real answer, inversion and derived figures.')
@@ -29,20 +33,21 @@ for mode,suffix,description in [('open','annotated','Three staves'),('keyboard',
     c.setFillColor(HexColor(col));c.rect(x,H-67,6,6,fill=1,stroke=0);c.setFont('Helvetica-Bold',8);c.drawString(x+10,H-67,lab)
    c.setFillColor(HexColor('#526174'));c.setFont('Helvetica',7)
    c.drawString(left,H-81,'i inversion; * variant / incomplete statement; > continuation; t sequential tail; r arpeggio-and-scale figure')
-   c.drawString(left,H-93,'ch chromatic foreshadowing. Voice prefixes: S soprano, A alto, B bass. Beats are dotted quavers.')
+   c.drawString(left,H-93,'ch chromatic foreshadowing. Beats are dotted quavers.')
    y=H-105
   else:
-   c.setFont('Times-Roman',11);c.drawString(left,H-29,'Bach - Fugue in C-sharp minor, BWV 873')
-   c.setFont('Helvetica',8);c.drawRightString(W-left,H-29,f'Bars {batch[0]["start"]}-{batch[-1]["end"]}')
-   y=H-43
+   y=H-28
   gap=min(25,(y-42-sum(s['height'] for s in batch))/max(1,len(batch)-1));assert gap>=8
   for s in batch:
-   c.drawImage(str(TEMP/f'{mode}-{s["start"]}.png'),left,y-s['height'],width=width,height=s['height']);y-=s['height']+gap
+   draw_score(c,R,s,TEMP/f'{mode}-{s["start"]}.png',left,y-s['height'],width,s['height']);y-=s['height']+gap
   assert y+gap>35
-  c.setFillColor(HexColor('#657486'));c.setFont('Helvetica',6.7)
-  c.drawString(left,23,'Kroll 1866 / Huron-Sapp encoding / Analysis checked against Keller, Prout and Tovey')
-  c.drawRightString(W-left,23,f'{page+1} / {len(batches)}');c.showPage()
+  if page==len(batches)-1:
+   c.setFillColor(HexColor('#657486'));c.setFont('Helvetica',6.7)
+   c.drawString(left,23,'Kroll 1866 / Huron-Sapp encoding / Analysis checked against Keller, Prout and Tovey')
+  page_number(c,W,page+1)
+  c.showPage()
  c.save();print(dest.name,len(batches),'pages')
+if args.scores_only:raise SystemExit(0)
 extracts=[
  ('prout',args.prout,[60,61],"Ebenezer Prout: Analysis of J. S. Bach's Forty-Eight Fugues",'Ed. Louis B. Prout. London: Edwin Ashdown, 1910. Printed pp. 57-58.',"https://waltercosand.com/CosandScores/Composers%20L-P/Composers_P/Prout%2C%20Ebenezer/Prout-Analysis_of_Bach%27s_48_Fugues.pdf"),
  ('tovey',args.tovey,[40],"Donald Francis Tovey: The Well-Tempered Clavier, Book II",'Associated Board, 1924. Printed p. 21. Fugue IV commentary.', 'https://s9.imslp.org/files/imglnks/usimg/1/1c/IMSLP911004-PMLP05899-Bach_-_48_Preludes_and_Fugues_%28Tovey%29_-_Book_II.pdf')]

@@ -1,6 +1,9 @@
 """Engrave annotated open/keyboard scores and isolated thematic examples."""
 import copy,json,re,argparse
 from pathlib import Path
+import sys
+sys.path.insert(0,str(Path(__file__).resolve().parents[4]/'scripts'))
+from engraving import tidy_score,finish_svg
 import xml.etree.ElementTree as ET
 import verovio
 p=argparse.ArgumentParser();p.add_argument('--root',type=Path,default=Path(__file__).resolve().parents[1]);R=p.parse_args().root
@@ -20,7 +23,7 @@ def serial(root):
  ET.register_namespace('',M[1:-1]);return ET.tostring(root,encoding='unicode')
 def prefix_svg(svg,prefix,interactive=False):
  ET.register_namespace('',V[1:-1])
- rr=ET.fromstring(svg);old=rr.get('id')
+ rr=ET.fromstring(finish_svg(svg));old=rr.get('id')
  for g in rr.iter():
   nid=g.get('id','')
   if interactive and nid in notes:
@@ -114,10 +117,11 @@ def complete(is_keyboard):
    first=ns[0];v=ann['voice'];m=sec.find(f'm:measure[@n="{first["bar"]}"]',NS)
    staff=keyboard_staff(v,first['bar'])
    d=ET.SubElement(m,M+'dir',{ID:f'mark-{ann["id"]}-{start}','staff':str(staff if is_keyboard else v+1),'startid':'#'+first['id'],'place':'below' if is_keyboard and ((v==1 and first['bar'] not in low_alto) or (v==2 and first['bar'] in low_alto)) else 'above','color':colours[ann['kind']]})
-   text=('SAB'[v]+': ' if is_keyboard else '')+ann['label']+(' >' if ann['start']<(start-1)*3 else '')
+   text=ann['label']+(' >' if ann['start']<(start-1)*3 else '')
    ET.SubElement(d,M+'rend',{'fontfam':'Arial','fontweight':'bold','fontstyle':'normal','fontsize':'small'}).text=text
  assert {n.get(ID) for n in root.findall('.//m:note',NS)}==set(notes)
  assert len(root.findall('.//m:tie',NS))==len(source.findall('.//m:tie',NS))==90
+ tidy_score(root,notes,is_keyboard,R.name)
  mode='keyboard' if is_keyboard else 'open'
  (TEMP/f'{mode}.mei').write_text(serial(root))
  tk=verovio.toolkit();tk.setOptions({'inputFrom':'mei','pageWidth':2300 if is_keyboard else 2500,'pageHeight':20000,'scale':40,'adjustPageHeight':True,'header':'none','footer':'none','svgViewBox':True,'breaks':'encoded','xmlIdSeed':873,'mnumInterval':1,'spacingStaff':14 if is_keyboard else 11})
@@ -139,7 +143,7 @@ def complete(is_keyboard):
 def examples():
  out=[]
  for kind,a,b,voice,start,end in [('subject',1,3,2,0,6.75),('second',35,37,0,102,110.25),('motif',13,14,0,37.5,40.5)]:
-  root=root_score();sd=root.find('.//m:scoreDef',NS);group=sd.find(M+'staffGrp');group.set('symbol','none')
+  root=tidy_score(root_score(),notes,False,R.name);sd=root.find('.//m:scoreDef',NS);group=sd.find(M+'staffGrp');group.set('symbol','none')
   defs=sd.findall('.//m:staffDef',NS)
   for child in list(sd):sd.remove(child)
   group=ET.SubElement(sd,M+'staffGrp',{'symbol':'none'})

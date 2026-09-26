@@ -18,12 +18,12 @@ export const sections=[
  {start:29,end:34,label:'Final pair and close',entries:'Subject: alto 29:1½ · tonal answer: soprano 31:1½',detail:'The countersubject returns in the alto under the last answer. After the soprano’s closing F♯, the tenor recalls the inverted episode figure. The final B major chord places D♯, the third, at the top.'},
 ];
 export const tonalEvents=[
- {id:'fs9',bar:9,q:32,key:'F♯ major',short:'F♯',type:'cadence',evidence:'The bass answer resolves from G♯ to F♯, while E♯ in the soprano rises to F♯. The alto supplies A♯.'},
- {id:'b11',bar:11,q:42.5,key:'B major',short:'B',type:'entry',evidence:'The tenor restates the subject on B after the episode. The other voices continue moving: this marker identifies the entry’s key, rather than a tonic cadence.'},
- {id:'fs18',bar:18,q:68,key:'F♯ major',short:'F♯',type:'cadence',evidence:'The bass moves from C♯ to F♯. F♯ in the soprano, A♯ in the alto and C♯ in the tenor complete the tonic chord, just before the inverted subject begins.'},
- {id:'b20',bar:20,q:76,key:'B major',short:'B',type:'cadence',evidence:'The tenor reaches B2 and the soprano resolves E to D♯. The alto’s tied C♯ resolves to B on the second quaver, which also begins its inverted entry.'},
- {id:'cs24',bar:24,q:92.5,key:'C♯ minor',short:'C♯m',type:'entry',evidence:'The tenor subject begins on E, the third of C♯ minor. Its B♯ and the subsequent G♯ dominant lead towards the cadence at bar 26; the entry itself is not a tonic chord.'},
- {id:'cs26',bar:26,q:100,key:'C♯ minor',short:'C♯m',type:'cadence',evidence:'The bass G♯ resolves to C♯2 and the soprano B♯ rises to C♯. E in the tenor supplies the minor third.'},
- {id:'b29',bar:29,q:112,key:'B major',short:'B',type:'cadence',evidence:'The bass A♯ rises to B and the tenor reaches D♯. The soprano’s C♯ suspension resolves to B on the second quaver as the alto subject enters.'},
- {id:'b34',bar:34,q:132,key:'B major',short:'B',type:'close',evidence:'The bass F♯ moves to B; the alto A♯ rises to B. D♯ in the soprano and F♯ in the tenor complete the final chord.'},
+ {id:'fs9',bar:9,q:32,key:'F♯ major',short:'F♯',roman:'V',type:'cadence',evidence:'The bass answer resolves from G♯ to F♯, while E♯ in the soprano rises to F♯. The alto supplies A♯.'},
+ {id:'b11',bar:11,q:42.5,key:'B major',short:'B',roman:'I',type:'entry',evidence:'The tenor restates the subject on B after the episode. The other voices continue moving: this marker identifies the entry’s key, rather than a tonic cadence.'},
+ {id:'fs18',bar:18,q:68,key:'F♯ major',short:'F♯',roman:'V',type:'cadence',evidence:'The bass moves from C♯ to F♯. F♯ in the soprano, A♯ in the alto and C♯ in the tenor complete the tonic chord, just before the inverted subject begins.'},
+ {id:'b20',bar:20,q:76,key:'B major',short:'B',roman:'I',type:'cadence',evidence:'The tenor reaches B2 and the soprano resolves E to D♯. The alto’s tied C♯ resolves to B on the second quaver, which also begins its inverted entry.'},
+ {id:'cs24',bar:24,q:92.5,key:'C♯ minor',short:'C♯m',roman:'ii',type:'entry',evidence:'The tenor subject begins on E, the third of C♯ minor. Its B♯ and the subsequent G♯ dominant lead towards the cadence at bar 26; the entry itself is not a tonic chord.'},
+ {id:'cs26',bar:26,q:100,key:'C♯ minor',short:'C♯m',roman:'ii',type:'cadence',evidence:'The bass G♯ resolves to C♯2 and the soprano B♯ rises to C♯. E in the tenor supplies the minor third.'},
+ {id:'b29',bar:29,q:112,key:'B major',short:'B',roman:'I',type:'cadence',evidence:'The bass A♯ rises to B and the tenor reaches D♯. The soprano’s C♯ suspension resolves to B on the second quaver as the alto subject enters.'},
+ {id:'b34',bar:34,q:132,key:'B major',short:'B',roman:'I',type:'close',evidence:'The bass F♯ moves to B; the alto A♯ rises to B. D♯ in the soprano and F♯ in the tenor complete the final chord.'},
 ];
