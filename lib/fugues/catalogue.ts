@@ -9,13 +9,32 @@ import metadata5 from '../../content/fugues/wtc-i-06/metadata.json';
 import metadata6 from '../../content/fugues/wtc-i-07/metadata.json';
 import metadata7 from '../../content/fugues/wtc-i-08/metadata.json';
 import metadata8 from '../../content/fugues/wtc-i-09/metadata.json';
-import metadata9 from '../../content/fugues/wtc-i-15/metadata.json';
-import metadata10 from '../../content/fugues/wtc-i-22/metadata.json';
-import metadata11 from '../../content/fugues/wtc-i-23/metadata.json';
-import metadata12 from '../../content/fugues/wtc-ii-04/metadata.json';
-import metadata13 from '../../content/fugues/wtc-ii-09/metadata.json';
-import metadata14 from '../../content/fugues/wtc-ii-22/metadata.json';
-export const catalogue:WorkMetadata[]=[metadata0,metadata1,metadata2,metadata3,metadata4,metadata5,metadata6,metadata7,metadata8,metadata9,metadata10,metadata11,metadata12,metadata13,metadata14];
+import metadata9 from '../../content/fugues/wtc-i-10/metadata.json';
+import metadata10 from '../../content/fugues/wtc-i-11/metadata.json';
+import metadata11 from '../../content/fugues/wtc-i-12/metadata.json';
+import metadata12 from '../../content/fugues/wtc-i-13/metadata.json';
+import metadata13 from '../../content/fugues/wtc-i-14/metadata.json';
+import metadata14 from '../../content/fugues/wtc-i-15/metadata.json';
+import metadata15 from '../../content/fugues/wtc-i-16/metadata.json';
+import metadata16 from '../../content/fugues/wtc-i-17/metadata.json';
+import metadata17 from '../../content/fugues/wtc-i-18/metadata.json';
+import metadata18 from '../../content/fugues/wtc-i-19/metadata.json';
+import metadata19 from '../../content/fugues/wtc-i-20/metadata.json';
+import metadata20 from '../../content/fugues/wtc-i-21/metadata.json';
+import metadata21 from '../../content/fugues/wtc-i-22/metadata.json';
+import metadata22 from '../../content/fugues/wtc-i-23/metadata.json';
+import metadata23 from '../../content/fugues/wtc-i-24/metadata.json';
+import metadata24 from '../../content/fugues/wtc-ii-01/metadata.json';
+import metadata25 from '../../content/fugues/wtc-ii-02/metadata.json';
+import metadata26 from '../../content/fugues/wtc-ii-03/metadata.json';
+import metadata27 from '../../content/fugues/wtc-ii-04/metadata.json';
+import metadata28 from '../../content/fugues/wtc-ii-05/metadata.json';
+import metadata29 from '../../content/fugues/wtc-ii-06/metadata.json';
+import metadata30 from '../../content/fugues/wtc-ii-07/metadata.json';
+import metadata31 from '../../content/fugues/wtc-ii-08/metadata.json';
+import metadata32 from '../../content/fugues/wtc-ii-09/metadata.json';
+import metadata33 from '../../content/fugues/wtc-ii-22/metadata.json';
+export const catalogue:WorkMetadata[]=[metadata0,metadata1,metadata2,metadata3,metadata4,metadata5,metadata6,metadata7,metadata8,metadata9,metadata10,metadata11,metadata12,metadata13,metadata14,metadata15,metadata16,metadata17,metadata18,metadata19,metadata20,metadata21,metadata22,metadata23,metadata24,metadata25,metadata26,metadata27,metadata28,metadata29,metadata30,metadata31,metadata32,metadata33];
 const loaders:Record<string,()=>Promise<FugueData>>={
  "wtc-i-01":()=>import('../../content/fugues/wtc-i-01/study').then(module=>module.default),
  "wtc-i-02":()=>import('../../content/fugues/wtc-i-02/study').then(module=>module.default),
@@ -26,10 +45,29 @@ const loaders:Record<string,()=>Promise<FugueData>>={
  "wtc-i-07":()=>import('../../content/fugues/wtc-i-07/study').then(module=>module.default),
  "wtc-i-08":()=>import('../../content/fugues/wtc-i-08/study').then(module=>module.default),
  "wtc-i-09":()=>import('../../content/fugues/wtc-i-09/study').then(module=>module.default),
+ "wtc-i-10":()=>import('../../content/fugues/wtc-i-10/study').then(module=>module.default),
+ "wtc-i-11":()=>import('../../content/fugues/wtc-i-11/study').then(module=>module.default),
+ "wtc-i-12":()=>import('../../content/fugues/wtc-i-12/study').then(module=>module.default),
+ "wtc-i-13":()=>import('../../content/fugues/wtc-i-13/study').then(module=>module.default),
+ "wtc-i-14":()=>import('../../content/fugues/wtc-i-14/study').then(module=>module.default),
  "wtc-i-15":()=>import('../../content/fugues/wtc-i-15/study').then(module=>module.default),
+ "wtc-i-16":()=>import('../../content/fugues/wtc-i-16/study').then(module=>module.default),
+ "wtc-i-17":()=>import('../../content/fugues/wtc-i-17/study').then(module=>module.default),
+ "wtc-i-18":()=>import('../../content/fugues/wtc-i-18/study').then(module=>module.default),
+ "wtc-i-19":()=>import('../../content/fugues/wtc-i-19/study').then(module=>module.default),
+ "wtc-i-20":()=>import('../../content/fugues/wtc-i-20/study').then(module=>module.default),
+ "wtc-i-21":()=>import('../../content/fugues/wtc-i-21/study').then(module=>module.default),
  "wtc-i-22":()=>import('../../content/fugues/wtc-i-22/study').then(module=>module.default),
  "wtc-i-23":()=>import('../../content/fugues/wtc-i-23/study').then(module=>module.default),
+ "wtc-i-24":()=>import('../../content/fugues/wtc-i-24/study').then(module=>module.default),
+ "wtc-ii-01":()=>import('../../content/fugues/wtc-ii-01/study').then(module=>module.default),
+ "wtc-ii-02":()=>import('../../content/fugues/wtc-ii-02/study').then(module=>module.default),
+ "wtc-ii-03":()=>import('../../content/fugues/wtc-ii-03/study').then(module=>module.default),
  "wtc-ii-04":()=>import('../../content/fugues/wtc-ii-04/study').then(module=>module.default),
+ "wtc-ii-05":()=>import('../../content/fugues/wtc-ii-05/study').then(module=>module.default),
+ "wtc-ii-06":()=>import('../../content/fugues/wtc-ii-06/study').then(module=>module.default),
+ "wtc-ii-07":()=>import('../../content/fugues/wtc-ii-07/study').then(module=>module.default),
+ "wtc-ii-08":()=>import('../../content/fugues/wtc-ii-08/study').then(module=>module.default),
  "wtc-ii-09":()=>import('../../content/fugues/wtc-ii-09/study').then(module=>module.default),
  "wtc-ii-22":()=>import('../../content/fugues/wtc-ii-22/study').then(module=>module.default),
 };

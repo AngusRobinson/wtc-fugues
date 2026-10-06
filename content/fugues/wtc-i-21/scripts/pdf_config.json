@@ -1,0 +1,21 @@
+{
+  "title": "Fugue in B flat major",
+  "bwv": 866,
+  "number": 21,
+  "slug": "bflat-major",
+  "voices": 3,
+  "meter": "3/4",
+  "answer": "tonal",
+  "csLegend": "CS1 / CS2 countersubjects",
+  "notation": "* variant / fragment; > continuation; b semiquaver tail; ai inverted quaver head",
+  "proutPages": [
+    50,
+    51
+  ],
+  "proutPrinted": "47\u201348",
+  "toveyPages": [
+    157,
+    158
+  ],
+  "toveyPrinted": "138\u2013139"
+}

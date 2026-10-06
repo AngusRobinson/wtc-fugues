@@ -1,0 +1,19 @@
+{
+  "title": "Fugue in A minor",
+  "bwv": 865,
+  "number": 20,
+  "slug": "a-minor",
+  "voices": 5,
+  "meter": "4/4",
+  "answer": "real",
+  "proutPages": [
+    48,
+    49
+  ],
+  "proutPrinted": "45\u201346",
+  "toveyPages": [
+    147,
+    148
+  ],
+  "toveyPrinted": "128\u2013129"
+}

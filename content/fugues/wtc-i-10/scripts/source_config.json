@@ -1,0 +1,15 @@
+{
+  "number": 10,
+  "bwv": 855,
+  "voices": 2,
+  "count": 3,
+  "unit": 4,
+  "barLength": 3.0,
+  "bars": 42,
+  "pickup": 0,
+  "duration": 126.0,
+  "sourceTempo": 102,
+  "keyAccidentals": {
+    "f": 1
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "title": "Fugue in D major",
+  "bwv": 874,
+  "bookRoman": "II",
+  "number": 5,
+  "slug": "d-major",
+  "voices": 4,
+  "meter": "Alla breve",
+  "answer": "real",
+  "notation": "h incomplete head; b four-note tail; * altered form; > continuation",
+  "proutPages": [
+    61,
+    62,
+    63
+  ],
+  "proutPrinted": "58\u201360",
+  "toveyPages": [
+    48
+  ],
+  "toveyPrinted": "29"
+}

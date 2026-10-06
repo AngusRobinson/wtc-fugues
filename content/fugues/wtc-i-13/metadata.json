@@ -1,0 +1,41 @@
+{
+  "id": "wtc-i-13",
+  "book": 1,
+  "number": 13,
+  "bwv": "858",
+  "key": "F♯ major",
+  "title": "J. S. Bach: Fugue in F♯ major",
+  "subtitle": "Das wohltemperierte Klavier I, no. 13 · BWV 858 · Three voices · 4/4",
+  "description": "Two formal parts, episodic development of the subject head, and countersubject inversion at the twelfth.",
+  "downloads": [
+    {
+      "label": "Two staves",
+      "href": "./pdf/bach-f-sharp-major-fugue-keyboard.pdf"
+    },
+    {
+      "label": "Three staves",
+      "href": "./pdf/bach-f-sharp-major-fugue-annotated.pdf"
+    }
+  ],
+  "analyses": [
+    {
+      "label": "Keller, pp. 82–84 (German)",
+      "href": "https://www.hermann-keller.org/assets/downloads/547e2aeb/bwv858.pdf#page=2"
+    },
+    {
+      "label": "Prout (1910), pp. 35–36",
+      "href": "./pdf/prout-bwv858-analysis.pdf"
+    },
+    {
+      "label": "Tovey (1924), p. 85",
+      "href": "./pdf/tovey-bwv858-analysis.pdf"
+    }
+  ],
+  "publicFiles": [
+    "pdf/bach-f-sharp-major-fugue-keyboard.pdf",
+    "pdf/bach-f-sharp-major-fugue-annotated.pdf",
+    "pdf/prout-bwv858-analysis.pdf",
+    "pdf/tovey-bwv858-analysis.pdf",
+    "sources/NOTICE.txt"
+  ]
+}

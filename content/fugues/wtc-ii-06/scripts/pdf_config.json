@@ -1,0 +1,21 @@
+{
+  "title": "Fugue in D minor",
+  "bwv": 875,
+  "bookRoman": "II",
+  "number": 6,
+  "slug": "d-minor",
+  "voices": 3,
+  "meter": "4/4",
+  "answer": "real",
+  "notation": "Si inversion; h triplet head; hi inversion; e semiquavers; t CS tail; c chromatic descent; * fragment / variant; > continuation",
+  "proutPages": [
+    63,
+    64
+  ],
+  "proutPrinted": "60\u201361",
+  "toveyPages": [
+    55,
+    56
+  ],
+  "toveyPrinted": "36\u201337"
+}

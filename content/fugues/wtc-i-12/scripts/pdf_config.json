@@ -1,0 +1,19 @@
+{
+  "title": "Fugue in F minor",
+  "bwv": 857,
+  "number": 12,
+  "slug": "f-minor",
+  "voices": 4,
+  "meter": "4/4",
+  "answer": "tonal",
+  "proutPages": [
+    36,
+    37,
+    38
+  ],
+  "proutPrinted": "33\u201335",
+  "toveyPages": [
+    96
+  ],
+  "toveyPrinted": "77"
+}

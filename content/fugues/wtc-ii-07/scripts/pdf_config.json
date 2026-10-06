@@ -1,0 +1,22 @@
+{
+  "title": "Fugue in E-flat major",
+  "bwv": 876,
+  "bookRoman": "II",
+  "number": 7,
+  "slug": "eflat-major",
+  "voices": 4,
+  "meter": "2/2",
+  "answer": "tonal",
+  "csLegend": "CS partial countersubject",
+  "notation": "a fourth figure; b crotchet\u2013quaver figure; c episodic continuation; * altered; > continuation",
+  "proutPages": [
+    64,
+    65,
+    66
+  ],
+  "proutPrinted": "61\u201363",
+  "toveyPages": [
+    62
+  ],
+  "toveyPrinted": "43"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "wtc-i-24",
+  "book": 1,
+  "number": 24,
+  "bwv": 869,
+  "status": "pending",
+  "voices": 4,
+  "count": 4,
+  "unit": 4,
+  "barLength": 4.0,
+  "bars": 76,
+  "pickup": 0,
+  "sourceTempo": 58,
+  "keyAccidentals": {
+    "f": 1,
+    "c": 1
+  }
+}

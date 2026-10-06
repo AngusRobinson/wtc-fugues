@@ -1,0 +1,21 @@
+{
+  "title": "Fugue in C sharp major",
+  "bwv": 872,
+  "bookRoman": "II",
+  "number": 3,
+  "slug": "c-sharp-major",
+  "voices": 3,
+  "meter": "4/4",
+  "answer": "tonal",
+  "notation": "h four-note head; i inversion; x2 augmentation; /2 diminution; d scale; e, f sequences; * variant; > continuation",
+  "proutPages": [
+    58,
+    59,
+    60
+  ],
+  "proutPrinted": "55\u201357",
+  "toveyPages": [
+    34
+  ],
+  "toveyPrinted": "15"
+}

@@ -40,7 +40,8 @@ for(const work of works){
  assert.equal((rendered.match(/class="score-tone"/g)||[]).length,arrivals.length,'The full score shows harmonic arrivals, not entry-only key contexts');
  for(const t of arrivals)assert(study.score.events.some(n=>Math.abs(n.start-t.q)<1e-7&&n.bar===t.bar),'No engraved anchor for '+work.id+' '+t.id);
  for(const event of study.tonalEvents){
-  assert.equal(event.roman,event.key.endsWith('minor')?event.roman.toLowerCase():event.roman.toUpperCase(),'Roman-numeral case follows key mode');
+  const chord = event.roman.split('/')[0];
+  assert.equal(chord,/\bminor\b/.test(event.key)?chord.toLowerCase():chord.toUpperCase(),'Roman-numeral case follows the named chord or key mode');
  }
  const ids=[...rendered.matchAll(/\sid="([^"]+)"/g)].map(x=>x[1]);
  assert.equal(new Set(ids).size,ids.length,'Duplicate identifiers in '+work.id);

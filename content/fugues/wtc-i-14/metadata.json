@@ -1,0 +1,41 @@
+{
+  "id": "wtc-i-14",
+  "book": 1,
+  "number": 14,
+  "bwv": "859",
+  "key": "F♯ minor",
+  "title": "J. S. Bach: Fugue in F♯ minor",
+  "subtitle": "Das wohltemperierte Klavier I, no. 14 · BWV 859 · Four voices · 6/4",
+  "description": "Two entry groups, direct and inverted subjects, and the pervasive quaver pairs of the countersubject.",
+  "downloads": [
+    {
+      "label": "Two staves",
+      "href": "./pdf/bach-f-sharp-minor-fugue-keyboard.pdf"
+    },
+    {
+      "label": "Four staves",
+      "href": "./pdf/bach-f-sharp-minor-fugue-annotated.pdf"
+    }
+  ],
+  "analyses": [
+    {
+      "label": "Keller, pp. 85–87 (German)",
+      "href": "https://www.hermann-keller.org/assets/downloads/547e2aeb/bwv859.pdf#page=2"
+    },
+    {
+      "label": "Prout (1910), pp. 36–37",
+      "href": "./pdf/prout-bwv859-analysis.pdf"
+    },
+    {
+      "label": "Tovey (1924), p. 91",
+      "href": "./pdf/tovey-bwv859-analysis.pdf"
+    }
+  ],
+  "publicFiles": [
+    "pdf/bach-f-sharp-minor-fugue-keyboard.pdf",
+    "pdf/bach-f-sharp-minor-fugue-annotated.pdf",
+    "pdf/prout-bwv859-analysis.pdf",
+    "pdf/tovey-bwv859-analysis.pdf",
+    "sources/NOTICE.txt"
+  ]
+}

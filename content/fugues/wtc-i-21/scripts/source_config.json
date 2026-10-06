@@ -1,0 +1,18 @@
+{
+  "id": "wtc-i-21",
+  "book": 1,
+  "number": 21,
+  "bwv": 866,
+  "status": "pending",
+  "voices": 3,
+  "count": 3,
+  "unit": 4,
+  "barLength": 3.0,
+  "bars": 48,
+  "pickup": 0,
+  "sourceTempo": 100,
+  "keyAccidentals": {
+    "b": -1,
+    "e": -1
+  }
+}

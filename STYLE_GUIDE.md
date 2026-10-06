@@ -16,7 +16,7 @@ Write for an advanced undergraduate musician. Use concise analytical prose and B
 
 ## Sources and verification
 
-Make an independent reading of the score, check Keller and Prout, and consult Tovey where available. Prefer Keller when interpretations remain in doubt, but verify his bar references and claims against the score. Record material differences of reading or voice allocation briefly in the source details.
+Make an independent reading of the score, check Keller and Prout, and consult Tovey where available. Keller’s interpretation governs the principal analytical reading, including formal divisions and thematic boundaries. Depart from it only for a specific reason supported by the score; verify his bar references and claims rather than silently repeating errors. Record material differences of reading or voice allocation briefly in the source details.
 
 Keep source discussion short on the page. Link Keller's hosted text; provide credited public-domain Prout and Tovey extracts where available. Credit the score edition, David Huron and Craig Sapp, and retain source notices. Do not reproduce Keller's text or a translation without an appropriate basis for doing so.
 

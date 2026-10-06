@@ -1,0 +1,18 @@
+{
+  "title": "Fugue in A flat major",
+  "bwv": 862,
+  "number": 17,
+  "slug": "aflat-major",
+  "voices": 4,
+  "meter": "4/4",
+  "answer": "tonal",
+  "proutPages": [
+    44,
+    45
+  ],
+  "proutPrinted": "41\u201342",
+  "toveyPages": [
+    130
+  ],
+  "toveyPrinted": "111"
+}

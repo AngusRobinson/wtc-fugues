@@ -58,7 +58,7 @@ def pdf_svg(system):
             if 'mNum' not in group.get('class','').split():continue
             if not kept:kept.append(''.join(group.itertext()).strip())
             else:parent.remove(group)
-    assert kept==[str(system['start'])],(system['start'],kept)
+    assert kept==[str(max(1,system['start']))],(system['start'],kept)
     ET.register_namespace('',V[1:-1]);ET.register_namespace('xlink','http://www.w3.org/1999/xlink')
     return ET.tostring(root,encoding='unicode')
 

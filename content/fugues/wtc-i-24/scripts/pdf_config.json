@@ -1,0 +1,20 @@
+{
+  "title": "Fugue in B minor",
+  "bwv": 869,
+  "number": 24,
+  "slug": "b-minor",
+  "voices": 4,
+  "meter": "4/4",
+  "answer": "tonal",
+  "notation": "h anticipation; e introductory figure; ei inversion; f closing figure; p suspension sequence",
+  "proutPages": [
+    54,
+    55
+  ],
+  "proutPrinted": "51\u201352",
+  "toveyPages": [
+    175,
+    176
+  ],
+  "toveyPrinted": "156\u2013157"
+}

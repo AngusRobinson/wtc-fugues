@@ -1,0 +1,41 @@
+{
+  "id": "wtc-i-20",
+  "book": 1,
+  "number": 20,
+  "bwv": "865",
+  "key": "A minor",
+  "title": "J. S. Bach: Fugue in A minor",
+  "subtitle": "Das wohltemperierte Klavier I, no. 20 · BWV 865 · Four voices; expanded close · 4/4",
+  "description": "Six formal groups develop direct and inverted subjects through octave and fifth stretti.",
+  "downloads": [
+    {
+      "label": "Two staves",
+      "href": "./pdf/bach-a-minor-fugue-keyboard.pdf"
+    },
+    {
+      "label": "Open score",
+      "href": "./pdf/bach-a-minor-fugue-annotated.pdf"
+    }
+  ],
+  "analyses": [
+    {
+      "label": "Keller, pp. 101–103 (German)",
+      "href": "https://www.hermann-keller.org/assets/downloads/547e2aeb/bwv865.pdf#page=2"
+    },
+    {
+      "label": "Prout (1910), pp. 45–46",
+      "href": "./pdf/prout-bwv865-analysis.pdf"
+    },
+    {
+      "label": "Tovey (1924), pp. 128–129",
+      "href": "./pdf/tovey-bwv865-analysis.pdf"
+    }
+  ],
+  "publicFiles": [
+    "pdf/bach-a-minor-fugue-keyboard.pdf",
+    "pdf/bach-a-minor-fugue-annotated.pdf",
+    "pdf/prout-bwv865-analysis.pdf",
+    "pdf/tovey-bwv865-analysis.pdf",
+    "sources/NOTICE.txt"
+  ]
+}

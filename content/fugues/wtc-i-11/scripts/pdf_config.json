@@ -1,0 +1,19 @@
+{
+  "title": "Fugue in F major",
+  "bwv": 856,
+  "number": 11,
+  "slug": "f-major",
+  "voices": 3,
+  "meter": "3/8",
+  "answer": "tonal",
+  "proutPages": [
+    35,
+    36
+  ],
+  "proutPrinted": "32\u201333",
+  "toveyPages": [
+    89,
+    90
+  ],
+  "toveyPrinted": "70\u201371"
+}

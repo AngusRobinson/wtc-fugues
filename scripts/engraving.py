@@ -14,6 +14,8 @@ def tidy_score(root,notes,keyboard=False,work=''):
  directions={}
  meter=root.find('.//m:scoreDef//m:meterSig',NS)
  bar_length=int(meter.get('count'))*4/int(meter.get('unit')) if meter is not None else 4
+ opening=root.find('.//m:measure',NS)
+ pickup=max((notes[n.get(ID)]['start']+notes[n.get(ID)]['duration'] for n in opening.findall('.//m:note',NS)),default=0) if opening is not None and opening.get('n')=='0' else 0
  for measure in root.findall('.//m:measure',NS):
   for staff in measure.findall(M+'staff'):
    layers=staff.findall(M+'layer');active=[l for l in layers if l.findall('.//m:note',NS)]
@@ -39,7 +41,7 @@ def tidy_score(root,notes,keyboard=False,work=''):
     # Place a polyphonic rest outside the neighbouring sounding notes, not
     # at a fixed staff position that can coincide with those notes.
     if direction:
-     cursor=(int(measure.get('n'))-1)*bar_length
+     cursor=0 if measure.get('n')=='0' else pickup+(int(measure.get('n'))-1)*bar_length
      def leaves(parent):
       for child in parent:
        if child.tag in [M+'note',M+'chord',M+'rest',M+'space',M+'mRest']:yield child

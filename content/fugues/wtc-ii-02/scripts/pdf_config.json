@@ -1,0 +1,21 @@
+{
+  "title": "Fugue in C minor",
+  "bwv": 871,
+  "bookRoman": "II",
+  "number": 2,
+  "slug": "c-minor",
+  "voices": 4,
+  "meter": "4/4",
+  "answer": "tonal",
+  "csLegend": "Derived figures",
+  "notation": "Si inversion; S x 2 augmentation; h subject head; e semiquavers; ei inversion; * variant; > continuation",
+  "proutPages": [
+    57,
+    58
+  ],
+  "proutPrinted": "54\u201355",
+  "toveyPages": [
+    28
+  ],
+  "toveyPrinted": "9"
+}

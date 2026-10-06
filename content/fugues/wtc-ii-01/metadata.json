@@ -1,0 +1,41 @@
+{
+  "id": "wtc-ii-01",
+  "book": 2,
+  "number": 1,
+  "bwv": "870",
+  "key": "C major",
+  "title": "J. S. Bach: Fugue in C major",
+  "subtitle": "Das wohltemperierte Klavier II, no. 1 · BWV 870 · Three voices · 2/4",
+  "description": "Four entry groups, with episodic imitation and a coda derived from the subject head.",
+  "downloads": [
+    {
+      "label": "Two staves",
+      "href": "./pdf/bach-c-major-fugue-keyboard.pdf"
+    },
+    {
+      "label": "Three staves",
+      "href": "./pdf/bach-c-major-fugue-annotated.pdf"
+    }
+  ],
+  "analyses": [
+    {
+      "label": "Keller, pp. 125–126 (German)",
+      "href": "https://www.hermann-keller.org/assets/downloads/547e2aeb/bwv870.pdf#page=2"
+    },
+    {
+      "label": "Prout (1910), pp. 53–54",
+      "href": "./pdf/prout-bwv870-analysis.pdf"
+    },
+    {
+      "label": "Tovey (1924), p. 3",
+      "href": "./pdf/tovey-bwv870-analysis.pdf"
+    }
+  ],
+  "publicFiles": [
+    "pdf/bach-c-major-fugue-keyboard.pdf",
+    "pdf/bach-c-major-fugue-annotated.pdf",
+    "pdf/prout-bwv870-analysis.pdf",
+    "pdf/tovey-bwv870-analysis.pdf",
+    "sources/NOTICE.txt"
+  ]
+}

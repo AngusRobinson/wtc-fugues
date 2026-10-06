@@ -1,0 +1,11 @@
+Bach, Fugue in A major, BWV 864. WTC I, no. 19.
+
+Score: Kroll, Bach-Gesellschaft XIV (1866), encoded by David Huron; revised by Craig Sapp. Original Humdrum download retained.
+https://github.com/humdrum-tools/bach-wtc-fugues/blob/master/kern/wtc1f19.krn
+
+The encoded upper register in bars 30–31 follows the raised reading discussed by Keller and adopted by Tovey. Alternative ossia pitches in bars 51 and 53 are excluded; primary readings retained. Voice handovers in bars 25 and 31 are identified in the analysis.
+
+Analysis follows Hermann Keller, Das Wohltemperierte Klavier von Johann Sebastian Bach, pp. 98–100.
+https://www.hermann-keller.org/assets/downloads/547e2aeb/bwv864.pdf
+
+Public-domain extracts: Ebenezer Prout, Analysis of J. S. Bach's Forty-Eight Fugues, ed. Louis B. Prout (1910), pp. 44–45; Donald Francis Tovey, The Well-Tempered Clavier I (1924), pp. 122–123. Full scan links are included in each extract.

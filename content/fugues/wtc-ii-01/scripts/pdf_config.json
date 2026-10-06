@@ -1,0 +1,21 @@
+{
+  "title": "Fugue in C major",
+  "bwv": 870,
+  "bookRoman": "II",
+  "number": 1,
+  "slug": "c-major",
+  "voices": 3,
+  "meter": "2/4",
+  "answer": "tonal",
+  "csLegend": "c derived accompaniment",
+  "notation": "h subject head; c semiquaver accompaniment; * incomplete / altered; > continuation",
+  "proutPages": [
+    56,
+    57
+  ],
+  "proutPrinted": "53\u201354",
+  "toveyPages": [
+    22
+  ],
+  "toveyPrinted": "3"
+}

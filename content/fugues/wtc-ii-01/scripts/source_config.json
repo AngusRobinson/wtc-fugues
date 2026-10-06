@@ -1,0 +1,15 @@
+{
+  "id": "wtc-ii-01",
+  "book": 2,
+  "number": 1,
+  "bwv": 870,
+  "status": "pending",
+  "voices": 3,
+  "count": 2,
+  "unit": 4,
+  "barLength": 2.0,
+  "bars": 83,
+  "pickup": 0,
+  "sourceTempo": 102,
+  "keyAccidentals": {}
+}

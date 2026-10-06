@@ -1,0 +1,41 @@
+{
+  "id": "wtc-ii-03",
+  "book": 2,
+  "number": 3,
+  "bwv": "872",
+  "key": "C sharp major",
+  "title": "J. S. Bach: Fugue in C sharp major",
+  "subtitle": "Das wohltemperierte Klavier II, no. 3 · BWV 872 · Three voices · 4/4",
+  "description": "Stretto and inversion from the exposition; later augmentation and diminution of the subject head.",
+  "downloads": [
+    {
+      "label": "Two staves",
+      "href": "./pdf/bach-c-sharp-major-fugue-keyboard.pdf"
+    },
+    {
+      "label": "Three staves",
+      "href": "./pdf/bach-c-sharp-major-fugue-annotated.pdf"
+    }
+  ],
+  "analyses": [
+    {
+      "label": "Keller, pp. 129–130 (German)",
+      "href": "https://www.hermann-keller.org/assets/downloads/547e2aeb/bwv872.pdf#page=2"
+    },
+    {
+      "label": "Prout (1910), pp. 55–57",
+      "href": "./pdf/prout-bwv872-analysis.pdf"
+    },
+    {
+      "label": "Tovey (1924), p. 15",
+      "href": "./pdf/tovey-bwv872-analysis.pdf"
+    }
+  ],
+  "publicFiles": [
+    "pdf/bach-c-sharp-major-fugue-keyboard.pdf",
+    "pdf/bach-c-sharp-major-fugue-annotated.pdf",
+    "pdf/prout-bwv872-analysis.pdf",
+    "pdf/tovey-bwv872-analysis.pdf",
+    "sources/NOTICE.txt"
+  ]
+}
