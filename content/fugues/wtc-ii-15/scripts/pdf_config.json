@@ -1,0 +1,21 @@
+{
+  "title": "Fugue in G major",
+  "bwv": 884,
+  "bookRoman": "II",
+  "number": 15,
+  "slug": "g-major",
+  "voices": 3,
+  "meter": "3/8",
+  "answer": "tonal",
+  "csLegend": "CS1 / CS2 two-part countersubject",
+  "notation": "S subject; A tonal answer; CS1 / CS2 countersubject; h arpeggios; q scalar continuation; r run; * altered; > continuation",
+  "proutPages": [
+    77,
+    78
+  ],
+  "proutPrinted": "74\u201375",
+  "toveyPages": [
+    124
+  ],
+  "toveyPrinted": "105"
+}

@@ -1,0 +1,16 @@
+J. S. Bach: Fugue in B major, BWV 892. WTC II, no. 23.
+
+Score: Kroll, Bach-Gesellschaft XIV (1866), pp. 194-197.
+Humdrum encoding: David Huron; revised by Craig Sapp.
+https://github.com/humdrum-tools/bach-wtc-fugues/blob/master/kern/wtc2f23.krn
+Original transcription retained without pitch changes.
+
+Analysis checked against Hermann Keller, Das Wohltemperierte Klavier
+(1965), pp. 183-184, linked at the author’s website; not reproduced.
+https://www.hermann-keller.org/assets/downloads/547e2aeb/bwv892.pdf
+Public-domain extracts: Ebenezer Prout, Analysis (1910), pp. 87-88;
+Donald Francis Tovey, The Well-Tempered Clavier II (1924), pp. 166-167.
+Complete original pages retained; source links included in each extract.
+
+Recording: Christine Schornsheim, Netherlands Bach Society; official
+YouTube embed only. No recording is redistributed.

@@ -1,0 +1,21 @@
+{
+  "title": "Fugue in F minor",
+  "bwv": 881,
+  "bookRoman": "II",
+  "number": 12,
+  "slug": "f-minor",
+  "voices": 3,
+  "meter": "2/4",
+  "answer": "tonal",
+  "csLegend": "No regular countersubject",
+  "notation": "r refrain; p accompaniment; a arpeggios; d semiquaver tail; q quaver figure; h head; * altered / incomplete; > continuation",
+  "proutPages": [
+    72,
+    73
+  ],
+  "proutPrinted": "69\u201370",
+  "toveyPages": [
+    100
+  ],
+  "toveyPrinted": "81"
+}

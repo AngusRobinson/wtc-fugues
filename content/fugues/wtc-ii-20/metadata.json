@@ -1,0 +1,41 @@
+{
+  "id": "wtc-ii-20",
+  "book": 2,
+  "number": 20,
+  "bwv": "889",
+  "key": "A minor",
+  "title": "J. S. Bach: Fugue in A minor",
+  "subtitle": "Das wohltemperierte Klavier II, no. 20 · BWV 889 · Three voices · Common time",
+  "description": "A modulating subject, two countersubjects in triple counterpoint, and sequential episodes.",
+  "downloads": [
+    {
+      "label": "Two staves",
+      "href": "./pdf/bach-a-minor-fugue-keyboard.pdf"
+    },
+    {
+      "label": "Three staves",
+      "href": "./pdf/bach-a-minor-fugue-annotated.pdf"
+    }
+  ],
+  "analyses": [
+    {
+      "label": "Keller, pp. 174–175 (German)",
+      "href": "https://www.hermann-keller.org/assets/downloads/547e2aeb/bwv889.pdf"
+    },
+    {
+      "label": "Prout (1910), pp. 81–83",
+      "href": "./pdf/prout-bwv889-analysis.pdf"
+    },
+    {
+      "label": "Tovey (1924), pp. 142–143",
+      "href": "./pdf/tovey-bwv889-analysis.pdf"
+    }
+  ],
+  "publicFiles": [
+    "pdf/bach-a-minor-fugue-keyboard.pdf",
+    "pdf/bach-a-minor-fugue-annotated.pdf",
+    "pdf/prout-bwv889-analysis.pdf",
+    "pdf/tovey-bwv889-analysis.pdf",
+    "sources/NOTICE.txt"
+  ]
+}

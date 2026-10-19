@@ -1,0 +1,18 @@
+J. S. Bach: Fugue in B minor, BWV 893. WTC II, no. 24.
+
+Score: Kroll, Bach-Gesellschaft XIV (1866), pp. 200-202.
+Humdrum encoding: David Huron; revised by Craig Sapp.
+https://github.com/humdrum-tools/bach-wtc-fugues/blob/master/kern/wtc2f24.krn
+Original transcription retained as bwv893.original.krn. The closing
+appoggiaturas C-sharp–B and E–D-sharp are restored from Kroll,
+realised as quavers followed by crotchets, as permitted by Tovey.
+
+Analysis checked against Hermann Keller, Das Wohltemperierte Klavier
+(1965), pp. 186-187, linked at the author’s website; not reproduced.
+https://www.hermann-keller.org/assets/downloads/547e2aeb/bwv893.pdf
+Public-domain extracts: Ebenezer Prout, Analysis (1910), pp. 89-90;
+Donald Francis Tovey, The Well-Tempered Clavier II (1924), pp. 174-175.
+Complete original pages retained; source links included in each extract.
+
+Recording: Christine Schornsheim, Netherlands Bach Society; official
+YouTube embed only. No recording is redistributed.

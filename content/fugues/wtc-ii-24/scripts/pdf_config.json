@@ -1,0 +1,22 @@
+{
+  "title": "Fugue in B minor",
+  "bwv": 893,
+  "bookRoman": "II",
+  "number": 24,
+  "slug": "b-minor",
+  "voices": 3,
+  "meter": "3/8",
+  "answer": "tonal",
+  "csLegend": "CS1 / CS2 countersubjects",
+  "notation": "Ar real answer; h head; t trill; r rocking sequence; d descending scale; * variant / fragment; > continuation",
+  "proutPages": [
+    92,
+    93
+  ],
+  "proutPrinted": "89\u201390",
+  "toveyPages": [
+    193,
+    194
+  ],
+  "toveyPrinted": "174\u2013175"
+}

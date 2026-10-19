@@ -269,10 +269,122 @@ The analyses examine subjects and countersubjects, recurring motifs, contrapunta
 - [Tovey’s analysis (1924), pp. 56–57](content/fugues/wtc-ii-09/pdf/tovey-bwv878-analysis.pdf)
 - [Keller’s analysis, pp. 144–146 (German)](https://www.hermann-keller.org/assets/downloads/547e2aeb/bwv878.pdf#page=2)
 
+**Book II, no. 10: Fugue in E minor, BWV 879**
+
+- [Two staves](content/fugues/wtc-ii-10/pdf/bach-e-minor-fugue-keyboard.pdf)
+- [Three staves](content/fugues/wtc-ii-10/pdf/bach-e-minor-fugue-annotated.pdf)
+- [Keller, pp. 147–149 (German)](https://www.hermann-keller.org/assets/downloads/547e2aeb/bwv879.pdf#page=2)
+- [Prout (1910), pp. 66–67](content/fugues/wtc-ii-10/pdf/prout-bwv879-analysis.pdf)
+- [Tovey (1924), p. 63](content/fugues/wtc-ii-10/pdf/tovey-bwv879-analysis.pdf)
+
+**Book II, no. 11: Fugue in F major, BWV 880**
+
+- [Two staves](content/fugues/wtc-ii-11/pdf/bach-f-major-fugue-keyboard.pdf)
+- [Three staves](content/fugues/wtc-ii-11/pdf/bach-f-major-fugue-annotated.pdf)
+- [Keller, pp. 150–152 (German)](https://www.hermann-keller.org/assets/downloads/547e2aeb/bwv880.pdf#page=2)
+- [Prout (1910), pp. 68–69](content/fugues/wtc-ii-11/pdf/prout-bwv880-analysis.pdf)
+- [Tovey (1924), pp. 71–72](content/fugues/wtc-ii-11/pdf/tovey-bwv880-analysis.pdf)
+
+**Book II, no. 12: Fugue in F minor, BWV 881**
+
+- [Two staves](content/fugues/wtc-ii-12/pdf/bach-f-minor-fugue-keyboard.pdf)
+- [Three staves](content/fugues/wtc-ii-12/pdf/bach-f-minor-fugue-annotated.pdf)
+- [Keller, pp. 154–155 (German)](https://www.hermann-keller.org/assets/downloads/547e2aeb/bwv881.pdf#page=3)
+- [Prout (1910), pp. 69–70](content/fugues/wtc-ii-12/pdf/prout-bwv881-analysis.pdf)
+- [Tovey (1924), p. 81](content/fugues/wtc-ii-12/pdf/tovey-bwv881-analysis.pdf)
+
+**Book II, no. 13: Fugue in F-sharp major, BWV 882**
+
+- [Two staves](content/fugues/wtc-ii-13/pdf/bach-f-sharp-major-fugue-keyboard.pdf)
+- [Three staves](content/fugues/wtc-ii-13/pdf/bach-f-sharp-major-fugue-annotated.pdf)
+- [Keller, pp. 156–157 (German)](https://www.hermann-keller.org/assets/downloads/547e2aeb/bwv882.pdf#page=2)
+- [Prout (1910), pp. 70–71](content/fugues/wtc-ii-13/pdf/prout-bwv882-analysis.pdf)
+- [Tovey (1924), pp. 87–88](content/fugues/wtc-ii-13/pdf/tovey-bwv882-analysis.pdf)
+
+**Book II, no. 14: Fugue in F-sharp minor, BWV 883**
+
+- [Two staves](content/fugues/wtc-ii-14/pdf/bach-f-sharp-minor-fugue-keyboard.pdf)
+- [Three staves](content/fugues/wtc-ii-14/pdf/bach-f-sharp-minor-fugue-annotated.pdf)
+- [Keller, pp. 159–160 (German)](https://www.hermann-keller.org/assets/downloads/547e2aeb/bwv883.pdf#page=2)
+- [Prout (1910), pp. 72–74](content/fugues/wtc-ii-14/pdf/prout-bwv883-analysis.pdf)
+- [Tovey (1924), pp. 95–96](content/fugues/wtc-ii-14/pdf/tovey-bwv883-analysis.pdf)
+
+**Book II, no. 15: Fugue in G major, BWV 884**
+
+- [Two staves](content/fugues/wtc-ii-15/pdf/bach-g-major-fugue-keyboard.pdf)
+- [Three staves](content/fugues/wtc-ii-15/pdf/bach-g-major-fugue-annotated.pdf)
+- [Keller, p. 162 (German)](https://www.hermann-keller.org/assets/downloads/547e2aeb/bwv884.pdf#page=2)
+- [Prout (1910), pp. 74–75](content/fugues/wtc-ii-15/pdf/prout-bwv884-analysis.pdf)
+- [Tovey (1924), p. 105](content/fugues/wtc-ii-15/pdf/tovey-bwv884-analysis.pdf)
+
+**Book II, no. 16: Fugue in G minor, BWV 885**
+
+- [Two staves](content/fugues/wtc-ii-16/pdf/bach-g-minor-fugue-keyboard.pdf)
+- [Four staves](content/fugues/wtc-ii-16/pdf/bach-g-minor-fugue-annotated.pdf)
+- [Keller, pp. 163–165 (German)](https://www.hermann-keller.org/assets/downloads/547e2aeb/bwv885.pdf)
+- [Prout (1910), pp. 75–77](content/fugues/wtc-ii-16/pdf/prout-bwv885-analysis.pdf)
+- [Tovey (1924), pp. 110–111](content/fugues/wtc-ii-16/pdf/tovey-bwv885-analysis.pdf)
+
+**Book II, no. 17: Fugue in A-flat major, BWV 886**
+
+- [Two staves](content/fugues/wtc-ii-17/pdf/bach-aflat-major-fugue-keyboard.pdf)
+- [Four staves](content/fugues/wtc-ii-17/pdf/bach-aflat-major-fugue-annotated.pdf)
+- [Keller, pp. 166–167 (German)](https://www.hermann-keller.org/assets/downloads/547e2aeb/bwv886.pdf)
+- [Prout (1910), pp. 77–78](content/fugues/wtc-ii-17/pdf/prout-bwv886-analysis.pdf)
+- [Tovey (1924), p. 119](content/fugues/wtc-ii-17/pdf/tovey-bwv886-analysis.pdf)
+
+**Book II, no. 18: Fugue in G-sharp minor, BWV 887**
+
+- [Two staves](content/fugues/wtc-ii-18/pdf/bach-g-sharp-minor-fugue-keyboard.pdf)
+- [Three staves](content/fugues/wtc-ii-18/pdf/bach-g-sharp-minor-fugue-annotated.pdf)
+- [Keller, pp. 169–170 (German)](https://www.hermann-keller.org/assets/downloads/547e2aeb/bwv887.pdf)
+- [Prout (1910), pp. 78–80](content/fugues/wtc-ii-18/pdf/prout-bwv887-analysis.pdf)
+- [Tovey (1924), pp. 127–128](content/fugues/wtc-ii-18/pdf/tovey-bwv887-analysis.pdf)
+
+**Book II, no. 19: Fugue in A major, BWV 888**
+
+- [Two staves](content/fugues/wtc-ii-19/pdf/bach-a-major-fugue-keyboard.pdf)
+- [Three staves](content/fugues/wtc-ii-19/pdf/bach-a-major-fugue-annotated.pdf)
+- [Keller, pp. 171–172 (German)](https://www.hermann-keller.org/assets/downloads/547e2aeb/bwv888.pdf)
+- [Prout (1910), pp. 80–81](content/fugues/wtc-ii-19/pdf/prout-bwv888-analysis.pdf)
+- [Tovey (1924), p. 137](content/fugues/wtc-ii-19/pdf/tovey-bwv888-analysis.pdf)
+
+**Book II, no. 20: Fugue in A minor, BWV 889**
+
+- [Two staves](content/fugues/wtc-ii-20/pdf/bach-a-minor-fugue-keyboard.pdf)
+- [Three staves](content/fugues/wtc-ii-20/pdf/bach-a-minor-fugue-annotated.pdf)
+- [Keller, pp. 174–175 (German)](https://www.hermann-keller.org/assets/downloads/547e2aeb/bwv889.pdf)
+- [Prout (1910), pp. 81–83](content/fugues/wtc-ii-20/pdf/prout-bwv889-analysis.pdf)
+- [Tovey (1924), pp. 142–143](content/fugues/wtc-ii-20/pdf/tovey-bwv889-analysis.pdf)
+
+**Book II, no. 21: Fugue in B-flat major, BWV 890**
+
+- [Two staves](content/fugues/wtc-ii-21/pdf/bach-bflat-major-fugue-keyboard.pdf)
+- [Three staves](content/fugues/wtc-ii-21/pdf/bach-bflat-major-fugue-annotated.pdf)
+- [Keller, pp. 176–177 (German)](https://www.hermann-keller.org/assets/downloads/547e2aeb/bwv890.pdf)
+- [Prout (1910), pp. 83–85](content/fugues/wtc-ii-21/pdf/prout-bwv890-analysis.pdf)
+- [Tovey (1924), pp. 148–149](content/fugues/wtc-ii-21/pdf/tovey-bwv890-analysis.pdf)
+
 **Book II, no. 22: Fugue in B-flat minor, BWV 891**
 
 - [Annotated keyboard score, two staves](content/fugues/wtc-ii-22/pdf/bach-bflat-minor-fugue-keyboard.pdf)
 - [Annotated open score, four staves](content/fugues/wtc-ii-22/pdf/bach-bflat-minor-fugue-annotated.pdf)
+
+**Book II, no. 23: Fugue in B major, BWV 892**
+
+- [Two staves](content/fugues/wtc-ii-23/pdf/bach-b-major-fugue-keyboard.pdf)
+- [Four staves](content/fugues/wtc-ii-23/pdf/bach-b-major-fugue-annotated.pdf)
+- [Keller, pp. 183–184 (German)](https://www.hermann-keller.org/assets/downloads/547e2aeb/bwv892.pdf)
+- [Prout (1910), pp. 87–88](content/fugues/wtc-ii-23/pdf/prout-bwv892-analysis.pdf)
+- [Tovey (1924), pp. 166–167](content/fugues/wtc-ii-23/pdf/tovey-bwv892-analysis.pdf)
+
+**Book II, no. 24: Fugue in B minor, BWV 893**
+
+- [Two staves](content/fugues/wtc-ii-24/pdf/bach-b-minor-fugue-keyboard.pdf)
+- [Three staves](content/fugues/wtc-ii-24/pdf/bach-b-minor-fugue-annotated.pdf)
+- [Keller, pp. 186–187 (German)](https://www.hermann-keller.org/assets/downloads/547e2aeb/bwv893.pdf)
+- [Prout (1910), pp. 89–90](content/fugues/wtc-ii-24/pdf/prout-bwv893-analysis.pdf)
+- [Tovey (1924), pp. 174–175](content/fugues/wtc-ii-24/pdf/tovey-bwv893-analysis.pdf)
 
 ## Sources
 

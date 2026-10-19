@@ -1,0 +1,23 @@
+{
+  "title": "Fugue in B-flat major",
+  "bwv": 890,
+  "bookRoman": "II",
+  "number": 21,
+  "slug": "bflat-major",
+  "voices": 3,
+  "meter": "3/4",
+  "answer": "tonal",
+  "csLegend": "CS1 / CS2 countersubjects",
+  "notation": "Ar real answer; h subject-head figure; t paired-quaver tail; * altered / incomplete; > continuation",
+  "proutPages": [
+    86,
+    87,
+    88
+  ],
+  "proutPrinted": "83\u201385",
+  "toveyPages": [
+    167,
+    168
+  ],
+  "toveyPrinted": "148\u2013149"
+}

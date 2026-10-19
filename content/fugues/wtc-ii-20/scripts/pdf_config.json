@@ -1,0 +1,23 @@
+{
+  "title": "Fugue in A minor",
+  "bwv": 889,
+  "bookRoman": "II",
+  "number": 20,
+  "slug": "a-minor",
+  "voices": 3,
+  "meter": "Common time",
+  "answer": "tonal",
+  "csLegend": "CS1 / CS2 countersubjects",
+  "notation": "q subject-derived quavers; e episodic demisemiquavers; k canon; * altered / shortened / fragment; > continuation",
+  "proutPages": [
+    84,
+    85,
+    86
+  ],
+  "proutPrinted": "81\u201383",
+  "toveyPages": [
+    161,
+    162
+  ],
+  "toveyPrinted": "142\u2013143"
+}

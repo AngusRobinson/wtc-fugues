@@ -1,0 +1,22 @@
+{
+  "title": "Fugue in F-sharp major",
+  "bwv": 882,
+  "bookRoman": "II",
+  "number": 13,
+  "slug": "f-sharp-major",
+  "voices": 3,
+  "meter": "2/2",
+  "answer": "real",
+  "csLegend": "CS1 / CS2 countersubjects",
+  "notation": "q quavers; m minims; c crotchet figure; g gavotte; b bass quavers; * altered / incomplete; > continuation",
+  "proutPages": [
+    73,
+    74
+  ],
+  "proutPrinted": "70\u201371",
+  "toveyPages": [
+    106,
+    107
+  ],
+  "toveyPrinted": "87\u201388"
+}

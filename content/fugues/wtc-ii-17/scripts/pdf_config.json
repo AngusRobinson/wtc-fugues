@@ -1,0 +1,20 @@
+{
+  "title": "Fugue in A-flat major",
+  "bwv": 886,
+  "bookRoman": "II",
+  "number": 17,
+  "slug": "aflat-major",
+  "voices": 4,
+  "meter": "4/4",
+  "answer": "tonal",
+  "notation": "S1 first subject; A answer; S2 second subject; CS semiquaver countersubject; * altered / incomplete; > continuation",
+  "proutPages": [
+    80,
+    81
+  ],
+  "proutPrinted": "77\u201378",
+  "toveyPages": [
+    138
+  ],
+  "toveyPrinted": "119"
+}

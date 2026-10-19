@@ -1,0 +1,22 @@
+{
+  "title": "Fugue in B major",
+  "bwv": 892,
+  "bookRoman": "II",
+  "number": 23,
+  "slug": "b-major",
+  "voices": 4,
+  "meter": "2/2",
+  "answer": "real",
+  "csLegend": "CS exposition countersubject",
+  "notation": "S1 first subject; A1 real answer; S2 second subject; q coils; r scale figure; o oscillation; * variant / fragment; > continuation",
+  "proutPages": [
+    90,
+    91
+  ],
+  "proutPrinted": "87\u201388",
+  "toveyPages": [
+    185,
+    186
+  ],
+  "toveyPrinted": "166\u2013167"
+}

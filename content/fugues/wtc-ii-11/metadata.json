@@ -1,0 +1,41 @@
+{
+  "id": "wtc-ii-11",
+  "book": 2,
+  "number": 11,
+  "bwv": "880",
+  "key": "F major",
+  "title": "J. S. Bach: Fugue in F major",
+  "subtitle": "Das wohltemperierte Klavier II, no. 11 · BWV 880 · Three voices · 6/16",
+  "description": "Eight subject entries, extensive episodic development and two dominant pedals.",
+  "downloads": [
+    {
+      "label": "Two staves",
+      "href": "./pdf/bach-f-major-fugue-keyboard.pdf"
+    },
+    {
+      "label": "Three staves",
+      "href": "./pdf/bach-f-major-fugue-annotated.pdf"
+    }
+  ],
+  "analyses": [
+    {
+      "label": "Keller, pp. 150–152 (German)",
+      "href": "https://www.hermann-keller.org/assets/downloads/547e2aeb/bwv880.pdf#page=2"
+    },
+    {
+      "label": "Prout (1910), pp. 68–69",
+      "href": "./pdf/prout-bwv880-analysis.pdf"
+    },
+    {
+      "label": "Tovey (1924), pp. 71–72",
+      "href": "./pdf/tovey-bwv880-analysis.pdf"
+    }
+  ],
+  "publicFiles": [
+    "pdf/bach-f-major-fugue-keyboard.pdf",
+    "pdf/bach-f-major-fugue-annotated.pdf",
+    "pdf/prout-bwv880-analysis.pdf",
+    "pdf/tovey-bwv880-analysis.pdf",
+    "sources/NOTICE.txt"
+  ]
+}

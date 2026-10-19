@@ -56,9 +56,10 @@ def pdf_svg(system):
     for parent in root.iter():
         for group in list(parent):
             if 'mNum' not in group.get('class','').split():continue
+            if system['start']==0:parent.remove(group);continue
             if not kept:kept.append(''.join(group.itertext()).strip())
             else:parent.remove(group)
-    assert kept==[str(max(1,system['start']))],(system['start'],kept)
+    assert kept==([] if system['start']==0 else [str(system['start'])]),(system['start'],kept)
     ET.register_namespace('',V[1:-1]);ET.register_namespace('xlink','http://www.w3.org/1999/xlink')
     return ET.tostring(root,encoding='unicode')
 
@@ -81,6 +82,27 @@ def numeral_baseline(system,width):
     y=float(number.find(V+'text').get('y'))
     return width*(dy+y)/float(inner.get('viewBox').split()[2])
 
+def roman_width(canvas,text):
+    return sum(4.5 if ch=='♭' else 5.5 if ch=='♯' else canvas.stringWidth(ch,'Times-Bold',9) for ch in text)
+
+def draw_roman(canvas,text,centre,baseline):
+    # The standard PDF Times font has no musical accidental glyphs.
+    # Draw those signs as vectors, preserving the established Roman typeface.
+    x=centre-roman_width(canvas,text)/2
+    for ch in text:
+        if ch=='♭':
+            canvas.saveState();canvas.setStrokeColor(HexColor('#35465e'));canvas.setLineWidth(.55)
+            p=canvas.beginPath();p.moveTo(x+1,baseline+8);p.lineTo(x+1,baseline)
+            p.moveTo(x+1,baseline+3.7);p.curveTo(x+4.7,baseline+6.2,x+4.6,baseline+2.1,x+1,baseline)
+            canvas.drawPath(p);canvas.restoreState();x+=4.5
+        elif ch=='♯':
+            canvas.saveState();canvas.setStrokeColor(HexColor('#35465e'));canvas.setLineWidth(.45)
+            canvas.line(x+1.3,baseline,x+1.3,baseline+7.4);canvas.line(x+3.6,baseline+.8,x+3.6,baseline+8.2)
+            canvas.setLineWidth(1);canvas.line(x+.3,baseline+2.1,x+4.7,baseline+3.3);canvas.line(x+.3,baseline+4.8,x+4.7,baseline+6)
+            canvas.restoreState();x+=5.5
+        else:
+            canvas.drawString(x,baseline,ch);x+=canvas.stringWidth(ch,'Times-Bold',9)
+
 def draw_score(canvas,root,system,image,left,bottom,width,height):
     positions=arrival_positions(root,system)
     canvas.drawImage(str(pdf_image(system,image)),left,bottom,width=width,height=height)
@@ -89,9 +111,9 @@ def draw_score(canvas,root,system,image,left,bottom,width,height):
         baseline=bottom+height-numeral_baseline(system,width)
         end=-1
         for event,x in sorted(positions,key=lambda pair:pair[1]):
-            centre=left+x*width;half=canvas.stringWidth(event['roman'],'Times-Bold',9)/2
+            centre=left+x*width;half=roman_width(canvas,event['roman'])/2
             assert centre-half>end+3,(root.name,event['id'],'tonal labels overlap')
-            canvas.drawCentredString(centre,baseline,event['roman']);end=centre+half
+            draw_roman(canvas,event['roman'],centre,baseline);end=centre+half
         canvas.restoreState()
 
 

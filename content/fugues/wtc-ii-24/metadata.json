@@ -1,0 +1,41 @@
+{
+  "id": "wtc-ii-24",
+  "book": 2,
+  "number": 24,
+  "bwv": "893",
+  "key": "B minor",
+  "title": "J. S. Bach: Fugue in B minor",
+  "subtitle": "Das wohltemperierte Klavier II, no. 24 · BWV 893 · Three voices · 3/8",
+  "description": "A tonal answer, a later semiquaver countersubject, partial stretto and a four-bar coda.",
+  "downloads": [
+    {
+      "label": "Two staves",
+      "href": "./pdf/bach-b-minor-fugue-keyboard.pdf"
+    },
+    {
+      "label": "Three staves",
+      "href": "./pdf/bach-b-minor-fugue-annotated.pdf"
+    }
+  ],
+  "analyses": [
+    {
+      "label": "Keller, pp. 186–187 (German)",
+      "href": "https://www.hermann-keller.org/assets/downloads/547e2aeb/bwv893.pdf"
+    },
+    {
+      "label": "Prout (1910), pp. 89–90",
+      "href": "./pdf/prout-bwv893-analysis.pdf"
+    },
+    {
+      "label": "Tovey (1924), pp. 174–175",
+      "href": "./pdf/tovey-bwv893-analysis.pdf"
+    }
+  ],
+  "publicFiles": [
+    "pdf/bach-b-minor-fugue-keyboard.pdf",
+    "pdf/bach-b-minor-fugue-annotated.pdf",
+    "pdf/prout-bwv893-analysis.pdf",
+    "pdf/tovey-bwv893-analysis.pdf",
+    "sources/NOTICE.txt"
+  ]
+}

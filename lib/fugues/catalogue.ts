@@ -33,8 +33,22 @@ import metadata29 from '../../content/fugues/wtc-ii-06/metadata.json';
 import metadata30 from '../../content/fugues/wtc-ii-07/metadata.json';
 import metadata31 from '../../content/fugues/wtc-ii-08/metadata.json';
 import metadata32 from '../../content/fugues/wtc-ii-09/metadata.json';
-import metadata33 from '../../content/fugues/wtc-ii-22/metadata.json';
-export const catalogue:WorkMetadata[]=[metadata0,metadata1,metadata2,metadata3,metadata4,metadata5,metadata6,metadata7,metadata8,metadata9,metadata10,metadata11,metadata12,metadata13,metadata14,metadata15,metadata16,metadata17,metadata18,metadata19,metadata20,metadata21,metadata22,metadata23,metadata24,metadata25,metadata26,metadata27,metadata28,metadata29,metadata30,metadata31,metadata32,metadata33];
+import metadata33 from '../../content/fugues/wtc-ii-10/metadata.json';
+import metadata34 from '../../content/fugues/wtc-ii-11/metadata.json';
+import metadata35 from '../../content/fugues/wtc-ii-12/metadata.json';
+import metadata36 from '../../content/fugues/wtc-ii-13/metadata.json';
+import metadata37 from '../../content/fugues/wtc-ii-14/metadata.json';
+import metadata38 from '../../content/fugues/wtc-ii-15/metadata.json';
+import metadata39 from '../../content/fugues/wtc-ii-16/metadata.json';
+import metadata40 from '../../content/fugues/wtc-ii-17/metadata.json';
+import metadata41 from '../../content/fugues/wtc-ii-18/metadata.json';
+import metadata42 from '../../content/fugues/wtc-ii-19/metadata.json';
+import metadata43 from '../../content/fugues/wtc-ii-20/metadata.json';
+import metadata44 from '../../content/fugues/wtc-ii-21/metadata.json';
+import metadata45 from '../../content/fugues/wtc-ii-22/metadata.json';
+import metadata46 from '../../content/fugues/wtc-ii-23/metadata.json';
+import metadata47 from '../../content/fugues/wtc-ii-24/metadata.json';
+export const catalogue:WorkMetadata[]=[metadata0,metadata1,metadata2,metadata3,metadata4,metadata5,metadata6,metadata7,metadata8,metadata9,metadata10,metadata11,metadata12,metadata13,metadata14,metadata15,metadata16,metadata17,metadata18,metadata19,metadata20,metadata21,metadata22,metadata23,metadata24,metadata25,metadata26,metadata27,metadata28,metadata29,metadata30,metadata31,metadata32,metadata33,metadata34,metadata35,metadata36,metadata37,metadata38,metadata39,metadata40,metadata41,metadata42,metadata43,metadata44,metadata45,metadata46,metadata47];
 const loaders:Record<string,()=>Promise<FugueData>>={
  "wtc-i-01":()=>import('../../content/fugues/wtc-i-01/study').then(module=>module.default),
  "wtc-i-02":()=>import('../../content/fugues/wtc-i-02/study').then(module=>module.default),
@@ -69,7 +83,21 @@ const loaders:Record<string,()=>Promise<FugueData>>={
  "wtc-ii-07":()=>import('../../content/fugues/wtc-ii-07/study').then(module=>module.default),
  "wtc-ii-08":()=>import('../../content/fugues/wtc-ii-08/study').then(module=>module.default),
  "wtc-ii-09":()=>import('../../content/fugues/wtc-ii-09/study').then(module=>module.default),
+ "wtc-ii-10":()=>import('../../content/fugues/wtc-ii-10/study').then(module=>module.default),
+ "wtc-ii-11":()=>import('../../content/fugues/wtc-ii-11/study').then(module=>module.default),
+ "wtc-ii-12":()=>import('../../content/fugues/wtc-ii-12/study').then(module=>module.default),
+ "wtc-ii-13":()=>import('../../content/fugues/wtc-ii-13/study').then(module=>module.default),
+ "wtc-ii-14":()=>import('../../content/fugues/wtc-ii-14/study').then(module=>module.default),
+ "wtc-ii-15":()=>import('../../content/fugues/wtc-ii-15/study').then(module=>module.default),
+ "wtc-ii-16":()=>import('../../content/fugues/wtc-ii-16/study').then(module=>module.default),
+ "wtc-ii-17":()=>import('../../content/fugues/wtc-ii-17/study').then(module=>module.default),
+ "wtc-ii-18":()=>import('../../content/fugues/wtc-ii-18/study').then(module=>module.default),
+ "wtc-ii-19":()=>import('../../content/fugues/wtc-ii-19/study').then(module=>module.default),
+ "wtc-ii-20":()=>import('../../content/fugues/wtc-ii-20/study').then(module=>module.default),
+ "wtc-ii-21":()=>import('../../content/fugues/wtc-ii-21/study').then(module=>module.default),
  "wtc-ii-22":()=>import('../../content/fugues/wtc-ii-22/study').then(module=>module.default),
+ "wtc-ii-23":()=>import('../../content/fugues/wtc-ii-23/study').then(module=>module.default),
+ "wtc-ii-24":()=>import('../../content/fugues/wtc-ii-24/study').then(module=>module.default),
 };
 export async function loadStudy(id:string):Promise<FugueData|undefined>{
  return Object.hasOwn(loaders,id)?loaders[id]():undefined;

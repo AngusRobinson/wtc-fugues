@@ -1,0 +1,20 @@
+{
+  "title": "Fugue in E minor",
+  "bwv": 879,
+  "bookRoman": "II",
+  "number": 10,
+  "slug": "e-minor",
+  "voices": 3,
+  "meter": "2/2",
+  "answer": "real",
+  "notation": "d triplet tail; di inverted direction; * altered / incomplete; > continuation",
+  "proutPages": [
+    69,
+    70
+  ],
+  "proutPrinted": "66\u201367",
+  "toveyPages": [
+    82
+  ],
+  "toveyPrinted": "63"
+}

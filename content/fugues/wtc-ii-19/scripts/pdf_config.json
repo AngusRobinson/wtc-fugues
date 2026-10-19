@@ -1,0 +1,21 @@
+{
+  "title": "Fugue in A major",
+  "bwv": 888,
+  "bookRoman": "II",
+  "number": 19,
+  "slug": "a-major",
+  "voices": 3,
+  "meter": "Common time",
+  "answer": "real",
+  "csLegend": "d dotted accompaniment",
+  "notation": "t subject-tail figure; ti inversion; * altered / extended; > continuation",
+  "proutPages": [
+    83,
+    84
+  ],
+  "proutPrinted": "80\u201381",
+  "toveyPages": [
+    156
+  ],
+  "toveyPrinted": "137"
+}

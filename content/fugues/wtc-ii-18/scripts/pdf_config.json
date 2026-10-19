@@ -1,0 +1,22 @@
+{
+  "title": "Fugue in G-sharp minor",
+  "bwv": 887,
+  "bookRoman": "II",
+  "number": 18,
+  "slug": "g-sharp-minor",
+  "voices": 3,
+  "meter": "6/8",
+  "answer": "real",
+  "notation": "S1 first subject; A1 real answer; S2 second subject; CS countersubject; * altered / incomplete; > continuation",
+  "proutPages": [
+    81,
+    82,
+    83
+  ],
+  "proutPrinted": "78\u201380",
+  "toveyPages": [
+    146,
+    147
+  ],
+  "toveyPrinted": "127\u2013128"
+}

@@ -1,0 +1,22 @@
+{
+  "title": "Fugue in F major",
+  "bwv": 880,
+  "bookRoman": "II",
+  "number": 11,
+  "slug": "f-major",
+  "voices": 3,
+  "meter": "6/16",
+  "answer": "tonal",
+  "csLegend": "No regular countersubject",
+  "notation": "d tail; e sequence; r quaver\u2013semiquaver rhythm; k seventh imitation; c cadence; * altered / extended; > continuation",
+  "proutPages": [
+    71,
+    72
+  ],
+  "proutPrinted": "68\u201369",
+  "toveyPages": [
+    90,
+    91
+  ],
+  "toveyPrinted": "71\u201372"
+}

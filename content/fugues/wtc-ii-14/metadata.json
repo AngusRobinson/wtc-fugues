@@ -1,0 +1,41 @@
+{
+  "id": "wtc-ii-14",
+  "book": 2,
+  "number": 14,
+  "bwv": "883",
+  "key": "F-sharp minor",
+  "title": "J. S. Bach: Fugue in F-sharp minor",
+  "subtitle": "Das wohltemperierte Klavier II, no. 14 · BWV 883 · Three voices · 4/4",
+  "description": "Three subjects introduced successively and combined in triple counterpoint.",
+  "downloads": [
+    {
+      "label": "Two staves",
+      "href": "./pdf/bach-f-sharp-minor-fugue-keyboard.pdf"
+    },
+    {
+      "label": "Three staves",
+      "href": "./pdf/bach-f-sharp-minor-fugue-annotated.pdf"
+    }
+  ],
+  "analyses": [
+    {
+      "label": "Keller, pp. 159–160 (German)",
+      "href": "https://www.hermann-keller.org/assets/downloads/547e2aeb/bwv883.pdf#page=2"
+    },
+    {
+      "label": "Prout (1910), pp. 72–74",
+      "href": "./pdf/prout-bwv883-analysis.pdf"
+    },
+    {
+      "label": "Tovey (1924), pp. 95–96",
+      "href": "./pdf/tovey-bwv883-analysis.pdf"
+    }
+  ],
+  "publicFiles": [
+    "pdf/bach-f-sharp-minor-fugue-keyboard.pdf",
+    "pdf/bach-f-sharp-minor-fugue-annotated.pdf",
+    "pdf/prout-bwv883-analysis.pdf",
+    "pdf/tovey-bwv883-analysis.pdf",
+    "sources/NOTICE.txt"
+  ]
+}

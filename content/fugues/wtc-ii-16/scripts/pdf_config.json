@@ -1,0 +1,23 @@
+{
+  "title": "Fugue in G minor",
+  "bwv": 885,
+  "bookRoman": "II",
+  "number": 16,
+  "slug": "g-minor",
+  "voices": 4,
+  "meter": "3/4",
+  "answer": "tonal",
+  "csLegend": "CS countersubject",
+  "notation": "S subject; A tonal answer; CS countersubject; +3 / +6 doubling; a rising / d falling semiquavers; * altered / incomplete; > continuation",
+  "proutPages": [
+    78,
+    79,
+    80
+  ],
+  "proutPrinted": "75\u201377",
+  "toveyPages": [
+    129,
+    130
+  ],
+  "toveyPrinted": "110\u2013111"
+}

@@ -1,0 +1,41 @@
+{
+  "id": "wtc-ii-21",
+  "book": 2,
+  "number": 21,
+  "bwv": "890",
+  "key": "B-flat major",
+  "title": "J. S. Bach: Fugue in B-flat major",
+  "subtitle": "Das wohltemperierte Klavier II, no. 21 · BWV 890 · Three voices · 3/4",
+  "description": "Two-part form, a tonal answer and two later countersubjects in triple counterpoint.",
+  "downloads": [
+    {
+      "label": "Two staves",
+      "href": "./pdf/bach-bflat-major-fugue-keyboard.pdf"
+    },
+    {
+      "label": "Three staves",
+      "href": "./pdf/bach-bflat-major-fugue-annotated.pdf"
+    }
+  ],
+  "analyses": [
+    {
+      "label": "Keller, pp. 176–177 (German)",
+      "href": "https://www.hermann-keller.org/assets/downloads/547e2aeb/bwv890.pdf"
+    },
+    {
+      "label": "Prout (1910), pp. 83–85",
+      "href": "./pdf/prout-bwv890-analysis.pdf"
+    },
+    {
+      "label": "Tovey (1924), pp. 148–149",
+      "href": "./pdf/tovey-bwv890-analysis.pdf"
+    }
+  ],
+  "publicFiles": [
+    "pdf/bach-bflat-major-fugue-keyboard.pdf",
+    "pdf/bach-bflat-major-fugue-annotated.pdf",
+    "pdf/prout-bwv890-analysis.pdf",
+    "pdf/tovey-bwv890-analysis.pdf",
+    "sources/NOTICE.txt"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "title": "Fugue in F-sharp minor",
+  "bwv": 883,
+  "bookRoman": "II",
+  "number": 14,
+  "slug": "f-sharp-minor",
+  "voices": 3,
+  "meter": "4/4",
+  "answer": "tonal",
+  "csLegend": "S2 / S3 later subjects",
+  "notation": "S1 first subject; A1 answer; S2 / S3 later subjects; h head; f fifth; e semiquavers; i inversion; * altered / incomplete; > continuation",
+  "proutPages": [
+    75,
+    76,
+    77
+  ],
+  "proutPrinted": "72\u201374",
+  "toveyPages": [
+    114,
+    115
+  ],
+  "toveyPrinted": "95\u201396"
+}
